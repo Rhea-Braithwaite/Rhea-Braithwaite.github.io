@@ -1,0 +1,87 @@
+img {
+  height: 300px;
+}
+
+
+.main{/* Create flex box*/
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+}
+.main-title{ /*Make title centered*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+
+.interviewees{
+  display: flex;
+  /* flex-wrap: nowrap; */
+}
+
+.year{
+  background-color: #f1f1f1;
+  flex: 1;
+  /* width: 25%; */
+  margin: 3px;
+}
+
+.headshot{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 220px;
+}
+
+
+
+
+
+
+
+.details{
+  display: flex;
+  /* flex-wrap: nowrap; */
+  /* background-color: DodgerBlue; */
+}
+
+/* .deets{
+  width:50%;
+} */
+
+.deets{
+  flex: 1;
+}
+
+.others{
+  display: flex;
+
+  /* flex-wrap: nowrap; */
+  /* background-color: DodgerBlue; */
+}
+.test{
+  /* align-self: center; */
+}
+.film{
+    flex: 1;
+    top: 10px;
+    margin: 3px;
+    /* width: 33%; */
+  /* background-color: DodgerBlue; */
+}
+
+.vid-others{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 220px;
+}
