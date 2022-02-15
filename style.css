@@ -1,50 +1,88 @@
+body{
+  background-color: rgb(200,200,200);
+  color: rgb(64,64,64)
+}
 img {
   height: 300px;
 }
 
 header{
   position: relative;
-  /* background-color: lightblue; */
+  background-color: white;
   height: 80px;
+  border-radius: 10px;
+}
+p, ol, ul, .about, .film, header{
+  font-family: "Courier New", "Roboto Mono", monospace;
+  line-height: 25px;
+}
+h3, h4, h5, .submit-bottom, button{
+  font-family: "Courier",  "Courier New", monospace;
+  font-style: italic;
+  font-weight: bold;
 }
 
-/* .header-content{
-  position: absolute;
-} */
+a{
+  text-decoration: none;
+  color: inherit;
+}
 
-.logo{
+button{
+  border-radius: 10px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  background-color: black;
+}
+
+button:hover{
+  background-color: darkred;
+}
+
+/* Header */
+#logo{
   position: absolute;
   width: 80px;
   height: 80px;
-  /* background-color: pink; */
-
+  left: 30px;
 }
 
-.submit{
+#submit-top{ //To create button using Java Script
   position: absolute;
-  right:0;
-  width: 100px;
-  height: 50px;
-  /* background-color: pink; */
+  text-align: center;
+  padding: 3px;
+  top: 25px;
+  right:5px;
+  width: 210px;
+  height: 30px;
+  border-style: solid;
+  border-radius: 10px;
 }
 
-/* footer{
-
-} */
+/* Video */
 .vid-section{
   display: flex;
   flex-direction: column;
 }
-.vid-title{ /*Make title centered*/
+
+.vid-title{
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Courier New", "Courier", "Lucida Sans Typewriter";
+
 }
 
-.video {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.vid-con{
+  display: flex;
+  justify-content: center;
+}
+
+.about{
+  padding-right: 100px;
+  text-align: center;
+  width: 250px;
 }
 
 .vid-description{
@@ -52,6 +90,16 @@ header{
   line-height: 24px;
   padding-left: 70px;
   padding-right: 70px;
+
+}
+
+/* Content */
+.intro{
+  font-weight: bold;
+  padding: 5px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: black;
 }
 
 .rationale{
@@ -68,6 +116,7 @@ header{
   padding-right: 140px;
 }
 
+/* Interviewees */
 .interviewees{
   display: flex;
   flex-direction: column;
@@ -81,31 +130,13 @@ header{
   justify-content: space-evenly;
 
 }
-.jj{
+.each-year{
   padding: 15px;
   text-align: center;
-}
-
-.freshman{
-  background-color: #f1f1f1;
   margin: 10px;
-
+  background-color: rgb(220,220,220);
 }
 
-.sophomore{
-  background-color: #f1f1f1;
-  margin: 10px;
-}
-
-.junior{
-  background-color: #f1f1f1;
-  margin: 10px;
-}
-
-.senior{
-  background-color: #f1f1f1;
-  margin: 10px;
-}
 .headshot{
   display: block;
   margin-left: auto;
@@ -113,16 +144,21 @@ header{
   height: 220px;
 }
 
+/* Other films */
+
 .FFContainer{
   display: flex;
   flex: 1;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  padding: 50px;
+  border-style: solid;
 }
 
 .other-videos-container{
   display: flex;
   flex-direction: column;
-
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .other-vids-title{
@@ -131,6 +167,7 @@ header{
 .other-videos{
   display:flex;
   flex: 1;
+  padding-top: 50px;
 }
 
 .film{
@@ -143,19 +180,29 @@ header{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 170px;
+  width: 200px;
+  height: 103px;
 }
 
+/* Prompt to submit at the bottom */
+.submit-bottom{
+  font-size: 150%;
+  text-align: center;
+  padding: 50px;
+}
+
+/* Footer */
 footer{
-  /* border: 5px solid; */
   display: flex;
   flex:1;
-
-  height:150px;
+  height:210px;;
   justify-content: space-around;
+  background-color: rgb(32,32,32);
+
+
 }
 .footer-content{
-  /* border: 2px solid; */
   width: 300px;
-  height: 145px;
+  height: 205px;
+  color: white;
 }
