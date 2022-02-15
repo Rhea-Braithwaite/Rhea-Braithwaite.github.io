@@ -19,7 +19,7 @@ Having some content, I decided focus on plaing the various components to mock th
 
 <img src="media/30MFF7.jpg" width="800" >
 
-<img src="media/30MFF8.jpg" width="800" >
+<img src="media/30MFF9.jpg" width="800" >
 
 Then having established the layout and positioning of the various web components, I could add the video, pictures and then begin styling.
 
@@ -34,7 +34,16 @@ Having shown the website to a friend, I decided to add a bit more information, a
 
 <img src="media/30MFF18.jpg" width="800" >
 
-Process: How did you go about implementing the concept.
+And slowly, bit by bit, I created my website.
 
+## Reflection/Evaluation:
+If I am being completely honest, this turned out a lot better than I was expecting. I was extremely concerned at first about the qaulity that I would produce because I have never created a website from scratch and I was really struggling with javascript. But under the guidance of Professor Mang, as well as Professor Pierre with his demo, my website came to be. To tackle my apprehension, I took it step by step, staring basic and then building on what I had done, before and whatever new concept I learned. 
 
-Reflection/Evaluation: This should bookend the initial concept and talk about whether your expectations and goals were met in the process of building the final working version.
+The goals I had outlines were:
+- Including the video
+- Adding descriptions
+- Ensuring to add the participants in the film
+- And most importantly, tell the story of how the video came to be.
+
+And I believe I accomplished them to the best of my abilities. 
+This should bookend the initial concept and talk about whether your expectations and goals were met in the process of building the final working version.
