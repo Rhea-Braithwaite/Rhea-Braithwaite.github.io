@@ -13,11 +13,17 @@ I began the process by first drafting up my wireframe. The final product differs
 
 Then I began adding the content of the page. At this point I was not really concerned about position or the overall aesthetic of the page, but simply the content that I wanted to add, and the user to see. 
 
-<img src="media/30MFF6.jpg" width="600" >
+<img src="media/30MFF6.jpg" width="800" >
 
 Having some content, I decided focus on plaing the various components to mock the wireframe, and make any changes that I though necessary. It proved useful to add placeholder images of various sizes, which I could then replace with picutres and/or videos.
 
-<img src="media/30MFF7.jpg" width="600" >
+<img src="media/30MFF7.jpg" width="800" >
+
+<img src="media/30MFF8.jpg" width="800" >
+
+Then having established the layout and positioning of the various web components, I could add the video, pictures and then begin styling.
+
+<img src="media/30MFF10.jpg" width="800" >
 
 
 Process: How did you go about implementing the concept.
