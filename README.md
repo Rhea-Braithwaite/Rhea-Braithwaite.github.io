@@ -47,3 +47,9 @@ The goals I had outlines were:
 
 And I believe I accomplished them to the best of my abilities. 
 This should bookend the initial concept and talk about whether your expectations and goals were met in the process of building the final working version.
+
+
+### Sources:
+- HTML + CSS + JavaScript : https://www.w3schools.com/
+- JavaScript: https://developer.mozilla.org/en-US/docs/Web/CSS
+- Troubleshooting: https://stackoverflow.com/
