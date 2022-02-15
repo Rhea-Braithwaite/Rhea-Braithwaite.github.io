@@ -7,8 +7,10 @@
 ## The Process
 
 I began the process by first drafting up my wireframe. The final product differs a bit from this concept, but I use Microsoft Powerpoint to come up with a basic template of what I wanted to do. 
-
+![](media/wireframe.jpg)
 Then based on the wireframe, I began adding the content of the page, particularly the video. At this point I was not really concerned about position or the overall aesthetic of the page, but simply the content. 
+![](media/30MFF6.jpg)
+
 
 
 Process: How did you go about implementing the concept.
