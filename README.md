@@ -7,12 +7,17 @@
 ## The Process
 
 I began the process by first drafting up my wireframe. The final product differs a bit from this concept, but I use Microsoft Powerpoint to come up with a basic template of what I wanted to do. 
-<img src="media/wireframe.jpg" width="100" height="100">
-![](media/wireframe.jpg, width="100" height="100")
 
-Then based on the wireframe, I began adding the content of the page, particularly the video. At this point I was not really concerned about position or the overall aesthetic of the page, but simply the content. 
-![](media/30MFF6.jpg)
+<img src="media/wireframe.jpg" width="150" >
 
+
+Then I began adding the content of the page. At this point I was not really concerned about position or the overall aesthetic of the page, but simply the content that I wanted to add, and the user to see. 
+
+<img src="media/30MFF6.jpg" width="150" >
+
+Having some content, I decided focus on plaing the various components to mock the wireframe, and make any changes that I though necessary. It proved useful to add placeholder images of various sizes, which I could then replace with picutres and/or videos.
+
+<img src="media/30MFF7.jpg" width="150" >
 
 
 Process: How did you go about implementing the concept.
