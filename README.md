@@ -24,10 +24,16 @@ Having some content, I decided focus on plaing the various components to mock th
 Then having established the layout and positioning of the various web components, I could add the video, pictures and then begin styling.
 
 <img src="media/30MFF10.jpg" width="800" >
+<img src="media/30MFF16.jpg" width="800" >
 
 Having shown the website to a friend, I decided to add a bit more information, and then I started messing around with different font-styles and colours. I am a huge fan of black and white, and I understood how tricky it is to use colours and have them complement one another, so I decided a grayscale approach was probably for the best. 
 
 <img src="media/30MFF15.jpg" width="800" >
+
+<img src="media/30MFF17.jpg" width="800" >
+
+<img src="media/30MFF18.jpg" width="800" >
+
 Process: How did you go about implementing the concept.
 
 
