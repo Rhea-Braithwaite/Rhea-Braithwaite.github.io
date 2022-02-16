@@ -48,7 +48,8 @@ button:hover{
   left: 30px;
 }
 
-#submit-top{ //To create button using Java Script
+/* To create button using Java Script */
+#submit-top{
   position: absolute;
   text-align: center;
   padding: 3px;
