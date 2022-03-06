@@ -3,6 +3,8 @@ header{
   font-size: 150%;
   line-height: 3;
 }
+
+/* Colour background light brown */
 body{
   background-color: #FFEBCD;
 }
@@ -21,7 +23,8 @@ img{
   width: 100%;
 }
 
-span{
+.title{
+  font-size: 150%;
   text-align: center;
   margin: 10px;
   padding: 20px;
@@ -40,6 +43,7 @@ span{
   bottom: 10px;
 }
 
+/* Move arrow up and down */
 @keyframes MoveUpDown {
   0%, 100% {
     bottom: 10px;
@@ -48,14 +52,12 @@ span{
     bottom: 50px;
   }
 }
-.title{
-  font-size: 150%;
 
-}
 .day{
   display: flex;
   flex-direction: column;
 }
+
 .segment{
   display: flex;
   flex-direction: row;
@@ -64,13 +66,13 @@ span{
 .pic{
   padding: 20px;
 }
+
 .info{
   font-size: 150%;
   display: flex;
   align-items: center;
   padding: 20px;
   text-align: center;
-
 }
 
 footer{
