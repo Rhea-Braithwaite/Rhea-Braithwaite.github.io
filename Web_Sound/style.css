@@ -1,0 +1,79 @@
+#era_container{
+  scroll-snap-type: y mandatory;
+}
+.era{
+  padding: 50px;
+  scroll-snap-align: start;
+  display: block;
+}
+
+body{
+  font-size: 100%;
+
+}
+
+#content{
+  display: flex;
+  flex-direction: row;
+}
+.title{
+  text-align: center;
+  font-size: 200%;
+  margin: 10px;
+  padding: 20px;
+  border-top-style: solid;
+  border-top-color: black;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+}
+
+header{
+  text-align: center;
+  padding: 25px;
+  font-size: 250%;
+  /* width: 100%; */
+  height: 100vh;
+  display: block;
+}
+
+.age_image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+#arrow {
+  font-size: 200%;
+  animation: MoveUpDown 2s linear infinite;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 10px;
+}
+
+/* Move arrow up and down */
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 10px;
+  }
+  50% {
+    bottom: 50px;
+  }
+}
+
+.gauge_container{
+  top: 0px;
+  /* background-color: #cae8ca;
+  border: 2px solid #4CAF50; */
+  display: inline-block;
+  position: sticky;
+  height: 100vh;
+  left: 0%;
+}
+
+#gauge{
+  height: inherit;
+}
