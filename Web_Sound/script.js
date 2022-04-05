@@ -41,7 +41,7 @@ $.fn.scrollPlay=function(O){
               $(audio).trigger("scroll-off")
           })
         }
-      }else if (isLoud !==loud){
+      }else if (isLoud !=loud){
         if (isLoud){
           $(audio).trigger("scroll-before-off").stop().animate({volume:0},O.duration,function(){
             $(audio).trigger("scroll-off")
