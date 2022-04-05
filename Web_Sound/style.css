@@ -1,21 +1,34 @@
-/* #era_container{
-  scroll-snap-type: y mandatory;
-} */
+#era_container{
+/*   scroll-snap-type: y mandatory; */
+  background-color: black;
+}
+
 .era{
   padding: 50px;
   /* scroll-snap-align: start; */
   display: block;
 }
 
+#page_title{
+  padding: 20px;
+}
+
 body{
   font-size: 100%;
+  background-color: black;
+  margin: 0px;
+}
 
+#clock{
+  width: 40%;
 }
 
 #content{
   display: flex;
   flex-direction: row;
+  background-color: black;
 }
+
 .title{
   text-align: center;
   font-size: 200%;
@@ -31,9 +44,10 @@ header{
   text-align: center;
   padding: 25px;
   font-size: 250%;
-  /* width: 100%; */
   height: 100vh;
   display: block;
+  background-color: black;
+  color: white;
 }
 
 .age_image{
@@ -70,6 +84,7 @@ header{
   position: sticky;
   height: 100vh;
   left: 0%;
+  background-color: black;
 }
 
 #gauge-fill{
@@ -81,13 +96,58 @@ header{
   background: white;
 }
 
+#gauge-fill{
+  position: absolute;
+  height: 100%;
+  top: 3px;
+  left: 42px;
+  width: 48px;
+  background: white;
+  max-width: 48px;
+}
+
 #gauge{
   height: 100%;
   position: relative;
 }
 
+/* Eras */
+#era1{
+  /* background-color: #735d30; */
+  background-color: #5A8B0C;
+}
+
+#era2{
+  background-color: #86B33E;
+}
+
+#era3{
+  background-color: #F9CA20;
+}
+
+#era4{
+  background-color: #EE9327;
+}
+
+#era5{
+  background-color: #EA592A;
+}
+
+#era6{
+  background-color: #E81906;
+  opacity: 70%;
+}
+
 #next{
   font-size: 200%;
   text-align: center;
-  height: 50vh;
+  height: 40vh;
+  background-color: black;
+  color:white;
+  line-height: 40vh;
+  justify-content: center;
+}
+
+#we{
+  color: red;
 }
