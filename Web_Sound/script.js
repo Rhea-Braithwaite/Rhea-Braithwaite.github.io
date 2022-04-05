@@ -29,6 +29,7 @@ $.fn.scrollPlay=function(O){
   return this.each(function(){
     var audio=this
     audio.volume=0
+    audio.play()
     $(window).on('scroll scroll-music',function(){
       var st=$(window).scrollTop(),
         isLoud=$(audio).is('.loud')
