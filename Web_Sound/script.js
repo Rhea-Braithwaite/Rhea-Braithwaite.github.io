@@ -9,7 +9,7 @@ function scroll (){ //Make additional content of webapge visible after the user 
     var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     var scrolled = (winScroll / height) * 100 ;
-    var max = 90;
+    var max = 100;
     fill.style.height = max - scrolled + "%";
 
 }
