@@ -22,11 +22,23 @@
       <img src="images/clock2.jpg" alt="" id="clock">
       
       <!-- Downward Arrow -->
-        <div id="arrow">
+       <div id="arrow">
           &dArr;
-        </div>
+       </div>
+       <div id="instructions1">
+        <p>Click each image to hear their sound.</p>
+        <p>Click the image again to pause the sound.</p>
+       </div>
+
+       <div id="instructions2">
+          <p>Click the Arrow to Begin</p>
+       </div>
+
 
     </header>
+    <audio id="warning">
+      <source src="audio/beeping.mp3" type="audio/mpeg">
+    </audio>
     <div id="content">
       <div class="gauge_container" data-aos="fade-up" data-aos-delay="100"
       data-aos-duration="1000">
@@ -40,8 +52,11 @@
           <div class="title">
             The Stone Age
           </div>
-          <img src="images/image_1.png" alt="Stone Age" class="age_image">
-          <!-- Image of Era 1 -->
+            <audio id="stone-age-player">
+              <source src="audio/StoneAge.mp3" type="audio/mpeg">
+            </audio>
+            <img src="images/image_1.png" alt="" class="age_image" id="stone-age-img">
+            <!-- Image of Era 1 -->
         </div>
 
         <div class="era" data-aos="fade-up" data-aos-delay="100"
@@ -49,7 +64,10 @@
           <div class="title">
             The Steel & Iron Age
           </div>
-          <img src="images/image_2.jpg" alt="Steel and Iron Age" class="age_image">
+          <audio id="steel-age-player">
+            <source src="audio/SteelAge.mp3" type="audio/mpeg">
+          </audio>
+          <img src="images/image_2.jpg" alt="" class="age_image" id="steel-age-img">
           <!-- Image of Era 2 -->
         </div>
 
@@ -58,7 +76,10 @@
           <div class="title">
             The Medieval & Renaissance Age
           </div>
-          <img src="images/image_3.png" alt="Medeival and Renaissance Age" class="age_image">
+          <audio id="medieval-age-player">
+            <source src="audio/MedievalAge.mp3" type="audio/mpeg">
+          </audio>
+          <img src="images/image_3.png" alt="" class="age_image" id="medieval-age-img">
           <!-- Image of Era 3 -->
         </div>
 
@@ -67,7 +88,10 @@
           <div class="title">
             The Industrial Revolution Age
           </div>
-          <img src="images/image_4.png" alt="Industrial Revolution Age" class="age_image">
+          <audio id="industrial-age-player">
+            <source src="audio/IndustrialAge.mp3" type="audio/mpeg">
+          </audio>
+          <img src="images/image_4.png" alt="" class="age_image" id="industrial-age-img">
           <!-- Image of Era 4 -->
         </div>
 
@@ -76,7 +100,10 @@
           <div class="title">
             The Modern Age
           </div>
-          <img src="images/image_5.png" alt="Modern Age" class="age_image">
+          <audio id="modern-age-player">
+            <source src="audio/ModernAge.mp3" type="audio/mpeg">
+          </audio>
+          <img src="images/image_5.png" alt="" class="age_image" id="modern-age-img">
           <!-- Image of Era 5 -->
         </div>
 
@@ -85,7 +112,10 @@
           <div class="title">
             The Future
           </div>
-          <img src="images/image_6.png" alt="Future" class="age_image">
+          <audio id="future-age-player">
+            <source src="audio/FutureAge.mp3" type="audio/mpeg">
+          </audio>
+          <img src="images/image_6.png" alt="" class="age_image" id="future-age-img">
           <!-- Image of Era 6 -->
         </div>
       </div>
