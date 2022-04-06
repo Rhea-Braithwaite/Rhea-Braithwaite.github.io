@@ -51,182 +51,182 @@ window.onscroll = function() {
   scroll();
 }
 
-let stoneAgePlayer = document.getElementById('stone-age-player');
-let stoneAgeImage = document.getElementById('stone-age-img');
+// let stoneAgePlayer = document.getElementById('stone-age-player');
+// let stoneAgeImage = document.getElementById('stone-age-img');
 
-var click = [0, 0, 0, 0, 0, 0];
-var currPlayer = stoneAgePlayer;
-var currIndex=0;
-
-
-// Stone Age
-stoneAgeImage.addEventListener('click', ()=>{
-  click[0]++;
-})
-
-stoneAgeImage.addEventListener('click', ()=> {
-  if(stoneAgePlayer.paused && (click[0]%2 === 1)){
-    if(currPlayer != stoneAgePlayer){
-        currPlayer.pause();
-        click[currIndex]++;
-        currPlayer.currentTime = 0;
-    }
-    stoneAgePlayer.play();
-    currPlayer = stoneAgePlayer;
-    currIndex = 0;
-    console.log("play");
-  }
-})
-
-stoneAgeImage.addEventListener('click', ()=> {
-  if(stoneAgePlayer.played && (click[0]%2 === 0)){
-    stoneAgePlayer.pause();
-    console.log("pause");
-  }
-})
-
-//Steel & Iron Age
-let steelAgePlayer = document.getElementById('steel-age-player');
-let steelAgeImage = document.getElementById('steel-age-img');
-steelAgeImage.addEventListener('click', ()=>{
-  click[1]++;
-})
-
-steelAgeImage.addEventListener('click', ()=> {
-  if(steelAgePlayer.paused && (click[1]%2 === 1)){
-    if(currPlayer != steelAgePlayer){
-        currPlayer.pause();
-        click[currIndex]++;
-        currPlayer.currentTime = 0;
-    }
-    steelAgePlayer.play();
-    currPlayer = steelAgePlayer;
-    currIndex = 1;
-    console.log("play");
-  }
-})
-
-steelAgeImage.addEventListener('click', ()=> {
-  if(steelAgePlayer.played && (click[1]%2 === 0) ){
-    steelAgePlayer.pause();
-    console.log("pause");
-  }
-})
+// var click = [0, 0, 0, 0, 0, 0];
+// var currPlayer = stoneAgePlayer;
+// var currIndex=0;
 
 
-//Medieval & Renaissance Age
-let medievalAgePlayer = document.getElementById('medieval-age-player');
-let medievalAgeImage = document.getElementById('medieval-age-img');
-medievalAgeImage.addEventListener('click', ()=>{
-  click[2]++;
-})
+// // Stone Age
+// stoneAgeImage.addEventListener('click', ()=>{
+//   click[0]++;
+// })
 
-medievalAgeImage.addEventListener('click', ()=> {
-  if(medievalAgePlayer.paused && (click[2]%2 === 1)){
-    if(currPlayer != medievalAgePlayer){
-        currPlayer.pause();
-        click[currIndex]++;
-        currPlayer.currentTime = 0;
-    }
-    medievalAgePlayer.play();
-    currPlayer = medievalAgePlayer;
-    currIndex = 2;
-    console.log("play");
-  }
-})
+// stoneAgeImage.addEventListener('click', ()=> {
+//   if(stoneAgePlayer.paused && (click[0]%2 === 1)){
+//     if(currPlayer != stoneAgePlayer){
+//         currPlayer.pause();
+//         click[currIndex]++;
+//         currPlayer.currentTime = 0;
+//     }
+//     stoneAgePlayer.play();
+//     currPlayer = stoneAgePlayer;
+//     currIndex = 0;
+//     console.log("play");
+//   }
+// })
 
-medievalAgeImage.addEventListener('click', ()=> {
-  if(medievalAgePlayer.played && (click[2]%2 === 0) ){
-    medievalAgePlayer.pause();
-    console.log("pause");
-  }
-})
+// stoneAgeImage.addEventListener('click', ()=> {
+//   if(stoneAgePlayer.played && (click[0]%2 === 0)){
+//     stoneAgePlayer.pause();
+//     console.log("pause");
+//   }
+// })
+
+// //Steel & Iron Age
+// let steelAgePlayer = document.getElementById('steel-age-player');
+// let steelAgeImage = document.getElementById('steel-age-img');
+// steelAgeImage.addEventListener('click', ()=>{
+//   click[1]++;
+// })
+
+// steelAgeImage.addEventListener('click', ()=> {
+//   if(steelAgePlayer.paused && (click[1]%2 === 1)){
+//     if(currPlayer != steelAgePlayer){
+//         currPlayer.pause();
+//         click[currIndex]++;
+//         currPlayer.currentTime = 0;
+//     }
+//     steelAgePlayer.play();
+//     currPlayer = steelAgePlayer;
+//     currIndex = 1;
+//     console.log("play");
+//   }
+// })
+
+// steelAgeImage.addEventListener('click', ()=> {
+//   if(steelAgePlayer.played && (click[1]%2 === 0) ){
+//     steelAgePlayer.pause();
+//     console.log("pause");
+//   }
+// })
 
 
-//Industrial Age
-let industrialAgePlayer = document.getElementById('industrial-age-player');
-let industrialAgeImage = document.getElementById('industrial-age-img');
-industrialAgeImage.addEventListener('click', ()=>{
-  click[3]++;
-})
+// //Medieval & Renaissance Age
+// let medievalAgePlayer = document.getElementById('medieval-age-player');
+// let medievalAgeImage = document.getElementById('medieval-age-img');
+// medievalAgeImage.addEventListener('click', ()=>{
+//   click[2]++;
+// })
 
-industrialAgeImage.addEventListener('click', ()=> {
-  if(industrialAgePlayer.paused && (click[3]%2 === 1)){
-    if(currPlayer != industrialAgePlayer){
-        currPlayer.pause();
-        click[currIndex]++;
-        currPlayer.currentTime = 0;
-    }
-    industrialAgePlayer.play();
-    currPlayer = industrialAgePlayer;
-    currIndex = 3;
-    console.log("play");
-  }
-})
+// medievalAgeImage.addEventListener('click', ()=> {
+//   if(medievalAgePlayer.paused && (click[2]%2 === 1)){
+//     if(currPlayer != medievalAgePlayer){
+//         currPlayer.pause();
+//         click[currIndex]++;
+//         currPlayer.currentTime = 0;
+//     }
+//     medievalAgePlayer.play();
+//     currPlayer = medievalAgePlayer;
+//     currIndex = 2;
+//     console.log("play");
+//   }
+// })
 
-industrialAgeImage.addEventListener('click', ()=> {
-  if(industrialAgePlayer.played && (click[3]%2 === 0) ){
-    industrialAgePlayer.pause();
-    console.log("pause");
-  }
-})
+// medievalAgeImage.addEventListener('click', ()=> {
+//   if(medievalAgePlayer.played && (click[2]%2 === 0) ){
+//     medievalAgePlayer.pause();
+//     console.log("pause");
+//   }
+// })
 
-//Modern Age
 
-let modernAgePlayer = document.getElementById('modern-age-player');
-let modernAgeImage = document.getElementById('modern-age-img');
-modernAgeImage.addEventListener('click', ()=>{
-  click[4]++;
-})
+// //Industrial Age
+// let industrialAgePlayer = document.getElementById('industrial-age-player');
+// let industrialAgeImage = document.getElementById('industrial-age-img');
+// industrialAgeImage.addEventListener('click', ()=>{
+//   click[3]++;
+// })
 
-modernAgeImage.addEventListener('click', ()=> {
-  if(modernAgePlayer.paused && (click[4]%2 === 1)){
-    if(currPlayer != modernAgePlayer){
-        currPlayer.pause();
-        click[currIndex]++;
-        currPlayer.currentTime = 0;
-    }
-    modernAgePlayer.play();
-    currPlayer = modernAgePlayer;
-    currIndex = 4;
-    console.log("play");
-  }
-})
+// industrialAgeImage.addEventListener('click', ()=> {
+//   if(industrialAgePlayer.paused && (click[3]%2 === 1)){
+//     if(currPlayer != industrialAgePlayer){
+//         currPlayer.pause();
+//         click[currIndex]++;
+//         currPlayer.currentTime = 0;
+//     }
+//     industrialAgePlayer.play();
+//     currPlayer = industrialAgePlayer;
+//     currIndex = 3;
+//     console.log("play");
+//   }
+// })
 
-modernAgeImage.addEventListener('click', ()=> {
-  if(modernAgePlayer.played && (click[4]%2 === 0) ){
-    modernAgePlayer.pause();
-    console.log("pause");
-  }
-})
+// industrialAgeImage.addEventListener('click', ()=> {
+//   if(industrialAgePlayer.played && (click[3]%2 === 0) ){
+//     industrialAgePlayer.pause();
+//     console.log("pause");
+//   }
+// })
 
-//The Future Age
-let futureAgePlayer = document.getElementById('future-age-player');
-let futureAgeImage = document.getElementById('future-age-img');
-futureAgeImage.addEventListener('click', ()=>{
-  click[5]++;
-})
+// //Modern Age
 
-futureAgeImage.addEventListener('click', ()=> {
-  if(futureAgePlayer.paused && (click[5]%2 === 1)){
-    if(currPlayer != futureAgePlayer){
-        currPlayer.pause();
-        click[currIndex]++;
-        currPlayer.currentTime = 0;
-    }
-    futureAgePlayer.play();
-    currPlayer = futureAgePlayer;
-    currIndex=5;
-    console.log("play");
-  }
-})
+// let modernAgePlayer = document.getElementById('modern-age-player');
+// let modernAgeImage = document.getElementById('modern-age-img');
+// modernAgeImage.addEventListener('click', ()=>{
+//   click[4]++;
+// })
 
-futureAgeImage.addEventListener('click', ()=> {
-  if(futureAgePlayer.played && (click[5]%2 === 0) ){
-    futureAgePlayer.pause();
-    console.log("pause");
-  }
-})    
+// modernAgeImage.addEventListener('click', ()=> {
+//   if(modernAgePlayer.paused && (click[4]%2 === 1)){
+//     if(currPlayer != modernAgePlayer){
+//         currPlayer.pause();
+//         click[currIndex]++;
+//         currPlayer.currentTime = 0;
+//     }
+//     modernAgePlayer.play();
+//     currPlayer = modernAgePlayer;
+//     currIndex = 4;
+//     console.log("play");
+//   }
+// })
+
+// modernAgeImage.addEventListener('click', ()=> {
+//   if(modernAgePlayer.played && (click[4]%2 === 0) ){
+//     modernAgePlayer.pause();
+//     console.log("pause");
+//   }
+// })
+
+// //The Future Age
+// let futureAgePlayer = document.getElementById('future-age-player');
+// let futureAgeImage = document.getElementById('future-age-img');
+// futureAgeImage.addEventListener('click', ()=>{
+//   click[5]++;
+// })
+
+// futureAgeImage.addEventListener('click', ()=> {
+//   if(futureAgePlayer.paused && (click[5]%2 === 1)){
+//     if(currPlayer != futureAgePlayer){
+//         currPlayer.pause();
+//         click[currIndex]++;
+//         currPlayer.currentTime = 0;
+//     }
+//     futureAgePlayer.play();
+//     currPlayer = futureAgePlayer;
+//     currIndex=5;
+//     console.log("play");
+//   }
+// })
+
+// futureAgeImage.addEventListener('click', ()=> {
+//   if(futureAgePlayer.played && (click[5]%2 === 0) ){
+//     futureAgePlayer.pause();
+//     console.log("pause");
+//   }
+// })    
 
 
 // var events=["abort","canplay","canplaythrough","durationchange","emptied","ended",
