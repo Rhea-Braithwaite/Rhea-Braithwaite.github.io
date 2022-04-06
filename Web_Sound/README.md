@@ -21,6 +21,14 @@ We began by meeting to come up with an initial idea. Seif had suggested using th
 
 
 #### Yunho
+I worked mainly on mixing the sound samples provided by Moyo with some no copyright background music to enhance the user's experience. My main aim was to make the sound feel as if the user is actually in the middle of the scene. By adding a multiple layer of the same sound samples with different volumes, the sound provides a sense of distance (sound from away and close).
+
+StoneAge - 
+SteelAge - 
+MedievalAge - 
+IndustrialAge - 
+ModernAge - 
+FutureAge - 
 
 
 ### Website
