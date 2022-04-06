@@ -1,11 +1,12 @@
 AOS.init();
 
 $('#arrow').click(function(){
-$(document).scrollTop(850) // any value you need
+$(document).scrollTop(850) // Scroll to section on arrow click
 });
 
 let fill = document.getElementById("gauge-fill");
 
+// Beeping audio
 let warning = document.getElementById('warning');
 warning.volume = 0.05;
 warning.playbackRate = 0.5;
@@ -19,7 +20,7 @@ function scroll (){ //Make additional content of webapge visible after the user 
     var max = 100;
     fill.style.height = max - scrolled + "%";
     
-    if (scrolled >= 15) {
+    if (scrolled >= 15) { //Play beeping upon arriving at first era. Increase speed of beeping audio further as you scroll
       warning.play();
       if(scrolled >= 90){
         warning.playbackRate = 3.0;
@@ -40,11 +41,10 @@ function scroll (){ //Make additional content of webapge visible after the user 
         warning.playbackRate = 0.5;
       }
     }
-    else{
+    else{ //Stop beeping if not in era section
       warning.pause();
       warning.currentTime = 0;
     }
-
 }
 
 window.onscroll = function() {
@@ -54,10 +54,9 @@ window.onscroll = function() {
 let stoneAgePlayer = document.getElementById('stone-age-player');
 let stoneAgeImage = document.getElementById('stone-age-img');
 
-var click = [0, 0, 0, 0, 0, 0];
+var click = [0, 0, 0, 0, 0, 0]; //Use click to play or pause audio. Even click: play. Odd clicks: pause
 var currPlayer = stoneAgePlayer;
 var currIndex=0;
-
 
 // Stone Age
 stoneAgeImage.addEventListener('click', ()=>{
@@ -66,22 +65,20 @@ stoneAgeImage.addEventListener('click', ()=>{
 
 stoneAgeImage.addEventListener('click', ()=> {
   if(stoneAgePlayer.paused && (click[0]%2 === 1)){
-    if(currPlayer != stoneAgePlayer){
+    if(currPlayer != stoneAgePlayer){ //Pause and reset previous audio
         currPlayer.pause();
         click[currIndex]++;
         currPlayer.currentTime = 0;
     }
-    stoneAgePlayer.play();
+    stoneAgePlayer.play(); //Play this audio
     currPlayer = stoneAgePlayer;
     currIndex = 0;
-    console.log("play");
   }
 })
 
-stoneAgeImage.addEventListener('click', ()=> {
+stoneAgeImage.addEventListener('click', ()=> { //Pause this audio
   if(stoneAgePlayer.played && (click[0]%2 === 0)){
     stoneAgePlayer.pause();
-    console.log("pause");
   }
 })
 
@@ -93,23 +90,21 @@ steelAgeImage.addEventListener('click', ()=>{
 })
 
 steelAgeImage.addEventListener('click', ()=> {
-  if(steelAgePlayer.paused && (click[1]%2 === 1)){
-    if(currPlayer != steelAgePlayer){
+  if(steelAgePlayer.paused && (click[1]%2 === 1)){ 
+    if(currPlayer != steelAgePlayer){ //Pause and reset previous audio
         currPlayer.pause();
         click[currIndex]++;
         currPlayer.currentTime = 0;
     }
-    steelAgePlayer.play();
+    steelAgePlayer.play();//Play this audio
     currPlayer = steelAgePlayer;
     currIndex = 1;
-    console.log("play");
   }
 })
 
 steelAgeImage.addEventListener('click', ()=> {
-  if(steelAgePlayer.played && (click[1]%2 === 0) ){
+  if(steelAgePlayer.played && (click[1]%2 === 0) ){ //Pause this audio
     steelAgePlayer.pause();
-    console.log("pause");
   }
 })
 
@@ -123,22 +118,20 @@ medievalAgeImage.addEventListener('click', ()=>{
 
 medievalAgeImage.addEventListener('click', ()=> {
   if(medievalAgePlayer.paused && (click[2]%2 === 1)){
-    if(currPlayer != medievalAgePlayer){
+    if(currPlayer != medievalAgePlayer){//Pause and reset previous audio
         currPlayer.pause();
         click[currIndex]++;
         currPlayer.currentTime = 0;
     }
-    medievalAgePlayer.play();
+    medievalAgePlayer.play(); //Play this audio
     currPlayer = medievalAgePlayer;
     currIndex = 2;
-    console.log("play");
   }
 })
 
 medievalAgeImage.addEventListener('click', ()=> {
-  if(medievalAgePlayer.played && (click[2]%2 === 0) ){
+  if(medievalAgePlayer.played && (click[2]%2 === 0) ){ //Pause this audio
     medievalAgePlayer.pause();
-    console.log("pause");
   }
 })
 
@@ -152,22 +145,20 @@ industrialAgeImage.addEventListener('click', ()=>{
 
 industrialAgeImage.addEventListener('click', ()=> {
   if(industrialAgePlayer.paused && (click[3]%2 === 1)){
-    if(currPlayer != industrialAgePlayer){
+    if(currPlayer != industrialAgePlayer){//Pause and reset previous audio
         currPlayer.pause();
         click[currIndex]++;
         currPlayer.currentTime = 0;
     }
-    industrialAgePlayer.play();
+    industrialAgePlayer.play(); //Play this audio
     currPlayer = industrialAgePlayer;
     currIndex = 3;
-    console.log("play");
   }
 })
 
 industrialAgeImage.addEventListener('click', ()=> {
-  if(industrialAgePlayer.played && (click[3]%2 === 0) ){
+  if(industrialAgePlayer.played && (click[3]%2 === 0) ){ //Pause this audio
     industrialAgePlayer.pause();
-    console.log("pause");
   }
 })
 
@@ -180,23 +171,21 @@ modernAgeImage.addEventListener('click', ()=>{
 })
 
 modernAgeImage.addEventListener('click', ()=> {
-  if(modernAgePlayer.paused && (click[4]%2 === 1)){
-    if(currPlayer != modernAgePlayer){
+  if(modernAgePlayer.paused && (click[4]%2 === 1)){ 
+    if(currPlayer != modernAgePlayer){ //Pause and reset previous audio
         currPlayer.pause();
         click[currIndex]++;
         currPlayer.currentTime = 0;
     }
-    modernAgePlayer.play();
+    modernAgePlayer.play(); //Play this audio
     currPlayer = modernAgePlayer;
     currIndex = 4;
-    console.log("play");
   }
 })
 
 modernAgeImage.addEventListener('click', ()=> {
-  if(modernAgePlayer.played && (click[4]%2 === 0) ){
+  if(modernAgePlayer.played && (click[4]%2 === 0) ){ //Pause this audio
     modernAgePlayer.pause();
-    console.log("pause");
   }
 })
 
@@ -208,23 +197,21 @@ futureAgeImage.addEventListener('click', ()=>{
 })
 
 futureAgeImage.addEventListener('click', ()=> {
-  if(futureAgePlayer.paused && (click[5]%2 === 1)){
-    if(currPlayer != futureAgePlayer){
+  if(futureAgePlayer.paused && (click[5]%2 === 1)){ 
+    if(currPlayer != futureAgePlayer){ //Pause and reset previous audio
         currPlayer.pause();
         click[currIndex]++;
         currPlayer.currentTime = 0;
     }
-    futureAgePlayer.play();
+    futureAgePlayer.play(); //Play this audio
     currPlayer = futureAgePlayer;
     currIndex=5;
-    console.log("play");
   }
 })
 
 futureAgeImage.addEventListener('click', ()=> {
-  if(futureAgePlayer.played && (click[5]%2 === 0) ){
+  if(futureAgePlayer.played && (click[5]%2 === 0) ){ //Pause this audio
     futureAgePlayer.pause();
-    console.log("pause");
   }
 })    
 
