@@ -266,34 +266,34 @@ $(function(){
     $(window).trigger('scroll-music')
   })
 // creating the dimensions of containers to play the sounds
-  $('#stone-age-player').scrollPlay({
+  $('#soundTour2').scrollPlay({
     top:550,
     bottom:1320,
     duration:2000
   })
 
-  $('#steel-age-player').scrollPlay({
+  $('#soundTour3').scrollPlay({
     top:1320,
     bottom:2090,
     duration:2000
   })
 
-  $('#medieval-age-player').scrollPlay({
+  $('#soundTour4').scrollPlay({
     top:2090,
     bottom:2860,
     duration:2000
   })
-  $('#industrial-age-player').scrollPlay({
+  $('#soundTour5').scrollPlay({
     top:2860,
     bottom:3630,
     duration:2000
   })
-  $('#modern-age-player').scrollPlay({
+  $('#soundTour6').scrollPlay({
     top:3630,
     bottom:4400,
     duration:2000
   })
-  $('#future-age-player').scrollPlay({
+  $('#soundTour7').scrollPlay({
     top:4400,
     bottom:5170,
     duration:2000
