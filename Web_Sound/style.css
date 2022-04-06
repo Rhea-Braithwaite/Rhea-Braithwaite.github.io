@@ -1,11 +1,9 @@
 #era_container{
-/*   scroll-snap-type: y mandatory; */
   background-color: black;
 }
 
 .era{
   padding: 50px;
-  /* scroll-snap-align: start; */
   display: block;
 }
 
@@ -13,9 +11,26 @@
   padding: 20px;
 }
 
+#instructions1{
+  color: white;
+  position: absolute;
+  font-size: 40%;
+  left: 5px;
+  top: 80%;
+}
+
+#instructions2{
+  color: white;
+  position: absolute;
+  font-size: 40%;
+  left: 45%;
+  top: 90%;
+}
+
 body{
   font-size: 100%;
   background-color: black;
+  margin: 10px;
 }
 
 #clock{
@@ -112,7 +127,6 @@ header{
 
 /* Eras */
 #era1{
-  /* background-color: #735d30; */
   background-color: #5A8B0C;
 }
 
