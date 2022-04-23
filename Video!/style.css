@@ -12,7 +12,12 @@ a{
 }
 
 
-
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
 
 /* .pointer{
   cursor: pointer;
@@ -31,21 +36,24 @@ a{
 /* Header Section */
 header{
   font-size: 125%;
+  width: 100%;
+  /* box-shadow: 0 0 transparent; */
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
 }
 
-.container{
+.logo-container{
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-left: 3%;
   padding-right: 3%;
-  padding-top: 2%;
+  padding-top: 1%;
   padding-bottom: 2%;
   margin-left: auto;
   margin-right: auto;
 }
 
-#logo-container{
+#logo-link{
   margin-top: -3.5%;
   width: 20%;
   /* height: 15%;
@@ -110,14 +118,11 @@ button:hover{
 }
 
 /* Though Bubble */
-/* .flex-item{
-  margin: auto;
-} */
 #thought-container{
   display: flex;
   justify-content: center;
   flex-direction: row;
-  padding-top: 30px;
+  padding-top: 50px;
 }
 #actor-container{
   width: 40%;
@@ -148,6 +153,7 @@ button:hover{
   padding-bottom: 50px;
   font-size: 150%;
 }
+
 #vid-section{
   display: flex;
   justify-content: center;
@@ -161,8 +167,10 @@ button:hover{
   margin-right: auto;
   border-color: rgb(255,131,3);
   border-style: solid;
-  width: 75%;
+  width: 70%;
+  /* height: 50%; */
 }
+
 
 /* Choices Buttons */
 #choices-box{
