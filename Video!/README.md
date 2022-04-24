@@ -1,5 +1,5 @@
 # VID-E-OH!!!
-### Video!: Seif, Sadiq, Moyo, Rhea
+### Video!: Seif, Sadeq, Moyo, Rhea
 ## Project Name: Tuturoo
 
 ## Project Description:
@@ -15,7 +15,7 @@
 ### Brainstorming
 
 ### Filming
-#### Sadiq
+#### Sadeq
 
 #### Seif
 
