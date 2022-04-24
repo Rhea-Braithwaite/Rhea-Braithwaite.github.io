@@ -9,11 +9,6 @@
 // Scene 3
 // Option 1: Remainder from scene 2
 // Option 2: Texting an upperclassman
-// var winScroll
-// window.onscroll = function() {
-//   winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-//   console.log(winScroll);
-// }
 
 let option1 = document.getElementById('choice1');
 let option2 = document.getElementById('choice2');
@@ -24,21 +19,25 @@ var clicks = 0;
 var opt1 = 1;
 var opt2 = 2;
 var clicked = 0;
-var last=false;
-// var vid_alt = document.getElementById('vid-section').getBoundingClientRect();
+var last = false;
 
 let videos = [];
 let currentVid = 1;
+
+// Gather videos
 for (let i = 1; i < 6; i++){
   videos.push('videos/vid'+i+'.mp4');
 }
+
+// Make choices not visible when first scene plays
 choices_box.style.visibility = "hidden";
 choices_box.style.opacity = "0";
 
+// When a video ends (except the last video) the choices are shown
 video.onended = function(){
   if(last == false){
-    choices_box.classList.remove('notransition');
-    console.log("Showing options");
+    choices_box.classList.remove('notransition'); //Add transitions for choices
+    // console.log("Showing options");
     hide();
   }
 
@@ -53,13 +52,14 @@ option1.onclick = function(){
   clicks++;
   reset(option1);
   nextVideo(temp1);
+
   //Update what next video may be
   switch (clicks) {
     case 1:
-      opt1 = 3;
+      opt1 = 3; //Scene 3
       break;
     case 2:
-      opt1 = 4;
+      opt1 = 4; //Scene 4
       break;
   }
 }
@@ -75,30 +75,32 @@ option2.onclick = function(){
   //Update what next video might be
   switch (clicks) {
     case 1:
-      opt2 = 3;
+      opt2 = 3; //Scene 3
       break;
     case 2:
-      opt2 = 4;
+      opt2 = 4; //Scene 4
       break;
   }
 }
 
-function hide(){
-  if (choices_box.style.visibility == "visible"){
 
+function hide(){
+  //Hide choices if visible
+  if (choices_box.style.visibility == "visible"){
     choices_box.style.visibility = "hidden";
     choices_box.style.opacity = "0";
   }
+  //Show choices if hidden
   else if (choices_box.style.visibility == "hidden"){
-
     choices_box.style.visibility = "visible";
     choices_box.style.opacity = "1";
   }
 }
 
 function reset(update){
-  console.log("Clicks", clicks);
-  console.log("Update",update.innerHTML);
+  // console.log("Clicks", clicks);
+  // console.log("Update",update.innerHTML);
+  // Updates choice that was selected to the next possible choice
   switch(clicks){
     case 1:
       update.innerHTML = "Message in the groupchat";
@@ -107,29 +109,28 @@ function reset(update){
       update.innerHTML = "Message an upperclassman";
       break;
     case 3:
-      console.log("Last");
-      // console.log(remaining.innerHTML);
+      // console.log("Last");
       if(update.innerHTML != "Message an upperclassman"){
-        console.log("Last");
+        // console.log("Last");
+        // If penultimate choice is selected, only display the last choice onwards
         if(clicked == 1){
           option1.style.display = "none";
         }else{
           option2.style.display = "none";
         }
       }else{
-        // choices_box.style.visibility = "hidden";
         last = true;
       }
       break;
     case 4:{
-      // choices_box.style.visibility = "hidden";
       last = true;
       break;
     }
   }
-  console.log("to",update.innerHTML);
+  // console.log("to",update.innerHTML);
 }
 
+// Load and auto play the next video
 function nextVideo(nextVid){
   currentVid = nextVid;
   vid_source.src = videos[currentVid];
