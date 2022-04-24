@@ -1,4 +1,4 @@
-# Comix Strip
+# VID-E-OH!!!
 ### Video!: Seif, Sadiq, Moyo, Rhea
 ## Project Name: Tuturoo
 
