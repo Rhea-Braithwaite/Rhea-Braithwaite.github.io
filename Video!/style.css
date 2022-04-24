@@ -4,7 +4,7 @@ html{
 }
 
 body {
-    background-color: rgba(252,246,235);
+  background-color: rgba(252,246,235);
 }
 
 a{
@@ -57,6 +57,7 @@ header{
 #logo-link{
   margin-top: -3.5%;
   width: 20%;
+  min-width: 20%;
 }
 
 #logo{
@@ -66,7 +67,7 @@ header{
 button{
   transition: ease .3s;
   background-color: transparent;
-  color: rgb(255,131,3); 
+  color: rgb(255,131,3);
   font-size: inherit;
   font-weight: 700;
 }
@@ -131,15 +132,24 @@ button:hover{
 } */
 
 #thought{
-  width: 300px;
+  /* width: 300px; */
+  width: 30%;
   border-style: solid;
   border-radius: 100px;
   border-bottom-left-radius: 0.375rem; /* Ad sharp corner to shape */
   border-color: rgb(255,131,3);
-  padding: 25px;
-  margin: auto;
+  padding-top: 25px;
+  /* padding-bottom: 5px; */
+  padding-left: 25px;
+  padding-right: 15px;
+  padding-bottom: 25px;
+  margin: 0;
   position: relative;
   top: -15%;
+  font-size: 1.3vw;
+  text-align: center;
+  height: fit-content;
+
 }
 
 /* Video */
@@ -181,6 +191,7 @@ button:hover{
   margin-top: 20px;
   border-spacing: 5px;
   transition: ease 0.5s;
+  text-align: center;
 }
 
 
