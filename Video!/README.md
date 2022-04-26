@@ -11,7 +11,7 @@ Tutoruu: An Academic Guide
 
 An underclass student is overwhelmed by an unbearable workload; hence he finds help by using an app called Tutoruu.
 
-### What is Our Project (Tutoruu) About?
+### What is Our Project About?
 
 An interactive web and film experience where the user tries to help the student tackle their workload. However, their efforts are not sufficient and the student eventually finds the tutoring app Tutoruu.  
 
