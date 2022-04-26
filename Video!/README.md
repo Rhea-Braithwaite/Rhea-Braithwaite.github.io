@@ -1,4 +1,4 @@
-# VID-E-OH!!!
+# Tutoruu: An Academic Guide
 ### Video!: Seif, Sadeq, Moyo, Rhea
 ## Project Name: Finding Tutoruu
 
