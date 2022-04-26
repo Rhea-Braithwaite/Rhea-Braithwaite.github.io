@@ -1,6 +1,9 @@
 # Tutoruu: An Academic Guide
 ### Members of the project: 
-Seif, Sadeq, Moyo, Rhea
+- Seif
+- Sadeq
+- Moyo
+- Rhea
 ## Project Name: 
 Tutoruu: An Academic Guide
 
