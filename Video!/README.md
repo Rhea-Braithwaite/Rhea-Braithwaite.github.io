@@ -1,6 +1,6 @@
 # Tutoruu: An Academic Guide
-### Video!: Seif, Sadeq, Moyo, Rhea
-## Project Name: Finding Tutoruu
+### Members of the project: Seif, Sadeq, Moyo, Rhea
+## Project Name: Tutoruu: An Academic Guide
 
 ## Synopsis of Tutoruu: 
 
