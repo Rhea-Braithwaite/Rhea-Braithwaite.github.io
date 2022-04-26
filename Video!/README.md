@@ -25,7 +25,7 @@ By being able to make the decisions to help the student, we hope the user will i
 
 ## Process: 
 
-### Brainstorming
+### Brainstorming Phase:
 
 We began the process by brainstorming a storyline to use. Seif and his partner Youssef having launched the app Tutoruu, suggested having a film to highlight the usefulness of the app. We then drew an outline of the various scenes, separating them into Beginning, Midpoint Escalation and Conclusion. We also identified the various decision options for each scene. Then we divided the roles into those focusing on filming, Sadeq and Seif, and the website, Rhea and Moyo. And then we began working on our respective parts. 
 
