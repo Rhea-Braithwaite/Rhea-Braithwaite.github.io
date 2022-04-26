@@ -199,3 +199,10 @@ button:hover{
   background-color: white;
   color: rgb(255,131,3);
 }
+
+footer{
+  background-color: rgb(255,131,3);
+  padding: 3%;
+  margin-top: 10px;
+  /* width: 100%; */
+}

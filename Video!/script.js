@@ -25,7 +25,7 @@ let videos = [];
 let currentVid = 1;
 
 // Gather videos
-for (let i = 1; i < 6; i++){
+for (let i = 1; i < 7; i++){
   videos.push('videos/vid'+i+'.mp4');
 }
 
@@ -39,6 +39,10 @@ video.onended = function(){
     choices_box.classList.remove('notransition'); //Add transitions for choices
     // console.log("Showing options");
     hide();
+  }
+  else{
+    //Play final video
+    nextVideo(5);
   }
 
 }
@@ -98,12 +102,10 @@ function hide(){
 }
 
 function reset(update){
-  // console.log("Clicks", clicks);
-  // console.log("Update",update.innerHTML);
   // Updates choice that was selected to the next possible choice
   switch(clicks){
     case 1:
-      update.innerHTML = "Message in the groupchat";
+      update.innerHTML = "Text in the groupchat";
       break;
     case 2:
       update.innerHTML = "Message an upperclassman";
@@ -127,7 +129,6 @@ function reset(update){
       break;
     }
   }
-  // console.log("to",update.innerHTML);
 }
 
 // Load and auto play the next video
@@ -136,6 +137,4 @@ function nextVideo(nextVid){
   vid_source.src = videos[currentVid];
   video.load();
   video.play();
-  // window.scrollTo(0, val);
-  // console.log('Val:', val);
 }
