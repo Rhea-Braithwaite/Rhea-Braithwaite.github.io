@@ -7,7 +7,7 @@
 ## Project Name: 
 Tutoruu: An Academic Guide
 
-## Synopsis of Tutoruu: 
+## Synopsis of 'Tutoruu: An Academic Guide': 
 
 An underclass student is overwhelmed by an unbearable workload; hence he finds help by using an app called Tutoruu.
 
