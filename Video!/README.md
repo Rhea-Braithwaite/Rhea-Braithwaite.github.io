@@ -19,10 +19,13 @@ By being able to make the decisions to help the student, we hope the user will i
 ### Brainstorming
 We began the process by brainstorming a storyline to use. Seif and his partner Youssef having launched the app Tutoruu, suggested having a film to highlight the usefulness of the app. We then drew an outline of the various scenes, separating them into Beginning, Midpoint Escalation and Conclusion. We also identified the various decision options for each scene. Then we divided the roles into those focusing on filming, Sadeq and Seif, and the website, Rhea and Moyo. And then we began working on our respective parts. 
 
-### Filming
-#### Sadeq
+### Video Production:
 
-#### Seif
+#### Sadeq
+The videography of this project was engaging because it allowed us to experiment and learn new methods by using a DSLR, Gimball, and GoPro. Initially, We thought of critical elements that would embed key characteristics to our character's P.O.V. and background. For this aspect to be accomplished, we conducted some research on character traits and the correlation of characters to space in cinematography. By understanding the different viewpoints, we planned to have the first P.O.V. (from the GoPro) and a third P.O.V (from Sony A7III). 'Handheld' shots were an option that we thought about, although it is ideal for action performance rather than an advertisement, such as in our case. Hence, a Gimball was an ideal solution for a steady reveal that prevented a distribution of (the character to space relationship) pacing. 
+Additionally, we implemented an even ratio of static to dynamic shots in our video; we thought this process would ease the logistics of pace and rhythm in post-production. Lastly, lighting was a vital component in our video as we considered daylights and indoor lights. We learned throughout our filming that lights were necessary because of how they control the contrast and appeal of a character in a frame.
+
+### Video Post-Production:
 
 ### Website
 For the website we started off by coming up with a wireframe of how we wanted the website to look. Then we finally implemented it. 
