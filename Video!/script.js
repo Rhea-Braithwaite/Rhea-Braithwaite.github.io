@@ -108,11 +108,11 @@ function reset(update){
       update.innerHTML = "Text in the groupchat";
       break;
     case 2:
-      update.innerHTML = "Message an upperclassman";
+      update.innerHTML = "Ask an upperclassman";
       break;
     case 3:
       // console.log("Last");
-      if(update.innerHTML != "Message an upperclassman"){
+      if(update.innerHTML != "Ask an upperclassman"){
         // console.log("Last");
         // If penultimate choice is selected, only display the last choice onwards
         if(clicked == 1){
