@@ -1,0 +1,37 @@
+/* .flex{
+
+} */
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#epilogue{
+  text-align: center;
+}
+
+.chapter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-style: solid;
+  margin-bottom: 10px;
+}
+
+.chapter-img{
+  width:40vw;
+}
+
+.blurb{
+  border-style: solid;
+  height: fit-content;
+  text-align: center;
+}
