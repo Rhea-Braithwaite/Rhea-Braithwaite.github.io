@@ -2,36 +2,169 @@
 
 } */
 
-header{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+html{
+  font-family: Georgia, serif;
+  /* font-style: italic; */
+  /* font-family:  */
 }
 
-footer{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+a{
+  text-decoration: none;
+  color: inherit;
 }
 
-#epilogue{
+/* Cover Page*/
+.index-body, .intro-body{
+  background-image: url("images/paper1.jpg");
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  /* font-family: "Helvetica Neue", "Arial", sans-serif; */
+  /* font-family: Georgia, serif; */
+  font-style: italic;
+}
+#cover-container{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
   text-align: center;
+  /* margin-top: 70px; */
+  /* font-size: 2vw; */
 }
 
-.chapter{
+#cover-img{
+  width: 90%;
+}
+#cover-author{
+  width: 25%;
+}
+#enter-container{
+  padding: 20px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  border-style: solid;
-  margin-bottom: 10px;
+  justify-content: center;
+}
+.enter{
+  padding-right: 5px;
+  padding-left: 5px;
+  border: solid;
+  width: fit-content;
+  background-color: #e8dcb8;
+  transform: skewX(-30deg);
+  border-radius: 5px;
+  font-size: 1.6vw;
 }
 
-.chapter-img{
-  width:40vw;
+.enter:hover{
+  /* background-color: #b5ab8d; */
+  background-color:#9c1c38;
 }
 
-.blurb{
-  border-style: solid;
-  height: fit-content;
+.outer-border{
+	border: 2px solid #DE9B72;
+  /* border: 2px solid #9c1c38; */
+  width: auto;
+  padding: 6px;
+  margin: auto;
+}
+
+.mid-border {
+  /* border: 6px solid #DE9B72; */
+  border: 6px solid #9c1c38;
+  padding: 6px;
+  margin: auto;
+}
+
+.inner-border{
+  position: relative;
+	border: 2px solid #DE9B72;
+  margin: auto;
+  height: 91vh;
+}
+
+.corner-decoration{
+	position: absolute;
+    width: 15%;
+}
+
+.corner-left-top{
+  left: 0;
+	top: 0;
+}
+
+.corner-right-top{
+  right: 0;
+	top: 0;
+  transform: rotate(90deg);
+}
+
+.corner-right-bottom{
+  right: 0;
+	bottom: 0;
+  transform: rotate(180deg);
+}
+
+.corner-left-bottom{
+  left: 0;
+	bottom: 0;
+  transform: rotate(-90deg);
+}
+
+.vertical-decoration{
+  position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 30%;
+}
+
+.top{
+  top: 0;
+}
+
+.bottom{
+  bottom:0;
+  transform: rotate(180deg);
+}
+
+@media (max-width: 950px){
+  #cover-container, #enter{
+    font-size:120%;
+  }
+
+  #cover-author{
+    width: 32%;
+  }
+}
+
+
+@media (max-width: 1050px){
+  .vertical-decoration{
+    width: 28%;
+  }
+
+}
+
+/* Introduction Page*/
+#intro{
   text-align: center;
+  position: relative;
+  top: 25%;
+}
+
+.intro-text{
+  margin: auto;
+  width: 60%;
+  font-size: 140%;
+}
+
+@media (max-width: 700px){
+  .intro-text{
+    font-size: 120%;
+  }
+}
+
+.curl1{
+  width: 18%;
+  padding: 20px;
 }

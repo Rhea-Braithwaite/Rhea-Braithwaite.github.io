@@ -1,0 +1,204 @@
+/* Content Page */
+html{
+  background-image: url("images/royal-rug2.png");
+}
+
+header{
+  /* position: fixed; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: white;
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+  padding: 10px;
+  font-size: 1.6vw;
+  margin-top: 15px;
+}
+
+.nav-link{
+  padding-left: 15px;
+  padding-right: 15px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.nav-link:hover{
+  border-radius: 50px;
+  background-color: #9c1c38;
+}
+
+#content-body{
+  /* background-image: url("images/royal-rug.png"); */
+
+  /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+/* .test2{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+} */
+
+.top-section-container{
+  background-image: url("images/moroccan-flower.png");
+}
+
+.top-section{
+  background-color: rgba(255,255,255, 0.5);
+  margin: auto;
+}
+
+.title{
+  text-align: center;
+  padding-top: 50px;
+  font-size: 150%;
+  font-style: italic;
+}
+
+#prologue{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.test{
+  margin-top: 20px;
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 100px;
+}
+
+.chapter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* border-style: solid; */
+  align-items: center;
+  height: auto;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  background-color: white;
+  color: transparent;
+  text-shadow: #111 0 0 4px;
+
+  /* background-image: url("images/paper1.jpg"); */
+}
+
+.chapter:hover{
+  color: #111;
+  text-shadow: none;
+}
+
+.chapter-img{
+  width:45vw;
+}
+
+.blurb-container{
+  text-align: center;
+  width: 40%;
+  top: 50%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: auto;
+}
+
+.blurb-title{
+  line-height: 40px;
+  top: 5%;
+  font-style: italic;
+}
+
+.blurb{
+  /* border-style: solid; */
+  height: fit-content;
+}
+
+@media (max-width: 700px){
+  header{
+    font-size: 2vw;
+    /* border: solid */
+  }
+  .chapter-img{
+    width:70%;
+  }
+
+  .chapter{
+    flex-direction: column;
+  }
+
+  .blurb-container{
+    width: 70%;
+  }
+}
+
+#epilogue-container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 120px;
+  font-size: 150%;
+  font-style: italic;
+}
+
+#epilogue{
+  text-align: center;
+  font-size: 120%;
+  width: 70%;
+  color: white;
+}
+h3{
+  color: #b18b3c;
+  font-style: italic;
+}
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  box-shadow: 0 -10px 15px -3px rgba(0,0,0,0.1), 0 -4px 6px -2px rgba(0,0,0,0.05);
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: white;
+}
+
+.me-me-me{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 100px;
+  padding-top: 80px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.rhea-img{
+  width: 25%;
+}
+
+#about-me{
+  width: 60%;
+  font-size: 120%;
+}
+
+#likes-dislikes{
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 820px){
+
+  .me-me-me{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+  }
+  .rhea-img{
+    width: 100%;
+  }
+
+  #about-me{
+    width: 100%;
+  }
+}
