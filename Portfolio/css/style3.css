@@ -1,48 +1,310 @@
-.me-me-me{
+/* Content Page */
+
+/* CSS Reset */
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* Website Background Image */
+html{
+  background-image: url("../images/royal-rug2.png");
+  font-family: Georgia, serif;
+}
+
+/* Remove blue color and line from hyperlinks */
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Chapter Font */
+@font-face {
+  font-family: fairytale;
+  src: url(../font/fairytale.ttf);
+}
+
+/* Navigation Bar */
+nav{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding-bottom: 100px;
-  padding-top: 80px;
-  padding-left: 50px;
-  padding-right: 50px;
+  background-color: white;
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+  padding: 10px;
+  font-size: 1.8vw;
+  margin-bottom: 15px;
+  width: 100%;
+  line-height: 80px;
 }
 
-.headshot-container{
+nav, .nav-bar{
+  float: right;
+}
+/* Make logo invisible */
+.logo{
+  font-size: 25px;
+  font-family: fairytale;
+  display: none;
+  width: fit-content;
+}
+
+.nav-bar, .nav-link-cont{
+  display: inline-block;
+  line-height: 20px;
+}
+
+/* 3 Lined Icon for Mobile Display */
+.checkbtn{
+  font-size: 30px;
+  color: black;
+  line-height: 80px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Make Icon not visible when the screen is wide */
+#check{
+  display: none;
+}
+/* Navigation Links to different web pages */
+.nav-link{
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  transition: 0.5s ease;
+}
+
+/* Change background color navigation buttons*/
+.nav-link:hover{
+  border-radius: 50px;
+  background-color: #9c1c38;
+}
+
+/* Background of upper section of website */
+.top-section-container{
+  background-image: url("../images/moroccan-flower.png");
+}
+
+/* Make section where text is transclucent */
+.top-section{
+  background-color: rgba(255,255,255, 0.5);
+}
+
+/* Title of web page */
+.title{
+  text-align: center;
+  font-size: 150%;
+  font-style: italic;
+  color: #870d29;
+  font-weight: bold;
+}
+
+/* Introductory poem */
+#prologue{
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 30px;
 }
 
-.rhea-img{
-  width: 90%;
+/*  */
+.note{
+  text-decoration: underline;
+  padding-bottom: 10px;
+  font-style: italic;
 }
 
-#about-me{
-  width: 60%;
-  /* font-size: 120%; */
-  font-size: 1.7vw;
-  line-height: 30px;
-  padding-left: 10px;
+.chapter-container{
+  margin-top: 20px;
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 100px;
 }
 
-#likes-dislikes{
+.chapter{
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  background-color: white;
 }
 
-@media (max-width: 900px){
+.chapter-cover{
+  font-family: fairytale;
+  text-align: center;
+  font-size: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  background-image: url(../images/paper1.jpg);
+}
 
-  .me-me-me{
-    display: flex;
-    flex-direction: column;
-    /* border-style: solid; */
-  }
-  .rhea-img{
-    width: 70%;
+
+.chapter-img{
+  width:45vw;
+  height: 18vw;
+}
+
+.blurb-container{
+  text-align: center;
+  width: 40%;
+  top: 50%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: auto;
+}
+
+/* Button to take user to portfolio website */
+.blurb-title{
+  line-height: 50px;
+  top: 5%;
+  font-style: italic;
+  border-style: solid;
+  border-radius: 10px;
+  width: fit-content;
+  background-color:#870d29 ;
+  color: #c4b89f;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: auto;
+  margin-bottom: 5px;
+  transition: 0.5s ease;
+}
+
+/* Change color of button upon hover */
+.blurb-title:hover{
+  background-color:  #ac1c3c;
+  color: #ded6c5;
+}
+
+.blurb{
+  line-height: 30px;
+  height: fit-content;
+}
+
+#epilogue-container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 120px;
+  font-size: 150%;
+  font-style: italic;
+}
+
+#epilogue{
+  text-align: center;
+  font-size: 120%;
+  width: 70%;
+  color: white;
+}
+
+/* Make headers in footer italic and of a brown color */
+h3{
+  color: #b18b3c;
+  font-style: italic;
+}
+ul{
+  padding: 25px;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  box-shadow: 0 -10px 15px -3px rgba(0,0,0,0.1), 0 -4px 6px -2px rgba(0,0,0,0.05);
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  background-color: white;
+  line-height: 25px;
+}
+
+/* Mobile View of Website */
+@media(max-width: 710px){
+  /* Ensure navigation bar when clicked is all that is visible */
+  nav{
+    position: sticky;
+    z-index: 1000;
+    top: 0;
   }
 
-  #about-me{
+  /* Make 3 lined icon visible */
+  .checkbtn{
+    display: block;
+    margin-left: 30%;
+  }
+
+  /* Side navigation bar. Initally positioned off-screen */
+  .nav-bar{
+    position: fixed;
     width: 100%;
-    font-size: 100%;
+    height: 100vh;
+    background: gray;
+    color: white;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  .nav-link-cont{
+    display: block;
+    margin: 35px 0;
+    line-height: 15px;
+  }
+
+  nav, .nav-bar, .nav-liv-cont, .nav-link{
+    font-size: 20px;
+  }
+
+  /* If 3 lined icon is clicked, make navigation bar visible */
+  #check:checked ~ .nav-bar{
+    left: 0;
+  }
+
+  /* Make logo visible */
+  .logo{
+    display: inline;
+  }
+}
+/* Mobile View of Website */
+@media (max-width: 700px){
+  .chapter-img{
+    width: 70vw;
+    height: 30vw;
+  }
+
+  .chapter{
+    flex-direction: column;
+  }
+
+  .blurb-container{
+    width: 85%;
+    font-size: 80%;
+    line-height: 20px;
+  }
+
+  #epilogue{
+    font-size: 70%;
+  }
+
+}
+
+@media(max-width: 550px){
+  footer{
+    flex-direction: column;
   }
 }

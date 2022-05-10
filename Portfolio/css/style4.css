@@ -1,0 +1,48 @@
+/* About Page */
+.me-me-me{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 100px;
+  padding-top: 80px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+/* Center image */
+.headshot-container{
+  display: flex;
+  justify-content: center;
+}
+
+.rhea-img{
+  width: 90%;
+}
+
+#about-me{
+  width: 60%;
+  font-size: 1.5vw;
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+#likes-dislikes{
+  display: flex;
+  flex-direction: row;
+}
+
+/* Mobile Display */
+@media (max-width: 900px){
+
+  .me-me-me{
+    display: flex;
+    flex-direction: column;
+  }
+  .rhea-img{
+    width: 70%;
+  }
+
+  #about-me{
+    width: 100%;
+    font-size: 100%;
+  }
+}

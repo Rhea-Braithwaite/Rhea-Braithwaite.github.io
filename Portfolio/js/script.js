@@ -1,12 +1,8 @@
 AOS.init();
 
-//On click if audio is not playing
-//playing
-//On click if audio is playing then
-//stop playing
-
+// Chapter 1 - 30MFF
 var Page1 = (function() {
-
+  // Load elements in book (the book cover, and the inner image)
   var config = {
       $bookBlock1 : $( '#bb-bookblock1' ),
       $navNext1 : $( '#bb-nav-next1' ),
@@ -25,12 +21,13 @@ var Page1 = (function() {
       var $slides = config.$bookBlock1.children();
 
       // add navigation events
+      // If the cover is clicked, open book to inner image
       config.$navNext1.on( 'click touchstart', function() {
         console.log("TEST next");
         config.$bookBlock1.bookblock( 'next' );
         return false;
       } );
-
+      // If the inner image is clicked, close book to cover
       config.$navPrev1.on( 'click touchstart', function() {
         console.log("TEST prev");
         config.$bookBlock1.bookblock( 'prev' );
@@ -44,8 +41,9 @@ var Page1 = (function() {
 
 Page1.init();
 
+// Chapter 2: Comic
 var Page2 = (function() {
-
+    // Load elements in book (the book cover, and the inner image)
   var config = {
       $bookBlock2 : $( '#bb-bookblock2' ),
       $navNext2 : $( '#bb-nav-next2' ),
@@ -64,11 +62,13 @@ var Page2 = (function() {
       var $slides = config.$bookBlock2.children();
 
       // add navigation events
+      // If the cover is clicked, open book to inner image
       config.$navNext2.on( 'click touchstart', function() {
         config.$bookBlock2.bookblock( 'next' );
         return false;
       } );
 
+      // If the inner image is clicked, close book to cover
       config.$navPrev2.on( 'click touchstart', function() {
         config.$bookBlock2.bookblock( 'prev' );
         return false;
@@ -81,9 +81,9 @@ var Page2 = (function() {
 
 Page2.init()
 
-
+// Chapter 3: Sound
 var Page3 = (function() {
-
+  // Load elements in book (the book cover, and the inner image)
   var config = {
       $bookBlock3 : $( '#bb-bookblock3' ),
       $navNext3 : $( '#bb-nav-next3' ),
@@ -102,11 +102,12 @@ var Page3 = (function() {
       var $slides = config.$bookBlock3.children();
 
       // add navigation events
+      // If the cover is clicked, open book to inner image
       config.$navNext3.on( 'click touchstart', function() {
         config.$bookBlock3.bookblock( 'next' );
         return false;
       } );
-
+      // If the inner image is clicked, close book to cover
       config.$navPrev3.on( 'click touchstart', function() {
         config.$bookBlock3.bookblock( 'prev' );
         return false;
@@ -119,8 +120,9 @@ var Page3 = (function() {
 
 Page3.init()
 
+// Chapter 4 - Video
 var Page4 = (function() {
-
+  // Load elements in book (the book cover, and the inner image)
   var config = {
       $bookBlock4 : $( '#bb-bookblock4' ),
       $navNext4 : $( '#bb-nav-next4' ),
@@ -139,11 +141,12 @@ var Page4 = (function() {
       var $slides = config.$bookBlock4.children();
 
       // add navigation events
+      // If the cover is clicked, open book to inner image
       config.$navNext4.on( 'click touchstart', function() {
         config.$bookBlock4.bookblock( 'next' );
         return false;
       } );
-
+      // If the inner image is clicked, close book to cover
       config.$navPrev4.on( 'click touchstart', function() {
         config.$bookBlock4.bookblock( 'prev' );
         return false;
