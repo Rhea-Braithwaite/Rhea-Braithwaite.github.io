@@ -130,8 +130,8 @@ a{
 
 /* Mobile Display */
 @media (max-width: 950px){
-  #cover-container, #enter{
-    font-size:120%;
+  .enter, #cover-container{
+    font-size: 100%;
   }
 
   #cover-author{
