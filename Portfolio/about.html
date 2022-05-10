@@ -4,30 +4,46 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> MY PORTFOLIO</title>
+
+    <!-- Font Icons Style Sheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <!-- <script src="jquery-3.6.0.min.js"></script> -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <!-- <link rel="stylesheet" href="css/style3.css"> -->
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script> -->
+
   </head>
   <body>
-    <header data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-      <a class="nav-link" href="content.html" id="home"> Home</a>
-      <a class="nav-link" href="#30MFF">30MFF</a>
-      <a class="nav-link" href="#comic">Comic</a>
-      <a class="nav-link" href="#sound">Audio</a>
-      <a class="nav-link" href="#video">Video</a>
-      <a class="nav-link" href="about.html">About</a>
-      <a class="nav-link" href="#contact" >Contact</a>
-    </header>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fa fa-bars"></i>
+      </label>
+
+      <ul class="nav-bar">
+        <li class="nav-link-cont"><a class="nav-link" href="content.html" id="home"> Home</a></li>
+        <li class="nav-link-cont"><a class="nav-link" href="#30MFF">30MFF</a></li>
+        <li class="nav-link-cont"><a class="nav-link" href="#comic">Comic</a></li>
+        <li class="nav-link-cont"><a class="nav-link" href="#sound">Audio</a></li>
+        <li class="nav-link-cont"><a class="nav-link" href="#video">Video</a></li>
+        <li class="nav-link-cont"><a class="nav-link" href="about.html">About Me</a></li>
+        <li class="nav-link-cont"><a class="nav-link" href="#contact" >Contact</a></li>
+      </ul>
+    </nav>
     <div class="top-section-container">
       <div class="title">
         ABOUT ME
       </div>
       <div class="me-me-me">
-        <img src="images/me.jpg" alt="" class="rhea-img">
+        <div class="headshot-container">
+          <img src="images/me.jpg" alt="" class="rhea-img">
+        </div>
+
         <div id="about-me">
           <p>Rhea is currently a Sophomore at New York University Abu Dhabi.
             She calls the island of Jamaica home, but is currently living in the UAE
@@ -78,6 +94,7 @@
 
     </footer>
   </body>
-  <script src="script.js" charset="utf-8"></script>
-
+  <!-- <script src="js/script.js" charset="utf-8"></script> -->
+  <!-- Font Icon Script fr Mobile View -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </html>

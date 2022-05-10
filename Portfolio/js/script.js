@@ -26,47 +26,16 @@ var Page1 = (function() {
 
       // add navigation events
       config.$navNext1.on( 'click touchstart', function() {
+        console.log("TEST next");
         config.$bookBlock1.bookblock( 'next' );
         return false;
       } );
 
       config.$navPrev1.on( 'click touchstart', function() {
+        console.log("TEST prev");
         config.$bookBlock1.bookblock( 'prev' );
         return false;
       } );
-
-
-      // add swipe events
-      // $slides.on( {
-      //   'swipeleft' : function( event ) {
-      //     config.$bookBlock.bookblock( 'next' );
-      //     return false;
-      //   },
-      //   'swiperight' : function( event ) {
-      //     config.$bookBlock.bookblock( 'prev' );
-      //     return false;
-      //   }
-      // } );
-      //
-      // // add keyboard events
-      // $( document ).keydown( function(e) {
-      //   var keyCode = e.keyCode || e.which,
-      //     arrow = {
-      //       left : 37,
-      //       up : 38,
-      //       right : 39,
-      //       down : 40
-      //     };
-      //
-      //   switch (keyCode) {
-      //     case arrow.left:
-      //       config.$bookBlock.bookblock( 'prev' );
-      //       break;
-      //     case arrow.right:
-      //       config.$bookBlock.bookblock( 'next' );
-      //       break;
-      //   }
-      // } );
     };
 
     return { init : init };
