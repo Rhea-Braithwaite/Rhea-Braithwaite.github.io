@@ -22,8 +22,8 @@
 #about-me{
   width: 60%;
   font-size: 1.5vw;
-  line-height: 30px;
-  padding-left: 10px;
+  line-height: 40px;
+  margin: auto;
 }
 
 #likes-dislikes{
@@ -36,7 +36,7 @@
 }
 
 /* Mobile Display */
-@media (max-width: 900px){
+@media  (max-width: 900px){
 
   .me-me-me{
     display: flex;
@@ -50,4 +50,24 @@
     width: 100%;
     font-size: 100%;
   }
+}
+
+
+/* For extremely large screens */
+@media (min-height: 1000px){
+
+    .me-me-me{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .rhea-img{
+      width: 50%;
+      margin-bottom: 20px;
+    }
+
+    #about-me{
+      width: 80%;
+      font-size: 130%;
+    }
 }
