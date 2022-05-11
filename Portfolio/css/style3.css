@@ -155,6 +155,7 @@ nav, .nav-bar{
 .chapter-img{
   width:45vw;
   height: 18vw;
+  cursor: pointer;
 }
 
 .blurb-container{
