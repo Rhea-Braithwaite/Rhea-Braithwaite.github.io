@@ -1,5 +1,3 @@
-AOS.init();
-
 // Chapter 1 - 30MFF
 var Page1 = (function() {
   // Load elements in book (the book cover, and the inner image)
