@@ -1,4 +1,7 @@
 # Tutoruu: An Academic Guide
+
+Click [here](https://rhea-braithwaite.github.io/Video!/) to see website
+
 ### Members of the project: 
 - Seif
 - Sadeq
