@@ -1,6 +1,6 @@
 # Project Name: 4 Years of College
 
-Click [here](https://rhea-braithwaite.github.io/30MFF/) to see a demo
+Click [here](https://rhea-braithwaite.github.io/30MFF/) to see website
 
 ## Project Description: 
 
