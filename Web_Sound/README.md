@@ -3,6 +3,8 @@
 ### Group Members: Moyo, Yunho, Seif, Rhea
 ## Project Name: Time Traveller
 
+Click [here](https://rhea-braithwaite.github.io/Web_Sound/) to see website
+
 ## Project Description:
 ### What is it?
 "Time Traveller" is a website that provides the viewer with an auitory experience of technology through time.
