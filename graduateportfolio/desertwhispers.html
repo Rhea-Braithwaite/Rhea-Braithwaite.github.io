@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> MY PORTFOLIO</title>
+
+    <!-- Font Icons Style Sheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- My Stylesheets -->
+    <link rel="stylesheet" href="css/style3.css">
+    <link rel="stylesheet" href="css/style4.css">
+    <link rel="stylesheet" href="css/project_ss.css">
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        Rhea's Bookshelf
+      </div>
+      <!-- Three lined icon for mobile display -->
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fa fa-bars"></i>
+      </label>
+      <!-- Navigation bar to different portfolio pages-->
+      <!-- Needs to be updated once the pages are created-->
+      <ul class="nav-bar">
+        <li class="nav-link-cont"><a class="nav-link" href="content.html" class="home"> Home</a></li>
+        <li class="nav-link-cont"><a class="nav-link" href="#book-contents" >Projects</a></li>
+        <li class="nav-link-cont"><a class="nav-link" href="about.html">About Me</a></li>
+        <li class="nav-link-cont"><a class="nav-link" href="#contact" >Contact</a></li>
+      </ul>
+    </nav>
+    <div class="project-body">
+      <div class="header">
+        <h1>Desert Whispers</h1>
+      </div>
+      <div class="overview-container">
+        <p class="overview"> Overview: An interactive installation, centered around a single tree in
+          the Sweihan Abu Dhabi desert, using sensors and LED lights to convey the
+          tree’s limits of human interaction.
+
+          </br> </br> Developed as the final project of the Desert Media Art course,
+          which teaches key technical aspects of design such as prototyping and
+          documentation. After splitting into teams of four, we used these newfound
+          skills to research, propose, produce and install an electronic artwork
+          designed for Abu Dhabi’s Sweihan desert.</p>
+      </div>
+
+      <div class="image-gallery">
+        <img src="images/projects/desertwhispers/tree_green3.jpg" alt="Mobile App Screenshots" class="project-img">
+        <img src="images/projects/desertwhispers/tree_yellow1.jpg" alt="Mobile App Screenshots" class="project-img">
+      </div>
+
+      <h2 class="project-heading">Early Steps</h2>
+
+      <p class="text"> We each created our own individual ideas, mine of which was using wind
+        chimes as a tool for the desert to voice itself.  </p>
+      <img src="images/projects/desertwhispers/early_idea.jpg" alt="Desert Tree that's the Center of the Project" class="project-img">
+
+
+      <h2 class="project-heading"> Site Visit and Final Idea </h2>
+      <p class="text">After a visit to our installation site, we workshopped my early idea into an
+        installation centered around a single tree we found.</p>
+        <img src="images/projects/desertwhispers/og_tree2.jpg" alt="Desert Tree that's the Center of the Project" class="test">
+
+      <div class="text-img-row">
+        <div class="text-column">
+          <p class="text" >Using LED lights wrapped in 3D printed leaves and an ultrasonic distance
+            sensor, the installation became a visual way for the tree to communicate
+            its boundaries as humans interact with it. </p>
+            <ul>
+              <li>Green: Tree is in a healthy state</li>
+              <li>Yellow: Approaching tree’s interaction limit</li>
+              <li>Red: Tree is in distress as interaction limit has been exceeded </li>
+            </ul>
+            <p class="text">The transition of the colors serve to make immediately visible the unseen
+               stresses the environment endures due to human presence. Once the visitor
+               walks away, the tree eventually returns to its earlier green and healthy
+               state. </p>
+        </div>
+        <div class="image-column">
+          <img src="images/projects/desertwhispers/design.jpg" alt="Desert Tree that's the Center of the Project" class="test">
+        </div>
+      </div>
+
+
+      <h2 class="project-heading">Building</h2>
+      <p class="text">I was once again on the technical side building the circuit, to include
+        all the electronic pieces of the project. I then worked on writing the code to calibrate the ultrasonic sensor, and
+           use its values to change the colors of the LED lights. </p>
+      <div class="image-gallery">
+        <img src="images/projects/desertwhispers/circuit.jpg" alt="Mobile App Screenshots" class="test">
+        <img src="images/projects/desertwhispers/circuit2.jpg" alt="Mobile App Screenshots" class="test">
+      </div>
+
+      <p class= "text">
+         <br> <br> After one of our teammates printed the leaves, I then combined
+         them with the LED lights attached to the circuit, and tested them to
+         ensure they changed colors as the distance and time spent at certain
+         distances changed.
+
+         <br> <br> Together, we safely attached the pieces onto the tree for the
+         final exhibition day, as another of our teammates documented the process.
+       </p>
+       <div class="image-gallery">
+         <img src="images/projects/desertwhispers/group_pic.jpg" alt="Mobile App Screenshots" class="test">
+         <img src="images/projects/desertwhispers/install.jpg" alt="Mobile App Screenshots" class="test">
+         <img src="images/projects/desertwhispers/tree_build.jpg" alt="Mobile App Screenshots" class="test">
+       </div>
+   </div>
+   <footer>
+     <div id="author-note" >
+       <h3>Author's Note:</h3>
+       <ul style="list-style-type:none">
+         <li>Please reach out to me if you have any questions, comments or puns
+            you'd like to share. </li>
+       </ul>
+     </div>
+
+     <div id="contact">
+       <h3>Contact Me:</h3>
+       <ul style="list-style-type:none">
+         <li>Email: rheafaith.braithwaite@gmail.com</li>
+       </ul>
+     </div>
+
+   </footer>
+  </body>
+</html>

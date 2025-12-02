@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> MY PORTFOLIO</title>
+
+    <!-- Font Icons Style Sheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- My Stylesheets -->
+    <link rel="stylesheet" href="css/style3.css">
+    <link rel="stylesheet" href="css/style4.css">
+    <link rel="stylesheet" href="css/project_ss.css">
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        Rhea's Bookshelf
+      </div>
+      <!-- Three lined icon for mobile display -->
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fa fa-bars"></i>
+      </label>
+      <!-- Navigation bar to different portfolio pages-->
+      <!-- Needs to be updated once the pages are created-->
+      <ul class="nav-bar">
+        <li class="nav-link-cont"><a class="nav-link" href="content.html" class="home"> Home</a></li>
+        <li class="nav-link-cont"><a class="nav-link" href="#book-contents" >Projects</a></li>
+        <li class="nav-link-cont"><a class="nav-link" href="about.html">About Me</a></li>
+        <li class="nav-link-cont"><a class="nav-link" href="#contact" >Contact</a></li>
+      </ul>
+    </nav>
+    <div class="project-body" >
+      <div class="header">
+        <h1>SafeSound</h1>
+      </div>
+
+      <div class="overview-container">
+        <p class="overview">Overview: Mobile application that detects AI-manipulated audio in real-time
+           to help protect users from voice-based fraud. </p>
+      </div>
+
+      <h2 class="project-heading">Background & Research</h2>
+      <p class="text">In recent years, there have been increased cases of individuals answering
+         the phone or engaging with audio, believed to be the voice of  a loved
+         one or acquaintance only to discover it is artificially generated. This
+         technology is commonly referred to as audio spoofing and falls within the
+          broader realm of deepfakes: highly convincing Artificial Intelligence (AI)
+           based audio-visual manipulations. Deepfake audio in particular is being
+            increasingly used to manipulate victims into financial scams.</p>
+
+      <h2 class="project-heading">Project's Goal</h2>
+      <p class="text">This project’s goal is to make readily accessible a tool for individuals
+        to verify if an audio is real or spoofed, and be notified in the event of
+        the latter, so they can exercise caution. The application then includes an
+        integrated machine learning model to detect any manipulated audio, as well
+        as an interface for users to record the audio and be notified in real time
+        if any is found. </p>
+
+      <h2 class="project-heading">Methodology</h2>
+      <div class="text-img-row">
+        <div class="text-column">
+          <p class="text">The first phase in this process was to develop a dataset of both spoofed and authentic
+            audio samples, to evaluate a set of selected models. This dataset included
+            a total of 17,312 audio clips: 8656 real and 8656 fake, across the
+            different methods of creating deep fake audio including text-to-speech
+            synthesis  (TTS) and voice conversion (VC) methods. </p>
+            <p class="text">These clips were then pre-processed to reflect the conditions of the
+              typical audio that would be analyzed by the app: phone calls. This process
+               involved resampling the file to indicate compression and then randomly
+               zeroing samples within the audios to indicate packet loss.</p>
+            <p class="text">Using this dataset, 2 deep learning models with 3 front-end configurations
+               were then evaluated and the best performing one was selected for
+               integration into the app. </p>
+        </div>
+        <div class="image-column">
+          <img src="images/projects/safesound/methods3.png" alt="Methodology Diagram" class="project-img">
+        </div>
+      </div>
+
+      <h2 class="project-heading">Digital Prototypes & App Implementation</h2>
+      <p class="text">I then created high fidelity prototypes in Figma for the different screens
+         of the user interface.</p>
+      <img src="images/projects/safesound/digital_prototypes2.png" alt="Digital Prototypes" class="project-img">
+
+
+      <p class="text">Using these as reference, I then developed in Android Studio with Kotlin
+         the final applicaion, compressing and integrating the model using TensorflowLite, and adding real time user notifications. </p>
+
+      <img src="images/projects/safesound/app.png" alt="Mobile App Screenshots" class="project-img">
+      <h2 class="project-heading">Next Steps/Methods of Improvement</h2>
+      <ul class="text">
+        <li>TESTING: to gather feedback on the app’s usability and
+           effectiveness.</li>
+        <li>Optimize the model for improved performance. This includes adjusting parameters and creating a larger more varied dataset. </li>
+      </ul>
+    </div>
+
+  </body>
+  <footer>
+    <div id="author-note" >
+      <h3>Author's Note:</h3>
+      <ul style="list-style-type:none">
+        <li>Please reach out to me if you have any questions, comments or puns
+           you'd like to share. </li>
+      </ul>
+    </div>
+
+    <div id="contact">
+      <h3>Contact Me:</h3>
+      <ul style="list-style-type:none">
+        <li>Email: rheafaith.braithwaite@gmail.com</li>
+      </ul>
+    </div>
+
+  </footer>
+</body>
+<!-- Font Icon Script fr Mobile View -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</html>
