@@ -1,0 +1,27 @@
+/* Introduction Page*/
+
+/* Position words in middle of page */
+#intro{
+  text-align: center;
+  position: relative;
+  top: 25%;
+}
+
+.intro-text{
+  margin: auto;
+  width: 60%;
+  font-size: 140%;
+  font-style: italic;
+}
+
+/* Mobile Display */
+@media (max-width: 700px){
+  .intro-text{
+    font-size: 70%;
+  }
+}
+
+.curl1{
+  width: 18%;
+  padding: 20px;
+}

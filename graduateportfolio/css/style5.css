@@ -1,0 +1,70 @@
+/* About Page */
+.me-me-me{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 100px;
+  padding-top: 80px;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: inherit;
+}
+/* Center image */
+.headshot-container{
+  display: flex;
+  justify-content: center;
+}
+
+.rhea-img{
+  width: 90%;
+}
+
+#about-me{
+  width: 70%;
+  font-size: 1.5vw;
+  line-height: 40px;
+  margin: auto;
+}
+
+#likes-dislikes{
+  display: flex;
+  flex-direction: row;
+}
+
+#likes, #dislikes{
+  list-style-type: circle;
+}
+
+/* Mobile Display */
+@media  (max-width: 900px){
+
+  .me-me-me{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about-me{
+    width: 100%;
+    font-size: 100%;
+  }
+}
+
+
+/* For extremely large screens */
+@media (min-height: 1000px){
+
+    .me-me-me{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .rhea-img{
+      width: 50%;
+      margin-bottom: 20px;
+    }
+
+    #about-me{
+      width: 80%;
+      font-size: 130%;
+    }
+}

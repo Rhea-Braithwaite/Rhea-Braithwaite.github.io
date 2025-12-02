@@ -1,0 +1,146 @@
+html{
+  font-family: Georgia, serif;
+}
+
+/* Remove blue color and line from hyperlinks */
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Cover Page*/
+.index-body, .intro-body{
+  background-image: url("images/paper1.jpg");
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+/* Center the cover container */
+#cover-container{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+#cover-img{
+  width: 90%;
+}
+
+#cover-author{
+  width: 25%;
+}
+
+#enter-container{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.enter{
+  padding-right: 5px;
+  padding-left: 5px;
+  border: solid;
+  width: fit-content;
+  background-color: #e8dcb8;
+  transform: skewX(-30deg);
+  border-radius: 5px;
+  font-size: 1.6vw;
+}
+
+.enter:hover{
+  background-color:#9c1c38;
+}
+
+/* Brown outer border */
+.outer-border{
+	border: 2px solid #DE9B72;
+  width: auto;
+  padding: 6px;
+  margin: auto;
+}
+
+/* Dark red middle border*/
+.mid-border {
+  border: 6px solid #9c1c38;
+  padding: 6px;
+  margin: auto;
+}
+
+/* Brown inner border */
+.inner-border{
+  position: relative;
+	border: 2px solid #DE9B72;
+  margin: auto;
+  height: 92vh;
+}
+
+.corner-decoration{
+	position: absolute;
+  width: 15%;
+}
+
+/* Position decoration to the top left */
+.corner-left-top{
+  left: 0;
+	top: 0;
+}
+
+/* Position decoration to the top right */
+.corner-right-top{
+  right: 0;
+	top: 0;
+  transform: rotate(90deg);
+}
+
+/* Position decoration to the bottom right */
+.corner-right-bottom{
+  right: 0;
+	bottom: 0;
+  transform: rotate(180deg);
+}
+
+/* Position decoration to the bottom left */
+.corner-left-bottom{
+  left: 0;
+	bottom: 0;
+  transform: rotate(-90deg);
+}
+
+.vertical-decoration{
+  position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 30%;
+}
+
+/* Position decoration to the top of the screen*/
+.top{
+  top: 0;
+}
+
+/* Position decoration to the bottom of the screen*/
+.bottom{
+  bottom:0;
+  transform: rotate(180deg);
+}
+
+/* Mobile Display */
+@media (max-width: 950px){
+  .enter, #cover-container{
+    font-size: 90%;
+  }
+
+  #cover-author{
+    width: 32%;
+  }
+}
+
+@media (max-width: 1050px){
+  .vertical-decoration{
+    width: 28%;
+  }
+}
