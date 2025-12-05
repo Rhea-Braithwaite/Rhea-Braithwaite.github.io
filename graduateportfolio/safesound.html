@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="css/style3.css">
     <link rel="stylesheet" href="css/style4.css">
     <link rel="stylesheet" href="css/project_ss.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+
   </head>
   <body>
     <nav>
@@ -52,6 +56,7 @@
            based audio-visual manipulations. Deepfake audio in particular is being
             increasingly used to manipulate victims into financial scams.</p>
 
+
       <h2 class="project-heading">Project's Goal</h2>
       <p class="text">This project’s goal is to make readily accessible a tool for individuals
         to verify if an audio is real or spoofed, and be notified in the event of
@@ -59,6 +64,8 @@
         integrated machine learning model to detect any manipulated audio, as well
         as an interface for users to record the audio and be notified in real time
         if any is found. </p>
+
+      <img src="images/projects/safesound/workflow.png" alt="Application WorkFlow" class="project-img1">
 
       <h2 class="project-heading">Methodology</h2>
       <div class="text-img-row">
@@ -72,26 +79,26 @@
               typical audio that would be analyzed by the app: phone calls. This process
                involved resampling the file to indicate compression and then randomly
                zeroing samples within the audios to indicate packet loss.</p>
-            <p class="text">Using this dataset, 2 deep learning models with 3 front-end configurations
+            <p class="text">Using this dataset 2 deep learning models with 3 front-end configurations (making a total of 12 models)
                were then evaluated and the best performing one was selected for
                integration into the app. </p>
         </div>
         <div class="image-column">
-          <img src="images/projects/safesound/methods3.png" alt="Methodology Diagram" class="project-img">
+          <img src="images/projects/safesound/methods3.png" alt="Methodology Diagram" class="project-img1">
         </div>
       </div>
 
       <h2 class="project-heading">Digital Prototypes & App Implementation</h2>
       <p class="text">I then created high fidelity prototypes in Figma for the different screens
          of the user interface.</p>
-      <img src="images/projects/safesound/digital_prototypes2.png" alt="Digital Prototypes" class="project-img">
+      <img src="images/projects/safesound/digital_prototypes2.png" alt="Digital Prototypes" class="project-img1">
 
 
       <p class="text">Using these as reference, I then developed in Android Studio with Kotlin
          the final applicaion, compressing and integrating the model using TensorflowLite, and adding real time user notifications. </p>
 
-      <img src="images/projects/safesound/app.png" alt="Mobile App Screenshots" class="project-img">
-      <h2 class="project-heading">Next Steps/Methods of Improvement</h2>
+      <img src="images/projects/safesound/app.png" alt="Mobile App Screenshots" class="project-img1">
+      <h2 class="project-heading">Next Steps & Methods of Improvement</h2>
       <ul class="text">
         <li>TESTING: to gather feedback on the app’s usability and
            effectiveness.</li>
