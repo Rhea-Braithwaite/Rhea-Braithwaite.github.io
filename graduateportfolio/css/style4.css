@@ -2,25 +2,25 @@
 .me-me-me{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  padding-bottom: 100px;
-  padding-top: 80px;
+  padding-bottom: 50px;;
+  padding-top: 20px;
   padding-left: 50px;
   padding-right: 50px;
-  height: inherit;
 }
 /* Center image */
 .headshot-container{
-  display: flex;
-  justify-content: center;
+  flex: 1;
+  padding-right: 15px;
 }
 
 .rhea-img{
-  width: 90%;
+  /* width: 200px; */
+  width:100%;
 }
 
 #about-me{
-  width: 70%;
+  flex:2;
+  /* width: 70%; */
   font-size: 1.5vw;
   line-height: 40px;
   margin: auto;
@@ -52,7 +52,6 @@
 
 /* For extremely large screens */
 @media (min-height: 1000px){
-
     .me-me-me{
       display: flex;
       flex-direction: column;
