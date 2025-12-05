@@ -40,7 +40,7 @@
   font-size: 100%;
 }
 
-.project-img{
+.project-img1{
   width: 100%;
   max-width: 800px;
   margin: 20px auto;
@@ -49,7 +49,24 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.test{
+.project-img2{
+  width: 50%;
+  margin: 20px auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.project-img3{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.project-img4{
   width: 100%;
   height: 500px;
   object-fit: cover;
@@ -58,8 +75,10 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.test3{
+
+.test2{
   width: 100%;
+  /* max-width: 800px; */
   height: 200px;
   object-fit: cover;
   margin: 20px auto;
@@ -68,15 +87,6 @@
 }
 
 
-.project-img2{
-  /* width: 100%; */
-  /* max-width: 800px; */
-  height: 200px;
-  margin: 20px auto;
-  display: block;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
 
 .text-img-row{
   display:flex;
@@ -116,12 +126,6 @@ iframe {
   display: block;
 }
 
-/* Mobile: stack them vertically */
-@media(max-width: 700px){
-  .text-img-row {
-    flex-direction: column;
-  }
-}
 
 .image-gallery {
   display: grid;
@@ -130,6 +134,24 @@ iframe {
   margin: 30px 0;
   /* height: 300px; /* Fixed height - adjust as needed */ */
   /* object-fit: cover; /* Crops to fill the space nicely */ */
+}
+
+
+.image-gallery2{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.project-img6 {
+  width: 70%;
+  max-width: 1000px;
+  height: auto;
+  object-fit: cover;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 table {
@@ -150,12 +172,18 @@ td {
 
 }
 
-.test2{
-  width: 100%;
-  /* max-width: 800px; */
-  height: 200px;
-  object-fit: cover;
-  margin: 20px auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+/* Mobile: stack them vertically */
+@media(max-width: 700px){
+  .text-img-row {
+    flex-direction: column;
+  }
+  iframe{
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    display: block;
+
+  }
 }
