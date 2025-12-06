@@ -132,9 +132,7 @@ iframe {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   margin: 30px 0;
-  /* height: 300px; /* Fixed height - adjust as needed */ */
-  /* object-fit: cover; /* Crops to fill the space nicely */ */
-}
+  }
 
 
 .image-gallery2{
@@ -184,6 +182,11 @@ td {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     margin: 20px auto;
     display: block;
-
+  }
+  .project-img2{
+    width: 90%;
+  }
+  .project-img6{
+    width: 90%;
   }
 }
