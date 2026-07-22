@@ -7,48 +7,174 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="css/styles_main.css">
     <link rel="stylesheet" href="css/bookblock.css"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   </head>
-  <body>
+<body class="pattern-background">
     <header>
       <nav>
-          <ul id="nav-bar">
-            <li><a>Home</a></li>
-            <li><a>Safe Sound</a></li>
-            <li><a>Desert Whispers</a></li>
-          </ul>
+        <div id="logo-side-bar-icon">
+          <div id="logo">
+            Rhea's Bookshelf
+          </div>
+          <button id="side-bar-icon" onClick=toggleNav()>
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+
+        <ul id="nav-bar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#safe-sound">Safe Sound</a></li>
+          <li><a href="#walk-with-you">Walk With You</a></li>
+          <li><a href="#desert-whispers">Desert Whispers</a></li>
+          <li><a href="#culinary-chronicles">Culinary Chronicles</a></li>
+          <li><a href="#digital-waste">Digital Waste</a></li>
+          <li><a href="switch-notes">Switch Notes</a></li>
+        </ul>
       </nav>
     </header>
-    <main >
+    <main>
       <!-- Short description of the ethos of each project -->
       <section id="prologue">
-        <h1>RHEA BRAITHWAITE PORTFOLIO</h1>
-        <p>committed to building tools and experiences that make people feel seen</p>
+        <div id="title">
+          <h1>PORTFOLIO NOTEBOOK</h1>
+          <p id="name">RHEA BRAITHWAITE</p>
+        </div>
+        <p>committed to building tools and experiences</p>
+        <p>that make people feel seen</p>
         <p id="note">
           Click Each Chapter for a Surprise
         </p>
       </section>
-      <section class="project">
-        <div class="bb-custom-wrapper">
-          <div id="bb-bookblock1" class="bb-bookblock">
-              <div class="test bb-item" id="bb-nav-next1">
-                <!-- Book cover -->
-                  Chapter 1
-              </div>
-              <div class="test bb-item" id="bb-nav-prev1">
-                test2
-              </div>
+      <div id="project-contents">
+        <section class="project" id="safe-sound">
+          <div class="bb-custom-wrapper">
+            <div id="bb-bookblock1" class="bb-bookblock project-cover-container">
+                <div class="project-cover bb-item" id="bb-nav-next1">
+                  <!-- Book cover -->
+                    Chapter 1: SafeSound
+                </div>
+                <div class="project-img bb-item" id="bb-nav-prev1">
+                  <!-- test2 -->
+                </div>
+            </div>
           </div>
-        </div>
 
-        <div>
-            <button></button>
-            <p class="blurb"></p>
-        </div>
-      </section>
+          <div class="blurb-container">
+              <a class="project-button">SafeSound</a>
+              <p class="blurb">Mobile application that detects AI-manipulated audio in real-time
+            to help protect users from voice-based fraud.</p>
+          </div>
+        </section>
+
+        <section class="project" id="walk-with-you">
+          <div class="bb-custom-wrapper">
+            <div id="bb-bookblock2" class="bb-bookblock project-cover-container">
+                <div class="project-cover bb-item" id="bb-nav-next2">
+                  <!-- Book cover -->
+                    Chapter 1: SafeSound
+                </div>
+                <div class="project-img bb-item" id="bb-nav-prev2">
+                  <!-- test2 -->
+                </div>
+            </div>
+          </div>
+
+          <div class="blurb-container">
+              <a class="project-button">WalkWithYou</a>
+              <p class="blurb">Mobile application that provides users with tools to make their
+            traveling journey safer.</p>
+          </div>
+        </section>
+
+        <section class="project" id="desert-whispers">
+          <div class="bb-custom-wrapper">
+            <div id="bb-bookblock3" class="bb-bookblock project-cover-container">
+                <div class="project-cover bb-item" id="bb-nav-next3">
+                  <!-- Book cover -->
+                    Chapter 1: SafeSound
+                </div>
+                <div class="project-img bb-item" id="bb-nav-prev3">
+                  <!-- test2 -->
+                </div>
+            </div>
+          </div>
+
+          <div class="blurb-container">
+              <a class="project-button">Desert Whispers</a>
+              <p class="blurb">An interactive installation, centered around a single tree in
+            the Sweihan Abu Dhabi desert, using sensors and LED lights to convey the
+            tree's limits of human interaction.</p>
+          </div>
+        </section>
+
+        <section class="project" id="culinary-chronicles">
+          <div class="bb-custom-wrapper">
+            <div id="bb-bookblock4" class="bb-bookblock project-cover-container">
+                <div class="project-cover bb-item" id="bb-nav-next4">
+                  <!-- Book cover -->
+                    Chapter 1: SafeSound
+                </div>
+                <div class="project-img bb-item" id="bb-nav-prev4">
+                  <!-- test2 -->
+                </div>
+            </div>
+          </div>
+
+          <div class="blurb-container">
+              <a class="project-button">Culinary Chronicles</a>
+              <p class="blurb">A virtual reality installation of a Saudi Arabian village,
+            bringing to life the unseen history of artist Maha Malluh's artwork,
+            "Food for Thought".</p>
+          </div>
+        </section>
+
+        <section class="project" id="digital-waste">
+          <div class="bb-custom-wrapper">
+            <div id="bb-bookblock5" class="bb-bookblock project-cover-container">
+                <div class="project-cover bb-item" id="bb-nav-next5">
+                  <!-- Book cover -->
+                    Chapter 1: SafeSound
+                </div>
+                <div class="project-img bb-item" id="bb-nav-prev5">
+                  <!-- test2 -->
+                </div>
+            </div>
+          </div>
+
+          <div class="blurb-container">
+              <a class="project-button">Digital Waste</a>
+              <p class="blurb">A virtual reality project of a forest scattered with
+            piles of trash and television screens that play videos depicting the
+            harsh realities of the climate crisis.</p>
+          </div>
+        </section>
+
+        <section class="project" id="switch-notes">
+          <div class="bb-custom-wrapper">
+            <div id="bb-bookblock6" class="bb-bookblock project-cover-container">
+                <div class="project-cover bb-item" id="bb-nav-next6">
+                  <!-- Book cover -->
+                    Chapter 1: SafeSound
+                </div>
+                <div class="project-img bb-item" id="bb-nav-prev6">
+                  <!-- test2 -->
+                </div>
+            </div>
+          </div>
+
+          <div class="blurb-container">
+              <!-- <a class="project-button">Switch Notes</a> -->
+              <p class="blurb">Arudino based game where song notes fall down
+            the screen in four different lanes. The user presses the matching switch for each lane
+            to play the note and increase their score.</p>
+          </div>
+        </section>
+      </div>
     </main>
-    <footer></footer>
+    <footer>
+      
+    </footer>
   </body>
-
   <!-- FLIP Javascript -->
   <script src="js/modernizr.custom.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
