@@ -1,0 +1,99 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#spine{
+    width: 18%;
+    max-width: 120px;
+    height: 100%;
+    flex-shrink: 0;
+    background-color: black;
+}
+
+#cover-itself{
+    flex: 1;
+    background-color: #F580AB;
+    background-image: linear-gradient(to right, #D81159, #D81159 14px, #F580AB 14px, #F580AB );
+    background-size: 28px 100%;
+    height: 100%;
+}
+
+#outer-box{
+    width: fit-content;
+    border: 5px double black;
+    background-color: white;
+    margin: 12rem auto 0 auto;
+}
+
+#inner-box{
+    text-align: center;
+    padding: 5px;
+}
+
+#title{
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-bottom: .5em;
+}
+
+.name-label{
+    font-size: 1.1em;
+}
+
+hr{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#sheets{
+    font-size: .6em;
+    font-weight: bold;
+    margin-top: 4px;
+    margin-left: 2px;
+    padding: 0 0 2px 4px;
+}
+
+
+@media (min-width: 768px){
+    #title{
+        font-size: 2rem;
+    }
+
+    .name-label{
+        font-size: 2rem;
+    }
+    
+    #sheets{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1024px){
+    #title{
+        font-size: 3rem;
+    }
+
+    .name-label{
+        font-size: 3rem;
+    }
+
+    #sheets{
+        font-size: .8rem;
+    }
+}
