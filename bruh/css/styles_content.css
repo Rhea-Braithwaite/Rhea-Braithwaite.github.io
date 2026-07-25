@@ -194,18 +194,19 @@ main{
     box-shadow:0.5px 0.5px 1px rgb(0,0,0,0.2);
 }
 
-
 .num{
   width: 100%;
   text-align: left;
   padding-left: .2rem;
 }
 
-.img-temp{
+.project-img{
   width: 90%;
   height: auto;
-  background-color: midnightblue;
-  margin: 0 .5rem 0 .5rem;
+  margin: 0 .5rem;
+}
+
+.index-img{
   object-fit: cover;
 }
 

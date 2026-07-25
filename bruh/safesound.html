@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> MY PORTFOLIO</title>
+    <link rel="stylesheet" href="./css/styles_projects.css">
+
+    <link rel="stylesheet" href="./css/styles_content.css">
+  </head> 
+  
+  <body>
+    <main class="project-body" >
+      <section>
+        <h1 class="project-title">SafeSound</h1>
+
+        <p class="overview">Overview: Mobile application that detects AI-manipulated audio in real-time to help protect users from voice-based fraud. </p>
+      </section>
+
+      <section>
+        <h2 class="project-heading">Background & Research</h2>
+      
+        <p class="text">In recent years, there have been increased cases of individuals answering the phone or engaging with audio, believed to be the voice of  a loved one or acquaintance only to discover it is artificially generated. This technology is commonly referred to as audio spoofing and falls within the broader realm of deepfakes: highly convincing Artificial Intelligence (AI) based audio-visual manipulations. Deepfake audio in particular is being increasingly used to manipulate victims into financial scams.</p>
+      </section>
+
+      <section>
+        <h2 class="project-heading">Project's Goal</h2>
+      
+        <p class="text">This project’s goal is to make readily accessible a tool for individuals to verify if an audio is real or spoofed, and be notified in the event of the latter, so they can exercise caution. The application then includes an integrated machine learning model to detect any manipulated audio, as well as an interface for users to record the audio and be notified in real time if any is found. </p>
+
+        <figure class="project-polaroid project-figure">
+          <div class="tape"></div>
+          <img src="images/projects/safesound/workflow.png" alt="Application WorkFlow" class="project-img" >
+        </figure>
+
+      
+        <!-- <img src="images/projects/safesound/workflow.png" alt="Application WorkFlow" class="project-img"> -->
+      </section>
+      <section class="project">
+        <h2 class="project-heading">Methodology</h2>
+        <div class="columns-2">
+          <ul class="text">
+            <li>The first phase in this process was to develop a dataset of both spoofed and authentic audio samples, to evaluate a set of selected models. This dataset included a total of 17,312 audio clips: 8656 real and 8656 fake, across the different methods of creating deep fake audio including text-to-speech synthesis  (TTS) and voice conversion (VC) methods.</li>
+            <li>These clips were then pre-processed to reflect the conditions of the typical audio that would be analyzed by the app: phone calls. This process involved resampling the file to indicate compression and then randomly zeroing samples within the audios to indicate packet loss.</li>
+            <li>Using this dataset 2 deep learning models with 3 front-end configurations (making a total of 12 models) were then evaluated and the best performing one was selected for integration into the app.</li>
+          </ul>
+          <figure class="project-polaroid project-figure">
+            <div class="tape"></div>
+            <img src="images/projects/safesound/methods3.png" alt="Methodology Diagram" class="project-img" >
+          </figure>
+        </div>
+
+      </section>
+
+      <section >
+        <h2 class="project-heading">Digital Prototypes & App Implementation</h2>
+        <p class="text">I then created high fidelity prototypes in Figma for the different screens of the user interface.</p>
+
+        <figure class="project-polaroid project-figure">
+          <div class="tape"></div>
+          <img src="images/projects/safesound/digital_prototypes2.png" alt="Digital Prototypes" class="project-img" >
+        </figure>
+
+        <p class="text">Using these as reference, I then developed the final application in Android Studio using the Kotlin programming language, compressing and integrating the model using TensorflowLite, and adding real time user notifications. </p>
+        <figure class="project-polaroid project-figure">
+          <div class="tape"></div>
+          <img src="images/projects/safesound/app.png" alt="Mobile App Screenshots" class="project-img" >
+        </figure>
+      </section>
+      
+      <section>
+        <h2 class="project-heading">Next Steps & Methods of Improvement</h2>
+
+        <ul class="text">
+          <li>TESTING: to gather feedback on the app’s usability and
+           effectiveness.</li>
+          <li>Optimize the model for improved performance. This includes adjusting parameters and creating a larger more varied dataset. </li>
+        </ul>
+      </section>
+    </main>
+
+  </body>
+</html>
