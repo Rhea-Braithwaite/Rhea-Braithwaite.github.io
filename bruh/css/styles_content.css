@@ -12,20 +12,122 @@
   --tape-gray: #dbd8be;
   --tape-edge-gray: #b7b49d;
 
+  --primary-color: #F580AB;
+  --secondary-color: #D81159;
+
 }
 body{
   background-color: var(--background-color);
   background-image: radial-gradient(circle, #d4d0c5 1.2px, transparent 1.2px);
   background-size: 15px 15px;
   display: flex;
-  width: 100%;
+  width: 100vw; 
+  height: 100vh;
   gap: 1rem;
 }
 
 header{
-  width: 12%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
   height: 100vh;
 }
+
+#side-bar-icon{
+  position: absolute;
+  top: .5em;
+  left: .5em;
+}
+
+#nav-bar{
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 55%;
+  height: 100%;
+  margin: .5em;
+  transition: left 300ms ease-out;
+  z-index: 1000;
+}
+
+#nav-bar.mobile{
+  left: 0;
+}
+
+#overlay{
+  background: rgba( 0, 0, 0, 0.5);
+  position: fixed;
+  inset: 0;
+  z-index: 9;
+  display: none;
+}
+
+#nav-bar.mobile ~ #overlay{
+  display: block;
+}
+#close-nav-icon{
+  position: absolute;
+  top: .2em;
+  right: 1em;
+}
+
+.to-do-list{
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+#header{
+  background-color: white;
+  width: 90%;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  margin: .7em 0 0 0;
+  padding: .2em 0;
+}
+
+#list-container{
+  list-style-type: none;
+  background-color: white;
+  width: 90%;
+  padding: 1.5em .7em;
+  border-radius: 7px;
+}
+
+.checkbox{
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+.to-do-item > a{
+  display: flex;
+  gap: .5em;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.to-do-text{
+  flex: 1;
+  border-bottom: 1px dashed black;
+  padding-left: 1em;
+}
+
+.to-do-blanks{
+  flex: 1;
+  height: 1em;
+  border-bottom: 1px dashed black;
+  padding-left: 1em;
+}
+
 
 .ribbon {
   font-size: 28px;
@@ -126,6 +228,25 @@ figcaption{
   padding-top: 1rem;
 }
 @media (min-width: 624px) {
+
+  header{
+    position: static;
+    width: 20%;
+    height: 100vh;
+  }
+  #nav-bar{
+    left: 0;
+    width: 100%;
+    position:static;
+  }
+  #side-bar-icon{
+    display: none;
+  }
+
+  #close-nav-icon{
+    display: none;
+  }
+
   #project-section {
     grid-template-columns: repeat(2, minmax(250px, 400px));
     row-gap: 3rem; 

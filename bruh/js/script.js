@@ -3,6 +3,16 @@ function toggleNav(){
   document.getElementById("nav-bar").classList.toggle("mobile");
 }
 
+function openNav(){
+  var navBar = document.getElementById("nav-bar");
+  navBar.classList.add("mobile");
+}
+
+function closeNav(){
+  var navBar = document.getElementById("nav-bar");
+  navBar.classList.remove("mobile");
+}
+
 let resizeTimer;
 window.addEventListener('resize', () => {
   document.body.classList.add('no-transition');
