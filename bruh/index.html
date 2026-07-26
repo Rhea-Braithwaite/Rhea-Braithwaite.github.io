@@ -1,97 +1,54 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
+  <head> 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> MY PORTFOLIO</title>
     <link rel="stylesheet" href="./css/styles_projects.css">
-
     <link rel="stylesheet" href="./css/styles_content.css">
-  </head> 
-  
+    <link rel="stylesheet" href="./css/styles_unique.css">
+  </head>
   <body>
+    <main class="project-body" >
+      <section class="header">
+        <h1 class="project-title">Switch Notes</h1>
+        <p class="overview">Overview: Arudino based game where song notes fall down the screen in four different lanes. The user presses the matching switch for each lane to play the note and increase their score.
+        </p>
+      </section>
 
+      <section>
+        <h2 class="project-heading">Early Design</h2>
+        <p class="text">I first began by doing a general outline of the game desig and the notes, which I initially just had as circles. The lanes were straightforward, just drawing lines and the same for the play zone. Each circle began to fall after the one before reached a certain point on the screen.</p>
+        <figure class="project-figure single">
+          <img src="images/projects/switchnotes/Fall1.gif" alt="Initial Sketch" class="project-img resize-design-image">
+        </figure>
+        <p class="text">I then worked on compiling images for the gameplay, for it to match the existing functionality, as well as worked on the code for the user to "play" a note by pressing the right lane.  </p>
+        <figure class="project-figure columns-2 double">
+          <img src="images/projects/switchnotes/SmoothFall.gif" alt="Note Falling Image 1" class="project-img">
+          <img src="images/projects/switchnotes/notePress.gif" alt="Note Falling Image 2" class="project-img">
+        </figure>
+      </section>
 
-    <div class="project-body">
-        
-      <div class="header">
-        <h1>Desert Whispers</h1>
-      </div>
-      <div class="overview-container">
-        <p class="overview"> Overview: An interactive installation, centered around a single tree in
-          the Sweihan Abu Dhabi desert, using sensors and LED lights to convey the
-          tree’s limits of human interaction.
+      <section>
+        <h2 class="project-heading">Arudino circuit</h2>
+        <p class="text"> Next up was building the Arduino circuit, using 4 switches for the lanes, a toner to play the corresponding note, as well as a potentiometer to change the speed of the interval by which the notes are falling. </p>
 
-          </br> </br> Developed as the final project of the Desert Media Art course,
-          which teaches key technical aspects of design such as prototyping and
-          documentation. After splitting into teams of four, we used these newfound
-          skills to research, propose, produce and install an electronic artwork
-          designed for Abu Dhabi’s Sweihan desert.</p>
-      </div>
+        <figure class="project-figure columns-2 double">
+          <img src="images/projects/switchnotes/schematic.jpg" alt="Ciruit Schematic" class="project-img">
+          <img src="images/projects/switchnotes/circuit5.jpg" alt="Arduino Circuit" class="project-img">
+        </figure>
+      </section>
 
-      <div class="image-gallery">
-        <img src="images/projects/desertwhispers/tree_green3.jpg" alt="Tree Installation" class="project-img1">
-        <img src="images/projects/desertwhispers/tree_yellow1.jpg" alt="Tree Installation" class="project-img1">
-      </div>
+      <section>
+        <h2 class="project-heading">Final Design</h2>
+        <p> Lastly, I added a start screen, help screen and end of level screen. </p>
 
-      <h2 class="project-heading">Early Steps</h2>
-
-      <p class="text"> We each created our own individual ideas, mine of which was using wind
-        chimes as a tool for the desert to voice itself.  </p>
-      <img src="images/projects/desertwhispers/early_idea.jpg" alt="Early Idea" class="project-img2">
-
-
-      <h2 class="project-heading"> Site Visit and Final Idea </h2>
-      <p class="text">After a visit to our installation site, we workshopped my early idea into an
-        installation centered around a single tree we found.</p>
-        <img src="images/projects/desertwhispers/og_tree2.jpg" alt="Desert Tree that's the Center of the Project" class="project-img4">
-
-      <div class="text-img-row">
-        <div class="text-column">
-          <p class="text" >Using LED lights wrapped in 3D printed leaves and an ultrasonic distance
-            sensor, the installation became a visual way for the tree to communicate
-            its boundaries as humans interact with it. </p>
-            <ul>
-              <li>Green: Tree is in a healthy state</li>
-              <li>Yellow: Approaching tree’s interaction limit</li>
-              <li>Red: Tree is in distress as interaction limit has been exceeded </li>
-            </ul>
-            <p class="text">The transition of the colors serve to make immediately visible the unseen
-               stresses the environment endures due to human presence. Once the visitor
-               walks away, the tree eventually returns to its earlier green and healthy
-               state. </p>
-        </div>
-        <div class="image-column">
-          <img src="images/projects/desertwhispers/design.jpg" alt="Installation Sketch" class="project-img1">
-        </div>
-      </div>
-
-
-      <h2 class="project-heading">Building</h2>
-      <p class="text">I was once again on the technical side building the circuit, to include
-        all the electronic pieces of the project. I then worked on writing the code in Circuit Python to calibrate the ultrasonic sensor, and
-           use its values to change the colors of the LED lights. </p>
-      <div class="image-gallery">
-        <img src="images/projects/desertwhispers/circuit.jpg" alt="Initial Circuit" class="project-img4">
-        <img src="images/projects/desertwhispers/circuit2.jpeg" alt="Final Ciruit" class="project-img4">
-      </div>
-
-      <p class= "text">
-         <br> <br> After one of our teammates printed the leaves, I then combined
-         them with the LED lights attached to the circuit, and tested them to
-         ensure they changed colors as the distance and time spent at certain
-         distances changed.
-
-         <br> <br> Together, we safely attached the pieces onto the tree for the
-         final exhibition day, as another of our teammates documented the process.
-       </p>
-       <div class="image-gallery">
-         <img src="images/projects/desertwhispers/group_pic.jpg" alt="Group Installation" class="project-img4">
-         <img src="images/projects/desertwhispers/install.jpeg" alt="Final Tree Setup Image 1" class="project-img4">
-         <img src="images/projects/desertwhispers/tree_build.jpg" alt="Final Tree Setup Image 2" class="project-img4">
-       </div>
-
-        <iframe src="https://drive.google.com/file/d/1p3IXPLUASEZrvaRieehx7YQdAL8GemF2/preview" width="700" height="480" allow="autoplay"></iframe>
-   </div>
+        <figure class="project-figure columns-2 double">
+        <!-- <img src="images/projects/switchnotes/StartScreen3.png" alt="Start Screen" class="project-img6"> -->
+          <img src="images/projects/switchnotes/intro.gif" alt="Help Screen" class="project-img">
+          <img src="images/projects/switchnotes/EOLScreen2.png" alt="End of Level Screen" class="project-img">
+        </figure>
+      </section>
+    </main>    
   </body>
 </html>

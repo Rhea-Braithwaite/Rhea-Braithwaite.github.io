@@ -1,0 +1,33 @@
+/* */
+
+.crop{
+    height: 500px;
+    object-fit: cover;
+}
+
+@media (min-width: 700px){
+    .resize-design-image{
+        width: 50%;
+    }
+}
+
+
+
+.project-img-flex{
+  flex: auto;
+  max-width: 500px;
+  height: auto;
+  flex: 1;
+}
+
+.columns-3-flex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-items: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+
