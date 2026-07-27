@@ -49,7 +49,7 @@ body{
   background-size: var(--stripe-width) 100%;
   height: 100%; */
   flex: 1;
-  background-image: url(../images/background/3_mei_7.jpg);
+  background-image: url(../images/background/flower_background.jpg);
   background-size: cover;
   /* background-position: center top;  */
 } 
@@ -88,13 +88,38 @@ hr{
 }
 
 #sheets{
-    font-size: .35em;
+    font-size: .34em;
     font-weight: bold;
     margin-top: 4px;
     margin-left: 2px;
     padding: 0 0 2px 4px;
 }
 
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.blinking-text {
+    text-align: center;
+    margin-top: 5%;
+    font-size: 1rem;
+    color: brown;
+    animation: blink 1.5s infinite;
+}
+
+.blinking-text a{
+    color: brown;
+}
 
 @media (min-width: 768px){
     #title{
@@ -112,6 +137,9 @@ hr{
     #middle-box{
         margin: .4rem .5rem;
     }
+    .blinking-text{
+        font-size: 1.5rem;
+    }
 }
 
 @media (min-width: 1024px){
@@ -125,5 +153,8 @@ hr{
 
     #sheets{
         font-size: .8rem;
+    }
+    .blinking-text{
+        font-size: 2rem;
     }
 }
