@@ -1,22 +1,25 @@
-*{
+/* *{
   padding: 0;
   margin: 0;
   text-decoration: none;
   box-sizing: border-box;
-}
+} */
   
 :root{
   --color: 130, 255, 173;
   --background-color: #fdfaf5;
 }
 
+
 .project-body{
   display: flex;
   flex-direction: column;
   gap: .8rem;
-  padding: 0 2rem;
-  width: 100%;
-  height: 100%;
+  /* padding: 0 2rem; */
+  /* width: 100%; */
+  /* height: 100%; */
+  font-family: "Indie Flower";
+
 }
 
 section{
@@ -36,12 +39,14 @@ section{
 
 .project-heading{
   position: relative;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   display:inline-block;
   text-transform: uppercase;
   width: fit-content;
   margin: 0 0.5rem 0.5rem .5rem ;
+  font-family: Caveat, 'Times New Roman', Times, serif;
 }
+
 .project-heading:after{
   background: linear-gradient(
     104deg,
@@ -86,6 +91,7 @@ section{
   justify-content: center;
 }
 
+
 .single{
   max-width: 800px;
   display: flex;
@@ -119,7 +125,10 @@ section{
 
 
 .text{
-    line-height: 1.5;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  font-family: system-ui;
+  /* font-family: "Comic Neue", "Comic Sans", cursive; */
 }
 
 ul[class="text"]{

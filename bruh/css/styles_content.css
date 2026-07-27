@@ -6,24 +6,59 @@
 }
 
 :root{
+  --main-line-color: hsl(234, 62%, 86%);
+  --side-line-color: hsl(350, 100%, 91%);
+  --paper-color: #fcfcfc;
+  /* --paper-color: hsl(0, 15%, 95%); */
+  /* --ink-color: hsl(0, 0%, 12%); */
+  --ink-color: #280003;
+  --line-thickness: 3px;
+  --top-space: 2lh;
+
+
+
   --background-color: #fdfaf5;
   --header-height: 50px;
   --shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05); 
-  --tape-gray: #dbd8be;
-  --tape-edge-gray: #b7b49d;
+  --tape-gray: #2AB7CA;
+  --tape-edge-gray: #F580AB;
 
   --primary-color: #F580AB;
   --secondary-color: #D81159;
+  --accent-color1: #280003;
+  --accent-color2: #2AB7CA;
+}
+
+body{
+background-color: #f580ab;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23d81159' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 0h40v40H0V0zm40 40h40v40H40V40zm0-40h2l-2 2V0zm0 4l4-4h2l-6 6V4zm0 4l8-8h2L40 10V8zm0 4L52 0h2L40 14v-2zm0 4L56 0h2L40 18v-2zm0 4L60 0h2L40 22v-2zm0 4L64 0h2L40 26v-2zm0 4L68 0h2L40 30v-2zm0 4L72 0h2L40 34v-2zm0 4L76 0h2L40 38v-2zm0 4L80 0v2L42 40h-2zm4 0L80 4v2L46 40h-2zm4 0L80 8v2L50 40h-2zm4 0l28-28v2L54 40h-2zm4 0l24-24v2L58 40h-2zm4 0l20-20v2L62 40h-2zm4 0l16-16v2L66 40h-2zm4 0l12-12v2L70 40h-2zm4 0l8-8v2l-6 6h-2zm4 0l4-4v2l-2 2h-2z'/%3E%3C/g%3E%3C/svg%3E");
+  font-family: 'Indie Flower', cursive;
+
+  
+  /* background-color: var(--background-color); */
+  /* background-image: radial-gradient(circle, #d4d0c5 1.2px, transparent 1.2px); */
+  /* background-size: 15px 15px; */
+  /* display: flex; */
+  width: 100vw; 
+  height: auto;
+  /* gap: 1rem; */
+
+  /* position: relative */
+}
+
+
+@font-face {
+  font-family: papernotes;
+  src: url(../font/Papernotes.ttf);
 
 }
-body{
-  background-color: var(--background-color);
-  background-image: radial-gradient(circle, #d4d0c5 1.2px, transparent 1.2px);
-  background-size: 15px 15px;
-  display: flex;
-  width: 100vw; 
-  height: 100vh;
-  gap: 1rem;
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+.indie-flower-regular {
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 header{
@@ -36,8 +71,10 @@ header{
 
 #side-bar-icon{
   position: absolute;
-  top: .5em;
-  left: .5em;
+  font-size: 2rem;
+  top: 6rem;
+  left: 3.7rem;
+  color: var(--secondary-color);
 }
 
 #nav-bar{
@@ -45,10 +82,12 @@ header{
   top: 0;
   left: -100%;
   width: 55%;
+  max-width: 300px;
   height: 100%;
-  margin: .5em;
+  margin: 2rem;
   transition: left 300ms ease-out;
   z-index: 1000;
+  padding: 1rem .5rem;
 }
 
 #nav-bar.mobile{
@@ -66,14 +105,15 @@ header{
 #nav-bar.mobile ~ #overlay{
   display: block;
 }
+
 #close-nav-icon{
   position: absolute;
-  top: .2em;
-  right: 1em;
+  top: 2.3em;
+  right: 1.5em;
 }
 
 .to-do-list{
-  background-color: var(--primary-color);
+  background-color: var(--primary-color);  
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -97,6 +137,7 @@ header{
   width: 90%;
   padding: 1.5em .7em;
   border-radius: 7px;
+
 }
 
 .checkbox{
@@ -119,6 +160,7 @@ header{
   flex: 1;
   border-bottom: 1px dashed black;
   padding-left: 1em;
+  font-size: 1.2rem;
 }
 
 .to-do-blanks{
@@ -129,43 +171,73 @@ header{
 }
 
 
-.ribbon {
-  font-size: 28px;
-  font-weight: bold;
-  color: #fff;
-  height: 90%;
-  box-shadow: var(--shadow);
-  width: 100%;
-}
+/* */
 
-.ribbon {
-  --f: .5em; /* control the folded part*/
-  --r: 2em; /* control the ribbon shape */
+
+
+main{
+  width: calc(100% - 6rem);
+  height: 100%;
+  /* flex: 1; */
+  background: var(--paper-color);
+  margin: 3rem;
   
-  /* position: absolute; */
-  /* left: 20px; */
-  top: calc(-1*var(--f));
-  padding: 0 0 .2em 0 ;
-  background: #BF4D28;
-  border-left: var(--f) solid #0005;
-  border-bottom: var(--r) solid #0000;
-  clip-path: polygon(var(--f) 0,100% 0,100% calc(100% - var(--r)),calc(50% + var(--f)/2) 100%, var(--f) calc(100% - var(--r)),var(--f) var(--f),0 var(--f));
+  padding: calc(var(--top-space) - 0.5lh) 3rem 1rem 5.5rem;
+  font-family: system-ui;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: var(--ink-color);
+  background-image: 
+    /* the red line */ linear-gradient(
+      90deg,
+      transparent,
+      transparent 4rem,
+      var(--side-line-color) 4rem,
+      var(--side-line-color) 4.25rem,
+      transparent 4.25rem
+    ),
+    /*  The top space  */
+      linear-gradient(
+        var(--paper-color),
+        var(--paper-color) var(--top-space),
+        transparent var(--top-space)
+      ),
+    /* the blue lines */
+      repeating-linear-gradient(
+        transparent,
+        transparent calc(1lh - var(--line-thickness)),
+        var(--main-line-color) calc(1lh - var(--line-thickness)),
+        var(--main-line-color) 1lh,
+        transparent 1lh
+      );
+  box-shadow: 0 0 1rem rgb(0 0 0 / 0.25);
+  font-family: "Indie Flower";
 }
-
 
 #index{
   text-align: center;
+
+} 
+
+#index h1{
+  /* background-color: blue; */
+  margin-bottom: -.8rem;
 }
 
-main{
-  flex: 1;
+#index p{
+  /* background-color: blue; */
+  margin-bottom: 1.5rem;
 }
+
+/* main{
+  flex: 1;
+} */
 
 #project-section{
   display: grid;
   grid-template-columns: repeat(1, min(300px, 450px));
   justify-content: center;
-  gap: 1.5rem;
+  gap: 2rem;
   margin: 1rem auto;
 }
 
@@ -182,16 +254,16 @@ main{
 }
 
 .tape::before {
-    content:"";
-    display:block;
-    height: 30px;
-    margin: -15px auto 5px auto;
-    width: 200px;
-    background-color: var(--tape-gray);
-    border-right: 1px dotted var(--tape-edge-gray);
-    border-left: 1px dotted var(--tape-edge-gray);
-    opacity: 0.5;
-    box-shadow:0.5px 0.5px 1px rgb(0,0,0,0.2);
+  content:"";
+  display:block;
+  height: 30px;
+  margin: -15px auto 5px auto;
+  width: 200px;
+  background-color: var(--tape-gray);
+  border-right: 1px dotted var(--tape-edge-gray);
+  border-left: 1px dotted var(--tape-edge-gray);
+  opacity: 0.5;
+  box-shadow:0.5px 0.5px 1px rgb(0,0,0,0.2);
 }
 
 .num{
@@ -229,7 +301,7 @@ figcaption{
   padding-top: 1rem;
 }
 @media (min-width: 624px) {
-
+/* 
   header{
     position: static;
     width: 20%;
@@ -246,7 +318,7 @@ figcaption{
 
   #close-nav-icon{
     display: none;
-  }
+  } */
 
   #project-section {
     grid-template-columns: repeat(2, minmax(250px, 400px));
