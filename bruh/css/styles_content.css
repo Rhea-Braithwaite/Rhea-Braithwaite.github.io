@@ -6,7 +6,7 @@
 }
 
 :root{
-  --main-line-color: hsl(234, 62%, 86%);
+  --main-line-color: hsla(234, 62%, 86%, .4);
   --side-line-color: hsl(350, 100%, 91%);
   --paper-color: #fcfcfc;
   /* --paper-color: hsl(0, 15%, 95%); */
