@@ -24,7 +24,7 @@ body{
     max-width: 120px;
     height: 100%;  
     flex-shrink: 0;
-    background-color: black;  
+    background-color: #332117;  
 }
 
 /* #cover-itself{
@@ -50,19 +50,22 @@ body{
   height: 100%; */
   flex: 1;
   background-image: url(../images/background/flower_background.jpg);
+
+  background-image: url(../../IMG_2337.jpeg);
   background-size: cover;
   /* background-position: center top;  */
 } 
 
 #outer-box{
     width: fit-content;
-    border: 3px solid black;
+    border: 3px solid #543F2E;
     background-color: white;
     margin: 12rem auto 0 auto;
+    color: #543F2E;
 }
 
 #middle-box{
-    border: 2px solid black;
+    border: 2px solid #543F2E;
     margin: .3rem .4rem;
 }
 
@@ -113,12 +116,12 @@ hr{
     text-align: center;
     margin-top: 5%;
     font-size: 1rem;
-    color: brown;
+    color: #332117;  
     animation: blink 1.5s infinite;
 }
 
 .blinking-text a{
-    color: brown;
+    color: #332117;
 }
 
 @media (min-width: 768px){

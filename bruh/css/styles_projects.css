@@ -7,10 +7,10 @@
   
 :root{
   --color: 130, 255, 173;
-  --background-color: #fdfaf5;
+  --background-color: #fdfaf5;  
 }
 
-
+  
 .project-body{
   display: flex;
   flex-direction: column;
