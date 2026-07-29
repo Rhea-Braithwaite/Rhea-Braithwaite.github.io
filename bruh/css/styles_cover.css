@@ -21,10 +21,10 @@ body{
 
 #spine{
     width: 15%;
-    max-width: 120px;
+    max-width: 1220px;
     height: 100%;  
     flex-shrink: 0;
-    background-color: #332117;  
+    background-color: black;  
 }
 
 /* #cover-itself{
@@ -51,21 +51,21 @@ body{
   flex: 1;
   background-image: url(../images/background/flower_background.jpg);
 
-  background-image: url(../../IMG_2337.jpeg);
-  background-size: cover;
+  /* background-image: url(../../IMG_2356.jpeg); */
+  background-size: contain;
   /* background-position: center top;  */
 } 
 
 #outer-box{
     width: fit-content;
-    border: 3px solid #543F2E;
+    border: 3px solid black;
     background-color: white;
     margin: 12rem auto 0 auto;
-    color: #543F2E;
+    color: black;
 }
 
 #middle-box{
-    border: 2px solid #543F2E;
+    border: 2px solid black;
     margin: .3rem .4rem;
 }
 
@@ -116,12 +116,12 @@ hr{
     text-align: center;
     margin-top: 5%;
     font-size: 1rem;
-    color: #332117;  
+    color: black;  
     animation: blink 1.5s infinite;
 }
 
 .blinking-text a{
-    color: #332117;
+    color: black;
 }
 
 @media (min-width: 768px){

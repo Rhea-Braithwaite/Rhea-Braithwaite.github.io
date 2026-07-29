@@ -26,7 +26,8 @@
   --primary-color: #F580AB;
   --secondary-color: #D81159;
   --accent-color1: #280003;
-  --accent-color2: #2AB7CA;
+  /* --accent-color2: #2AB7CA; */
+  --accent-color2: #4B88A2;
 }
 
 body{
@@ -40,10 +41,18 @@ body{
   /* background-size: 15px 15px; */
   /* display: flex; */
   width: 100vw; 
-  height: auto;
+  min-height: 100vh;
+  /* height: 100vh; */
   /* gap: 1rem; */
 
   /* position: relative */
+ 
+  /* background-color: #332217;
+  background-image: url("https://www.transparenttextures.com/patterns/xv.png"); */
+  color: var(--accent-color1);
+
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -66,15 +75,15 @@ header{
   top: 0;
   left: 0;
   z-index: 10;
-  height: 100vh;
-
+  height: auto;
+  max-height: 600px;
 }
 
 #side-bar-icon{
   position: absolute;
-  font-size: 2rem;
-  top: 6rem;
-  left: 3.7rem;
+  font-size: clamp(1.3rem, 1.3rem + .5vw, 2.5rem);
+  top: 4rem;
+  left: clamp(2.4rem, 2rem + .4vw, 3.5rem);
   color: var(--secondary-color);
 }
 
@@ -82,10 +91,10 @@ header{
   position: fixed;
   top: 0;
   left: -100%;
-  width: 55%;
-  max-width: 300px;
+  width: 80%;
+  max-width: 350px;
   height: 100%;
-  margin: 2rem;
+  /* margin: 2rem 2rem 2rem 0; */
   transition: left 300ms ease-out;
   z-index: 1000;
   padding: 1rem .5rem;
@@ -109,8 +118,9 @@ header{
 
 #close-nav-icon{
   position: absolute;
-  top: 2.8em;
-  right: 2em;
+  top: clamp(2.7rem, 2.7rem + .4vw ,3.7rem);
+  right: clamp(1.7rem, 1rem + .7vw, 3rem);
+  color: var(--accent-color2);
 }
 
 .to-do-list{
@@ -131,18 +141,21 @@ header{
   width: 90%;
   text-align: center;
   border-radius: 10px;
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 1.5rem + .3vw , 2.5rem );
   margin: .7em 0 0 0;
   padding: .2em 0;
+
 }
 
 #list-container{
   list-style-type: none;
   background-color: white;
   width: 90%;
-  padding: 1.5em .7em;
+  padding: 1.5em .7em .5em .7em; 
   border-radius: 7px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .checkbox{
@@ -182,8 +195,8 @@ header{
 .to-do-text{
   flex: 1;
   border-bottom: 1px dashed black;
-  padding-left: 1em;
-  font-size: 1.2rem;
+  padding-left: clamp(.5rem, .5rem + 1vw , 1rem);
+  font-size: clamp(.8rem, 1.2rem + .2vw , 2rem);
   text-transform: uppercase;
   /* font-weight: bold; */
 }
@@ -201,11 +214,13 @@ header{
 
 
 main{
-  width: calc(100% - 6rem);
+  width: calc(100% - 2rem);
   height: 100%;
   /* flex: 1; */
   background: var(--paper-color);
-  margin: 3rem;
+  margin: clamp(1rem, 1rem + 1vw ,3rem);
+  /* margin: 1rem; */
+  /* min-width: 450px; */
   
   padding: calc(var(--top-space) - 0.5lh) 3rem 1rem 5.5rem;
   /* font-family: system-ui; */
@@ -237,16 +252,31 @@ main{
       );
   box-shadow: 0 0 1rem rgb(0 0 0 / 0.25);
   /* font-family: "Indie Flower"; */
+  /* display:flex;
+  flex-direction: column; */
 }
 
-#index{
+#hero-text{
   text-align: center;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: blue; */
+  width: 100%;
+  height: 100%;
+  gap: .5rem;
+  margin-top: -2rem;
+  color: #104547;
+  font-size: clamp(1rem, 1rem + .5vw ,2.5rem);
 } 
 
-#index h1{
-  /* background-color: blue; */
-  margin-bottom: -.8rem;
+#hero-text h1{
+  text-transform: uppercase;
+  /* color: #104547; */
+}
+.star{
+  /* color: var(--accent-color2); */
+  font-weight: bold;
 }
 
 #index p{
@@ -265,7 +295,7 @@ main{
 
 #project-section{
   display: grid;
-  grid-template-columns: repeat(1, min(350px, 450px));
+  grid-template-columns: repeat(1, min(350px, 100%));
   justify-content: center;
   gap: 2rem;
   margin: 1rem auto;
@@ -285,12 +315,16 @@ main{
   justify-content: space-between;
 }
 
+
 .tape::before {
   content:"";
   display:block;
-  height: 30px;
-  margin: -15px auto 5px auto;
-  width: 200px;
+  height: clamp(1.3rem, 1rem + .2vw ,2rem);
+  margin: -10px auto 5px auto;
+  width: clamp(7rem, 7rem + 5vw , 13rem);
+
+
+
   /* background-color: var(--tape-gray); */
   
 
@@ -298,7 +332,8 @@ main{
    /* transform-origin: center; */
   background-color: #E5E5F7;
   /* opacity: 0.9; */
-  background-image:  radial-gradient(#444CF7 3.15px, transparent 3.15px), radial-gradient(#444CF7 3.15px, #E5E5F7 3.15px);
+  
+  background-image:  radial-gradient(var(--primary-color) 3.15px, transparent 3.15px), radial-gradient(#280003 3.15px, #00916E 3.15px);
   background-size: 42px 42px;
   background-position: 0 0,25px 25px;
 
@@ -345,8 +380,11 @@ main{
 }
 
 figcaption{
-  font-size: 1.8rem;
+  color: #104547;
+  font-size: clamp(1.5rem, 1.5rem + .3rem 3rem);
+  font-weight:bold;
   /* padding-top: 1rem; */
+  text-align: center;
 }
 @media (min-width: 624px) {
 /* 
