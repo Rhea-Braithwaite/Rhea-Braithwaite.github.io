@@ -2,15 +2,104 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> MY PORTFOLIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhea Braithwaite Portfolio</title>
     <link rel="stylesheet" href="./css/styles_projects.css">
+    <link rel="stylesheet" href="./css/styles_index.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 
-    <link rel="stylesheet" href="./css/styles_content.css">
-    <link rel="stylesheet" href="./css/styles_unique.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Patrick+Hand&display=swap" rel="stylesheet">
     
-  </head>
+    <script src="./js/script.js" defer></script>
+  </head> 
+  
   <body>
+    <header>
+      <a id="side-bar-icon" onClick="openNav()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <nav id="nav-bar" class="to-do-list">
+        <p id="header">TO DO LIST</p>
+        <a id="close-nav-icon" onClick="closeNav()">
+          <i class="fa fa-x"></i>
+        </a>
+        <ul id="list-container">
+          <li class="to-do-item"> 
+            <a href="index-projects.html">
+              <span class="checkbox"></span>
+              <span class="to-do-text">HOME</span>
+            </a>
+          </li>
+          <li class="to-do-item">
+            <a href="safesound.html">
+              <span class="checkbox"></span>
+              <span class="to-do-text">SafeSound</span>
+            </a>
+          </li>
+          <li class="to-do-item">
+            <a href="walkwithyou.html">
+              <span class="checkbox"></span>
+              <span class="to-do-text">WalkWithYou</span>
+            </a>
+          </li>
+          <li class="to-do-item">
+            <a href="desertwhispers.html">
+              <span class="checkbox"></span>
+              <span class="to-do-text">Desert Whispers</span>
+            </a>
+          </li>
+          <li class="to-do-item">
+            <a href="digitalwaste.html">
+              <span class="checkbox"></span>
+              <span class="to-do-text">Culinary Chronicles</span>
+            </a>
+          </li>
+
+          <li class="to-do-item">
+            <a href="digitalwaste.html">
+              <span class="checkbox"></span>
+              <span class="to-do-text">Digital Waste</span>
+            </a>
+          </li>
+          <li class="to-do-item">
+            <a href="switchnotes.html">
+              <span class="checkbox"></span>
+              <span class="to-do-text">Switch Notes</span>
+            </a>
+          </li>
+          <li class="to-do-item">
+            <a>
+              <span class="checkbox"></span>
+              <span class="to-do-blanks"></span>
+            </a>
+          </li>
+          <li class="to-do-item">
+            <a>
+              <span class="checkbox"></span>
+              <span class="to-do-blanks"></span>
+            </a>
+          </li>
+          <li class="to-do-item">
+            <a>
+              <span class="checkbox"></span>
+              <span class="to-do-blanks"></span>
+            </a>
+          </li>
+
+          <li class="to-do-item">
+            <a>
+              <span class="checkbox"></span>
+              <span class="to-do-blanks"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div id="overlay" onClick="closeNav()"></div>
+    </header>
+
     <main class="project-body">
       <section class="header">
         <h1 class="project-title">Desert Whispers</h1>
@@ -18,7 +107,6 @@
       <br> <br> Developed as the final project of the Desert Media Art course, which teaches key technical aspects of design such as prototyping and documentation. After splitting into teams of four, we used these newfound skills to research, propose, produce and install an electronic artwork designed for Abu Dhabi’s Sweihan desert.</p>
 
         <figure class="project-figure columns-2 double">
-          
           <img src="images/projects/desertwhispers/tree_green3.jpg" alt="Tree Installation" class="project-img">
           <img src="images/projects/desertwhispers/tree_yellow1.jpg" alt="Tree Installation" class="project-img">
         </figure> 

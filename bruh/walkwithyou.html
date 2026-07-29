@@ -1,16 +1,105 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> MY PORTFOLIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhea Braithwaite Portfolio</title>
     <link rel="stylesheet" href="./css/styles_projects.css">
+    <link rel="stylesheet" href="./css/styles_index.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 
-    <link rel="stylesheet" href="./css/styles_content.css">
-  </head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Patrick+Hand&display=swap" rel="stylesheet">
+    
+    <script src="./js/script.js" defer></script>
+  </head> 
+  
   <body>
+    <header>
+      <a id="side-bar-icon" onClick="openNav()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <nav id="nav-bar" class="to-do-list">
+        <p id="header">TO DO LIST</p>
+        <a id="close-nav-icon" onClick="closeNav()">
+          <i class="fa fa-x"></i>
+        </a>
+        <ul id="list-container">
+          <li class="to-do-item"> 
+            <a href="index-projects.html">
+              <span class="checkbox"></span>
+              <span class="to-do-text">HOME</span>
+            </a>
+          </li>
+          <li class="to-do-item">
+            <a href="safesound.html">
+              <span class="checkbox"></span>
+              <span class="to-do-text">SafeSound</span>
+            </a>
+          </li>
+          <li class="to-do-item">
+            <a href="walkwithyou.html">
+              <span class="checkbox"></span>
+              <span class="to-do-text">WalkWithYou</span>
+            </a>
+          </li>
+          <li class="to-do-item">
+            <a href="desertwhispers.html">
+              <span class="checkbox"></span>
+              <span class="to-do-text">Desert Whispers</span>
+            </a>
+          </li>
+          <li class="to-do-item">
+            <a href="digitalwaste.html">
+              <span class="checkbox"></span>
+              <span class="to-do-text">Culinary Chronicles</span>
+            </a>
+          </li>
+
+          <li class="to-do-item">
+            <a href="digitalwaste.html">
+              <span class="checkbox"></span>
+              <span class="to-do-text">Digital Waste</span>
+            </a>
+          </li>
+          <li class="to-do-item">
+            <a href="switchnotes.html">
+              <span class="checkbox"></span>
+              <span class="to-do-text">Switch Notes</span>
+            </a>
+          </li>
+          <li class="to-do-item">
+            <a>
+              <span class="checkbox"></span>
+              <span class="to-do-blanks"></span>
+            </a>
+          </li>
+          <li class="to-do-item">
+            <a>
+              <span class="checkbox"></span>
+              <span class="to-do-blanks"></span>
+            </a>
+          </li>
+          <li class="to-do-item">
+            <a>
+              <span class="checkbox"></span>
+              <span class="to-do-blanks"></span>
+            </a>
+          </li>
+
+          <li class="to-do-item">
+            <a>
+              <span class="checkbox"></span>
+              <span class="to-do-blanks"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div id="overlay" onClick="closeNav()"></div>
+    </header>
+
     <main class="project-body" >
-      <section class="header">
+      <section>
         <h1 class="project-title">WalkWithYou</h1>
         <p class="overview">Overview: Mobile application that provides users with tools to make their traveling journey safer.
           <br> Developed as part of The Summer Environmental Education Development (SEEDs) program, an annual intensive 10-week mobile app development hackathon. It provides an opportunity for female college students to gain coding experience and work with a non-profit.
@@ -18,13 +107,19 @@
       </section>
       
       <section>
-        <h2 class="project-heading">Early Steps</h2>
+        <h2 class="project-heading highlight">Early Steps</h2>
         <p class="text"> We wanted to explore the problem domain of Women’s Safety, operatingfrom our own personal experiences as young women navigating daily life. After conducting initial research it was statistically clear, this wasn’t isolated to us and very much universal. </p>
-        
-        <figure class="columns-2 project-figure double">
-          <img src="images/projects/seeds/violence1.png" alt="Violence in Jamaica" class="project-img">
-          <img src="images/projects/seeds/violence2.png" alt="Violence in Canada and China" class="project-img">
-        </figure>
+        <div class="columns-2 double">
+          <figure class="project-polaroid project-figure">
+            <div class="tape"></div>
+            <img src="images/projects/seeds/violence1.png" alt="Violence in Jamaica" class="project-img">
+          </figure>
+          <figure class="project-polaroid project-figure">
+            <div class="tape"></div>
+            <img src="images/projects/seeds/violence2.png" alt="Violence in Canada and China" class="project-img">
+          </figure>
+        </div>
+
       </section>
 
       <section>
@@ -35,7 +130,8 @@
       <section>
         <h2 class="project-heading">Target Group and User Interviews</h2>
         <p class="text">We used this baseline to nail down our primary user base (women) and conducted interviews to outline their transportation journey and identify paint points our app could improve.  </p>
-        <figure class="project-figure single">
+        <figure class="project-polaroid project-figure single">
+          <div class="tape"></div>
           <img src="images/projects/seeds/interviews.png" alt="Interviews" class="project-img">
         </figure>
         
@@ -67,12 +163,20 @@
           </tr>
         </table> 
         <p class="text">We then worked on low-fi prototype sketches of each feature </p>
-        <figure class="columns-2 project-figure double">
-          <img src="images/projects/seeds/jasmine_lowfi.png" alt="Low Fidelity Prototypes" class="project-img">
-          <img src="images/projects/seeds/rhea_lowfi.png" alt="Low Fidelity Prototypes" class="project-img">
-        </figure>
+        <div class="columns-2 double">
+          <figure class="project-figure project-polaroid single">
+            <div class="tape"></div>
+            <img src="images/projects/seeds/jasmine_lowfi.png" alt="Low Fidelity Prototypes" class="project-img">
+          </figure>
+          
+          <figure class="project-figure project-polaroid single">
+            <div class="tape"></div>
+            <img src="images/projects/seeds/rhea_lowfi.png" alt="Low Fidelity Prototypes" class="project-img">
+          </figure>
+        </div>
         <p> and then transformed them into high fidelity versions in Figma.</p>
-        <figure class="project-figure single">
+        <figure class=" project-polaroid project-figure single">
+          <div class="tape"></div>
           <img src="images/projects/seeds/digital_prototypes2.png" alt="High Fidelity Prototypes" class="project-img">
         </figure>
         
@@ -81,7 +185,8 @@
       <section>
         <h2 class="project-heading">Final Product</h2>
         <p class="text">I then coded the final app in Android Studio using the Kotlin programming language.</p>
-        <figure class="project-figure single">
+        <figure class="project-polaroid project-figure single">
+          <div class="tape"></div>
           <img src="images/projects/seeds/app.png" alt="Mobile App Screenshots" class="project-img">
         </figure>
       </section>
