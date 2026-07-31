@@ -72,9 +72,9 @@
             </a>
           </li>
           <li class="to-do-item">
-            <a>
+            <a href="about-me.html">
               <span class="checkbox"></span>
-              <span class="to-do-blanks"></span>
+              <span class="to-do-text">About Me</span>
             </a>
           </li>
           <li class="to-do-item">
@@ -100,25 +100,53 @@
       </nav>
       <div id="overlay" onClick="closeNav()"></div>
     </header>
+    
     <main id="about-me">
-      <section>
+      <section >
+        <h1 class="page-title">about me</h1>
+      </section>
+      <section id="headshot">
         <figure id="headshot-figure" class="project-polaroid sub-section">
           <div class="tape"></div>
-          <!-- <img src="images/miscellaneous/headshot.jpg" alt="Headshot of Rhea" class="project-img"> -->
+          <img src="images/miscellaneous/headshot.jpg" alt="Headshot of Rhea" class="project-img">
         </figure>
-        <div class="sub-section">
-					<h2 class="highlight about-heading">Profile</h2>
-					<ul id="profile">
-						<li>name: rhea braithwaite</li>
-						<li>age: 24</li>
-						<li>sign: virgo</li>
-						<li>height: 6'1</li>
-						<li>eye color: brown</li>
-					</ul>  
-        </div>
-
       </section>
-
+      <section id="profile">
+        <h2 class="highlight about-heading">Profile</h2>
+        <ul class="text" id="profile-list">
+          <li>Name: rhea braithwaite</li>
+          <li>Age: 24</li>
+          <li>Sign: virgo</li>
+          <li>Height: 6'1</li>
+          <li>Eye color: brown</li>
+        </ul>
+      </section>
+      <section id="favorite-songs">
+        <h2 class="highlight about-heading">favorite-songs</h2>
+        <ul class="text">
+          <li>At the beach in every life by Gigi Perez</li>
+          <li>Illusion by One Direction</li>
+          <li>Caramel by Sleep Token</li>
+        </ul>
+      </section>
+      <section id="likes">
+        <h2 class="highlight about-heading">likes</h2>
+        <ul class="text" id="likes">
+          <li>fashion illustration</li>
+          <li>açai</li>
+          <li>doc martens</li>
+          <li>fan fiction</li>
+        </ul>
+      </section>
+      <section id="dislikes">
+        <h2 class="highlight about-heading">dislikes</h2>
+        <ul class="text">
+          <li>banana (except in smoothies)</li>
+          <li>jellies</li>
+          <li>people who don't wash thair hands</li>
+        </ul>
+      </section>
+<!-- 
       <section>
 				<div class="sub-section">
           <h2 class="highlight about-heading">favorite-songs</h2>
@@ -161,7 +189,7 @@
           </ul>
         </div>
         
-      </section>
+      </section> -->
     </main>
   </body>
 </html>

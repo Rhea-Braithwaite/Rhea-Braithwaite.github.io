@@ -1,0 +1,190 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+#about-me{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  /* column-gap: 3rem; */
+  justify-content: center;
+  /* align-items:center; */
+  /* background-color: black; */
+}
+
+.page-title{
+  text-align: center;
+  font-family: Caveat;
+  font-size: clamp(2rem, 2rem + 1.5vw, 4rem);
+  text-align: center;
+}
+
+#about-me section{
+
+  /* max-width: 500px; */
+  /* flex: 1 1 350px; */
+  /* height: fit-content; */
+  /* background-color: blue; */
+}
+
+.about-heading{
+  font-size: clamp(1.7rem, 1.7rem + 1vw, 2.5rem);
+  display: inline-block;
+  text-transform: lowercase;
+  width: fit-content;
+  margin: 0 0.5rem 0.5rem .5rem ;
+  font-family: Caveat, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+ul{
+  list-style-position: inside;
+}
+
+#profile{
+  border: 2px dashed rgba(0, 0, 0, .5);
+  padding: .5rem;
+}
+
+#profile-list{
+  list-style-type: none;
+
+}
+@media (min-width: 768px){
+  #about-me{
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+  .page-title{
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+
+  #headshot{
+    grid-column: 1;
+    grid-row: 2 / 4;
+  }
+
+  #profile{
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  #favorite-songs{
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  #likes{
+    grid-column: 1;
+    grid-row: 4;
+
+  }
+
+  #dislikes{
+    grid-column: 2;
+    grid-row: 4;
+
+  }
+}
+
+
+@media (min-width: 1024px){
+  #about-me{
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: stretch;
+    /* background-color:blue; */
+  }
+  .page-title{
+    grid-column: 1 / 4;
+    grid-row: 1;
+  }
+
+  #headshot{
+    grid-column: 1;
+    grid-row: 2 / 4;
+  }
+
+  #profile{
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  #favorite-songs{
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  #likes{
+    grid-column: 2;
+    grid-row: 3;
+
+  }
+
+  #dislikes{
+    grid-column: 3;
+    grid-row: 3;
+
+  }
+
+
+
+
+}
+
+/* 
+#about-me section{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem;
+}
+
+.headshot-figure{
+
+}
+.about-heading{
+  font-size: clamp(1.7rem, 1.7rem + 1vw, 2.5rem);
+  display: inline-block;
+  text-transform: lowercase;
+  width: fit-content;
+  margin: 0 0.5rem 0.5rem .5rem ;
+  font-family: Caveat, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+.sub-section{
+  max-width: 500px;
+  flex: 1 1 350px;
+}
+
+
+ul{
+  list-style-position: inside;
+}
+.music-player{
+  display: flex;
+  gap: 1rem;
+  border: 2px solid black;
+  width: fit-content;
+  padding: .3rem .5rem;
+}
+.square{
+  width: 100px;
+
+  height: 70px;
+  border: 2px solid black;
+}
+.song{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.song hr{
+  width: 80%;
+} */
