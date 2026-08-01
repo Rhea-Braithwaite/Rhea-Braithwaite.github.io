@@ -188,6 +188,54 @@ iframe{
   padding-bottom: .5rem;
 }
 
+
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  padding: 1rem;
+}
+
+.lightbox-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox-overlay img {
+  max-width: 95%;
+  max-height: 90vh;
+  border-radius: 4px;
+  box-shadow: 0 0 2rem rgba(0,0,0,0.5);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 2rem;
+  /* right: clamp(2.4rem, 2.4rem + .4vw, 3.5rem); */
+  left: 97%;
+  /* top: 20px;
+  right: 30px; */
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  cursor: pointer;
+  line-height: 1;
+  z-index: 1001;
+}
+
+.zoomable {
+  cursor: zoom-in;
+}
+
+
+
+
 @media (min-width: 700px){
   .overview{
     font-size: 1.5rem;
