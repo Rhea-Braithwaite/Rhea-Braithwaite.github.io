@@ -1,10 +1,3 @@
-/* *{
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  box-sizing: border-box;
-} */
-  
 :root{
   --color: 130, 255, 173;
   --background-color: #fdfaf5;  
@@ -29,18 +22,12 @@
   display: flex;
   flex-direction: column;
   gap: .8rem;
-  /* padding: 0 2rem; */
-  /* width: 100%; */
-  /* height: 100%; */
-  /* font-family: "Indie Flower"; */
   align-items: center;
-
 }
 
 section{
   width: 100%;
   height: auto;
-  /* background-color: blue; */
 }
 
 .project-title{
@@ -48,16 +35,15 @@ section{
   font-family: Caveat;
   font-size: clamp(2rem, 2rem + 1.5vw, 4rem);
 }
+
 .overview{
   border: 3px dashed var(--accent-color2);
   margin: 0 clamp(.5em, .5em + .5vw ,2em);
-  /* margin: 0 2em; */
   padding: .5em;
   text-align: center;
   font-family: Nunito;
   font-size: clamp(.9rem, .9rem + .1vw ,1.3rem);
   font-weight: 300;  
-
 }
 
 .project-heading{
@@ -89,17 +75,6 @@ section{
     padding: 0 1rem 0 .4rem;
 }
 
-/* .project-polaroid{
-  width: 100%;
-  height: auto;
-  background-color: white;
-  padding: 0 0 1rem 0;
-  box-shadow: 0 4px  10px 0 rgba( 0, 0, 0, 0.3 ), 0 0 4rem rgba( 255, 255, 235, 0.5 ) inset;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-} */
 
 .project-figure{
   width: 100%;
@@ -111,12 +86,6 @@ section{
   display: flex;
   justify-content: center;
 }
-/* 
-.single{
-  max-width: 800px;
-  display: flex;
-  justify-content: center;
-} */
 
 .double{
   max-width: 1200px;
@@ -130,7 +99,8 @@ section{
   padding-bottom: 1rem;
 }
 
- 
+
+/* Columns initially 1 on mobile screens */
 .columns-2{
   display: grid;
   grid-template-columns: 1fr;
@@ -138,17 +108,11 @@ section{
   align-items: center;
 }
 
-.columns-3{
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-}
 
 .text{
   line-height: 1.6;
   font-size: clamp(1rem, 1rem + .2vw, 2rem);
   font-family: Nunito;
-  /* font-family: "Comic Neue", "Comic Sans", cursive; */
 }
 
 ul[class="text"]{
@@ -188,7 +152,7 @@ iframe{
   padding-bottom: .5rem;
 }
 
-
+/* Overlay when images are clicked and enlarged */
 .lightbox-overlay {
   position: fixed;
   inset: 0;
@@ -218,10 +182,7 @@ iframe{
 .lightbox-close {
   position: absolute;
   top: 2rem;
-  /* right: clamp(2.4rem, 2.4rem + .4vw, 3.5rem); */
   left: 97%;
-  /* top: 20px;
-  right: 30px; */
   font-size: 2.5rem;
   color: var(--secondary-color);
   cursor: pointer;
@@ -234,8 +195,27 @@ iframe{
 }
 
 
+.image-gallery{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-items: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.image-gallery .project-figure{
+  flex: 1 1 360px;
+}
+
+.columns-3 .project-figure{
+  flex: 1;
+}
 
 
+/* */
+
+/* Increase columns for large screens */
 @media (min-width: 700px){
   .overview{
     font-size: 1.5rem;
@@ -246,11 +226,8 @@ iframe{
       align-items: center;
   } 
 
-  .columns-3{
-    grid-template-columns: repeat(3, 1fr);
-      column-gap: 1rem;
-  }
   .project-figure-iframe{
     width: 80%;
   }
 }
+

@@ -27,33 +27,10 @@ body{
     background-color: black;  
 }
 
-/* #cover-itself{
-    flex: 1;
-    background-color: #F580AB;
-    background-image: linear-gradient(to right, #D81159, #D81159 14px, #F580AB 14px, #F580AB );
-    background-size: 28px 100%;
-    height: 100%;
-} */
-
 #cover-itself {
-  /* --stripe-width: clamp(30px, 4vw, 60px);
-  flex: 1;
-  background-color: #F580AB;
-  background-image: linear-gradient(
-    to right,
-    #D81159,
-    #D81159 calc(var(--stripe-width) / 2),
-    #F580AB calc(var(--stripe-width) / 2),
-    #F580AB
-  );
-  background-size: var(--stripe-width) 100%;
-  height: 100%; */
   flex: 1;
   background-image: url(../images/background/flower_background.jpg);
-
-  /* background-image: url(../../IMG_2356.jpeg); */
   background-size: contain;
-  /* background-position: center top;  */
 } 
 
 #outer-box{
@@ -98,6 +75,7 @@ hr{
     padding: 0 0 2px 4px;
 }
 
+/* Define blinking animation for text */
 @keyframes blink {
     0% {
         opacity: 1;
@@ -157,6 +135,7 @@ hr{
     #sheets{
         font-size: .8rem;
     }
+    
     .blinking-text{
         font-size: 2rem;
     }
