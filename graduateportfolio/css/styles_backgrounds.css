@@ -1,66 +1,57 @@
-
 :root{
-  --main-line-color: hsla(234, 62%, 86%, .4);
-  --side-line-color: hsl(350, 100%, 91%);
-  --paper-color: #fcfcfc;
-  /* --paper-color: hsl(0, 15%, 95%); */
-  /* --ink-color: hsl(0, 0%, 12%); */ 
-  --ink-color: #280003;
-  --line-thickness: 3px;
-  --top-space: 2lh;
-
-
-
-  --background-color: #fdfaf5;
-  --header-height: 50px;
-  --shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05); 
-  --tape-gray: #280003;
-  --tape-edge-gray: #F580AB;
+  /* Overarching Styling Variables */
+  --background-color: #fdfaf5;  
 
   --primary-color: #F580AB;
+  --primary-color-rgb: 245, 128, 171;
+
   --secondary-color: #D81159;
+  --secondary-color-rgb: 216, 17, 89;
+
   --accent-color1: #280003;
-  /* --accent-color2: #2AB7CA; */
-  --accent-color2: #4B88A2;
+  --accent-color1-rgb: 40, 0, 3 ;
   
+  --accent-color2: #4B88A2;
+  --accent-color2-rgb: 75, 136, 162;
 }
 
+/* Define backgrounds for each page */
 #index-background{
-  background-color: #f580ab;
+  background-color: var(--primary-color);
   background-image: url(../images/background/pink-plaid.jpeg);
 }
 
 #safesound-background{
-  background-color: #f580ab;
+  background-color: var(--primary-color);
   background-image: url(../images/background/blue-stars.jpeg);
 }
 
 #walkwithyou-background{
-  background-color: #f580ab;
+  background-color: var(--primary-color);
   background-image: url(../images/background/purple-flowers.jpeg);
 }
  
 #desertwhispers-background{
-  background-color: #f580ab;
+  background-color: var(--primary-color);
   background-image: url(../images/background/green-flora.jpeg);
 }
  
 #culinarychronicles-background{
-  background-color: #f580ab;
+  background-color: var(--primary-color);
   background-image: url(../images/background/black-flowers.jpeg);
 }
  
 #digitalwaste-background{
-  background-color: #f580ab;
+  background-color: var(--primary-color);
   background-image: url(../images/background/brown-diamonds.jpeg);
 }
  
 #switchnotes-background{
-  background-color: #f580ab;
+  background-color: var(--primary-color);
   background-image: url(../images/background/red.jpeg);
 }
  
 #aboutme-background{
-  background-color: #f580ab;
+  background-color: var(--primary-color);
   background-image: url(../images/background/pink-flowers-hibiscus.jpeg);
 }

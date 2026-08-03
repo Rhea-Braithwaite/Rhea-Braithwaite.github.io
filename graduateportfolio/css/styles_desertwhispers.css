@@ -1,55 +1,18 @@
 /* Crop trio of images */
-
 .crop{
   height: 250px;
   object-fit: cover;
 }
 
-
 @media (min-width: 700px){
   .resize-design-image{
       width: 50%;
   }
+
   .crop{
     height: 500px;
   }
 }
-
-
-/* 
-.image-gallery{
-  display: flex;
-  flex-direction: row;
-  flex-wrap:wrap;
-  justify-items: center;
-  align-items: center;
-  gap: 1rem;
-}
-
-.image-gallery .project-figure{
-  flex: 1 1 360px;
-}
-
-.columns-3 .project-figure{
-  flex: 1;
-} */
-
-/* .project-figure2{
-  width: 100%;
-  background-color: cream;
-  margin: 1rem auto;
-  justify-content: center;
-  display: flex;
-  justify-content: center;
-} */
-
-/* .project-img-flex{
-  flex: auto;
-  max-width: 500px;
-  height: auto;
-  flex: 1;
-} */
-
 
 
 

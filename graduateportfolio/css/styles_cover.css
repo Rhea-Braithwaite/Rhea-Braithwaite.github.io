@@ -102,6 +102,7 @@ hr{
     color: black;
 }
 
+/* Adjust sizing of title section based on screen size */
 @media (min-width: 768px){
     #title{
         font-size: 2rem;
@@ -118,6 +119,7 @@ hr{
     #middle-box{
         margin: .4rem .5rem;
     }
+    
     .blinking-text{
         font-size: 1.5rem;
     }

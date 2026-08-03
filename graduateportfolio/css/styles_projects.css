@@ -1,7 +1,6 @@
 :root{
-  --color: 130, 255, 173;
+  /* Overarching Styling Variables */
   --background-color: #fdfaf5;  
-
 
   --primary-color: #F580AB;
   --primary-color-rgb: 245, 128, 171;
@@ -9,13 +8,11 @@
   --secondary-color: #D81159;
   --secondary-color-rgb: 216, 17, 89;
 
-
   --accent-color1: #280003;
   --accent-color1-rgb: 40, 0, 3 ;
-  /* --accent-color2: #2AB7CA; */
+  
   --accent-color2: #4B88A2;
   --accent-color2-rgb: 75, 136, 162;
-
 }
 
 .project-body{
@@ -57,6 +54,7 @@ section{
   font-weight: bold;
 }
 
+/* Use gradient to simulate highlighter in a notebook */
 .highlight {
   background: linear-gradient(
     104deg,
@@ -108,7 +106,6 @@ section{
   align-items: center;
 }
 
-
 .text{
   line-height: 1.6;
   font-size: clamp(1rem, 1rem + .2vw, 2rem);
@@ -152,7 +149,7 @@ iframe{
   padding-bottom: .5rem;
 }
 
-/* Overlay when images are clicked and enlarged */
+/* Overlay to cover page when images are clicked and enlarged */
 .lightbox-overlay {
   position: fixed;
   inset: 0;
@@ -182,9 +179,6 @@ iframe{
 .lightbox-close {
   position: absolute;
   top: 2rem;
-  /* left: 97%; */
-  /* right: clamp(); */
-  /* font-size: clamp(2rem, 2rem + 1vw, 4rem); */
   right: clamp(1rem, 1rem + 2.4vw, 3.5rem);
  
   font-size: 2.5rem;
@@ -194,15 +188,16 @@ iframe{
   z-index: 1001;
 }
 
+/* Cursor for images that are capable of being zoomed in */
 .zoomable {
   cursor: zoom-in;
 }
 
-
+/* Container that holds and resizes multiple images in a row */
 .image-gallery{
   display: flex;
   flex-direction: row;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   justify-items: center;
   align-items: center;
   gap: 1rem;
@@ -216,20 +211,19 @@ iframe{
   flex: 1;
 }
 
-
-/* */
-
-/* Increase columns for large screens */
 @media (min-width: 700px){
   .overview{
     font-size: 1.5rem;
   }
+
+  /* Increase columns for large screens */
   .columns-2{
     grid-template-columns: repeat(2, 1fr);
       column-gap: 1rem;
       align-items: center;
   } 
 
+  /* Enlarge iframe on wider screens */
   .project-figure-iframe{
     width: 80%;
   }

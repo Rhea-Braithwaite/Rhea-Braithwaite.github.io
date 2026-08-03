@@ -1,3 +1,4 @@
+/* CSS Reset */
 *{
   padding: 0;
   margin: 0;
@@ -6,31 +7,25 @@
 }
 
 :root{
+  /* Page design variables */
   --main-line-color: hsla(234, 62%, 86%, .4);
   --side-line-color: hsl(350, 100%, 91%);
   --paper-color: #fcfcfc;
-  /* --paper-color: hsl(0, 15%, 95%); */
-  /* --ink-color: hsl(0, 0%, 12%); */ 
   --ink-color: #280003;
   --line-thickness: 3px;
   --top-space: 2lh;
 
-
-
+  /* Overarching Styling Variables */
   --background-color: #fdfaf5;
   --header-height: 50px;
   --shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05); 
-  --tape-gray: #280003;
-  --tape-edge-gray: #F580AB;
 
   --primary-color: #F580AB;
   --secondary-color: #D81159;
-  --accent-color1: #280003;
-  /* --accent-color2: #2AB7CA; */
+  --accent-color1: #280003; 
   --accent-color2: #4B88A2;
-  
+  --accent-color3: #00916E;
 }
-
 
 body{
   font-family: Caveat, cursive;
@@ -73,13 +68,13 @@ header{
   width: 80%;
   max-width: 350px;
   height: 100%;
-  /* margin: 2rem 2rem 2rem 0; */
   transition: left 300ms ease-out;
   z-index: 1000;
   padding: 1rem .5rem;
 }
 
-#nav-bar.mobile{
+/* Make navbar visible */
+#nav-bar.visible{
   left: 0;
 }
 
@@ -91,7 +86,7 @@ header{
   display: none;
 }
 
-#nav-bar.mobile ~ #overlay{
+#nav-bar.visible ~ #overlay{
   display: block;
 }
 
@@ -101,14 +96,10 @@ header{
   right: clamp(1.7rem, 1rem + .7vw, 3rem);
   color: var(--accent-color2);
 }
-
+/* Styling for nav bar links */
 .to-do-list{
   background-color: #6882d1;
-  background-image: url("https://www.transparenttextures.com/patterns/crisp-paper-ruffles.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  /* background-color: var(--primary-color);   */
-  
+  background-image: url("../images/background/crisp-paper-ruffles.png");
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -124,7 +115,6 @@ header{
   font-size: clamp(1.5rem, 1.5rem + .3vw , 2.5rem );
   margin: .7em 0 0 0;
   padding: .2em 0;
-
 }
 
 #list-container{
@@ -138,6 +128,7 @@ header{
   justify-content: flex-start;
 }
 
+/* Add checkbox to visualise to-do-list item */
 .checkbox{
   display: inline-block;
   width: 1em;
@@ -148,19 +139,12 @@ header{
   position: relative;
 }
 
-
-
+/* Add tick to checkbox when user hovers over a nav bar link */
 .to-do-item:hover .checkbox::after{
   position: absolute;
   content: "✓";
   font-size: 1.5em;
   top: -.5em;
-  /* left: .05em; */
-  /* background-color: blue; */
-}
-.to-do-item:hover .to-do-item >.checkbox::after{
-  content:"✓";
-
 }
 
 .to-do-item > a{
@@ -171,7 +155,6 @@ header{
   color: black;
 }
 
-
 .to-do-text{
   flex: 1;
   border-bottom: 1px dashed black;
@@ -180,6 +163,7 @@ header{
   text-transform: uppercase;
 }
 
+/* Empty nav-bar sections to fill the space visually */
 .to-do-blanks{
   flex: 1;
   height: 1em;
@@ -187,14 +171,13 @@ header{
   padding-left: 1em;
 }
 
-/* Make main appear like notebook */
+/* Make main appear like lined notebook page */
 main{
   width: calc(100% - 2 * clamp(1rem, 1rem + 1vw ,3rem));
   height: 100%;
 
   background: var(--paper-color);
   margin: clamp(1rem, 1rem + 1vw ,3rem);
-  /* margin: 2rem auto; */
 
   padding: calc(var(--top-space) - 0.5lh) 1rem 1rem 3.5rem;
   font-size: 1.5rem;
@@ -226,33 +209,29 @@ main{
   box-shadow: 0 0 1rem rgb(0 0 0 / 0.25);
 }
 
-#hero-text{
+#index-page-title {
   text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: blue; */
   width: 100%;
   height: 100%;
-  gap: .5rem;
+
   margin-top: -2rem;
   color: #104547;
   font-size: clamp(1rem, 1rem + .5vw ,2.5rem);
 } 
 
-#hero-text h1{
+#index-page-title h1{
   text-transform: uppercase;
-  /* color: #104547; */
 }
-.star{
-  /* color: var(--accent-color2); */
+
+.drawing{
+  color: var(--secondary-color);
   font-weight: bold;
+  padding-left: 1rem;
 }
-
-#index p{
-  margin-bottom: 1.5rem;
-}
-
 
 .project-link {
   display: block; 
@@ -267,6 +246,7 @@ main{
   margin: 1rem auto;
 }
 
+/* Make index of projects appear like polaroid images */
 .project-polaroid{
   width: 100%;
   height: auto;
@@ -278,8 +258,8 @@ main{
   align-items: center;
   justify-content: space-between;
 }
-
-
+               
+/* Add tape to each polaroid image */
 .tape::before {
   content:"";
   display:block;
@@ -288,19 +268,13 @@ main{
   width: clamp(7rem, 7rem + 5vw , 13rem);
 
   background-color: #E5E5F7;
-  background-image:  radial-gradient(var(--primary-color) 3.15px, transparent 3.15px), radial-gradient(#280003 3.15px, #00916E 3.15px);
+  background-image:  radial-gradient(var(--primary-color) 3.15px, transparent 3.15px), radial-gradient(#280003 3.15px, var(--accent-color3) 3.15px);
   background-size: 42px 42px;
   background-position: 0 0,25px 25px;
-  border-right: 1px dotted var(--tape-edge-gray);
-  border-left: 1px dotted var(--tape-edge-gray);
+  border-right: 1px dotted var(--primary-color);
+  border-left: 1px dotted var(--primary-color);
   opacity: 0.7;
   box-shadow:0.5px 0.5px 1px rgb(0,0,0,0.2);
-}
-
-.num{
-  width: 100%;
-  text-align: left;
-  padding-left: .2rem;
 }
 
 .project-img{
@@ -313,6 +287,7 @@ main{
   object-fit: cover;
 }
 
+/* Rotate images slightly for a more scrap book feel */
 .rotate1{
   transform: rotate(.7deg);
 }
@@ -337,13 +312,17 @@ figcaption{
 }
 
 @media (min-width: 624px) {
+  #index-page-title{
+    flex-direction: row;
+    /* gap: .5rem; */
+  }
   /* Increase columns to 2 for tablet sized screens */
   #project-section {
     grid-template-columns: repeat(2, minmax(250px, 400px));
     row-gap: 3rem; 
   }
 
-  /* Adjust left margin */
+  /* Adjust left margin to be larger on wider screens */
   main{
     padding: calc(var(--top-space) - 0.5lh) 2rem 1rem 4.5rem;
     background-image: 
@@ -370,18 +349,17 @@ figcaption{
           transparent 1lh
         );
   }
-
-
 }
 
-/* Increase columns to 3 for computer sized screens */
+
 @media (min-width: 1025px) {
+  /* Increase columns to 3 for computer sized screens */
   #project-section {
     grid-template-columns: repeat(3, minmax(250px, 400px));
     row-gap: 3rem;
   }
 
-  /* Adjust left margin */
+  /* Adjust left margin to be larger on wider screens */
   main{
     padding: calc(var(--top-space) - 0.5lh) 3rem 1rem 5.5rem;
     background-image: 

@@ -1,16 +1,16 @@
 function toggleNav(){
   var navBar = document.getElementById("nav-bar");
-  document.getElementById("nav-bar").classList.toggle("mobile");
+  document.getElementById("nav-bar").classList.toggle("visible");
 }
 
 function openNav(){
   var navBar = document.getElementById("nav-bar");
-  navBar.classList.add("mobile");
+  navBar.classList.add("visible");
 }
 
 function closeNav(){
   var navBar = document.getElementById("nav-bar");
-  navBar.classList.remove("mobile");
+  navBar.classList.remove("visible");
 }
 
 let resizeTimer;
