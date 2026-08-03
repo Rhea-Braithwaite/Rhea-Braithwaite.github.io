@@ -1,6 +1,3 @@
-/* Content Page */
-
-/* CSS Reset */
 *{
   padding: 0;
   margin: 0;
@@ -8,288 +5,258 @@
   box-sizing: border-box;
 }
 
-/* Website Background Image */
-html{
-  background-image: url("../images/royal-rug2.png");
-  font-family: Georgia, serif;
-}
+:root{
+  --background-color: #fdfaf5;
+  --header-height: 50px;
+  --shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05); 
+  --tape-gray: #dbd8be;
+  --tape-edge-gray: #b7b49d;
 
-/* Remove blue color and line from hyperlinks */
-a{
-  text-decoration: none;
-  color: inherit;
-}
+  --primary-color: #F580AB;
+  --secondary-color: #D81159;
 
-/* Chapter Font */
-@font-face {
-  font-family: fairytale;
-  src: url(../font/fairytale.ttf);
 }
-
-/* Navigation Bar */
-nav{
+body{
+  background-color: var(--background-color);
+  background-image: radial-gradient(circle, #d4d0c5 1.2px, transparent 1.2px);
+  background-size: 15px 15px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  background-color: white;
-  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
-  /* padding: 5px; */
-  font-size: 1.8vw;
-  margin-bottom: 15px;
-  width: 100%;
-  line-height: 80px;
+  width: 100vw; 
+  height: 100vh;
+  gap: 1rem;
 }
 
-nav, .nav-bar{
-  float: right;
-}
-
-/* Make logo invisible */
-.logo{
-  font-size: 25px;
-  font-family: fairytale;
-  display: none;
-  width: fit-content;
-}
-
-.nav-bar, .nav-link-cont{
-  display: inline-block;
-  line-height: 20px;
-}
-
-/* 3 Lined Icon for Mobile Display */
-.checkbtn{
-  font-size: 30px;
-  color: black;
-  line-height: 80px;
-  cursor: pointer;
-  display: none;
-}
-
-/* Make Icon not visible when the screen is wide */
-#check{
-  display: none;
-}
-/* Navigation Links to different web pages */
-.nav-link{
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  cursor: pointer;
-  position: relative;
-  display: flex;
-  justify-content: space-evenly;
-  transition: 0.5s ease;
-}
-
-/* Change background color navigation buttons*/
-.nav-link:hover{
-  border-radius: 50px;
-  background-color: #9c1c38;
-}
-
-/* Background of upper section of website */
-.top-section-container{
-  background-image: url("../images/moroccan-flower.png");
-}
-
-/* Make section where text is transclucent */
-.top-section{
-  background-color: rgba(255,255,255, 0.5);
-}
-
-/* Title of web page */
-.title{
-  text-align: center;
-  font-size: 150%;
-  font-style: italic;
-  color: #870d29;
-  font-weight: bold;
-}
-
-/* Introductory poem */
-#prologue{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  padding-bottom: 30px;
-}
-
-/*  */
-.note{
-  text-decoration: underline;
-  padding-bottom: 10px;
-  font-style: italic;
-}
-
-#book-contents{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1f)); */
-  align-items: center;
-  gap: 20px;
-  padding: 20px;
-}
-
-.chapter-background{
-  display:flex;
-  justify-content: center;
-  align-items:center;
-  background-image: url(../images/paper1.jpg);
-  padding: 15px;
-
-}
-
-.chapter-container{
-  margin-top: 20px;
-  background-color: white;
-  padding: 10px;
-  margin-bottom: 25px;
-
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  height: 200px;
-  border-radius: 20px;
-  background
-}
-
-
-.chapter-img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  cursor: pointer;
-}
-
-.blurb-container{
-  text-align: center;
-  width: 40%;
-  top: 50%;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  height: auto;
-}
-
-.blurb{
-  line-height: 30px;
-  /* height: fit-content; */
-  height: 200px; /* adjust to fit your longest description */
-
-}
-
-.overlay {
-  position: absolute;
+header{
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
   z-index: 10;
+  height: 100vh;
 }
 
-.clickable-div:hover {
-  opacity: 0.8;
+#side-bar-icon{
+  position: absolute;
+  top: .5em;
+  left: .5em;
 }
 
-/* Make headers in footer italic and of a brown color */
-h3{
-  color: #b18b3c;
-  font-style: italic;
-}
-ul{
-  padding: 25px;
+#nav-bar{
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 55%;
+  height: 100%;
+  margin: .5em;
+  transition: left 300ms ease-out;
+  z-index: 1000;
 }
 
-footer{
+#nav-bar.mobile{
+  left: 0;
+}
+
+#overlay{
+  background: rgba( 0, 0, 0, 0.5);
+  position: fixed;
+  inset: 0;
+  z-index: 9;
+  display: none;
+}
+
+#nav-bar.mobile ~ #overlay{
+  display: block;
+}
+#close-nav-icon{
+  position: absolute;
+  top: .2em;
+  right: 1em;
+}
+
+.to-do-list{
+  background-color: var(--primary-color);
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  box-shadow: 0 -10px 15px -3px rgba(0,0,0,0.1), 0 -4px 6px -2px rgba(0,0,0,0.05);
-  padding-top: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 10px;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+#header{
   background-color: white;
-  line-height: 25px;
+  width: 90%;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  margin: .7em 0 0 0;
+  padding: .2em 0;
 }
 
-/* Mobile View of Website */
-@media(max-width: 710px){
-  /* Ensure navigation bar when clicked is all that is visible */
-  nav{
-    position: sticky;
-    z-index: 1000;
-    top: 0;
-  }
+#list-container{
+  list-style-type: none;
+  background-color: white;
+  width: 90%;
+  padding: 1.5em .7em;
+  border-radius: 7px;
+}
 
-  /* Make 3 lined icon visible */
-  .checkbtn{
-    display: block;
-    margin-left: 30%;
-  }
+.checkbox{
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 4px;
+}
 
-  /* Side navigation bar. Initally positioned off-screen */
-  .nav-bar{
-    position: fixed;
-    width: 100%;
+.to-do-item > a{
+  display: flex;
+  gap: .5em;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.to-do-text{
+  flex: 1;
+  border-bottom: 1px dashed black;
+  padding-left: 1em;
+}
+
+.to-do-blanks{
+  flex: 1;
+  height: 1em;
+  border-bottom: 1px dashed black;
+  padding-left: 1em;
+}
+
+
+.ribbon {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  height: 90%;
+  box-shadow: var(--shadow);
+  width: 100%;
+}
+
+.ribbon {
+  --f: .5em; /* control the folded part*/
+  --r: 2em; /* control the ribbon shape */
+  
+  /* position: absolute; */
+  /* left: 20px; */
+  top: calc(-1*var(--f));
+  padding: 0 0 .2em 0 ;
+  background: #BF4D28;
+  border-left: var(--f) solid #0005;
+  border-bottom: var(--r) solid #0000;
+  clip-path: polygon(var(--f) 0,100% 0,100% calc(100% - var(--r)),calc(50% + var(--f)/2) 100%, var(--f) calc(100% - var(--r)),var(--f) var(--f),0 var(--f));
+}
+
+
+#index{
+  text-align: center;
+}
+
+main{
+  flex: 1;
+}
+
+#project-section{
+  display: grid;
+  grid-template-columns: repeat(1, min(300px, 450px));
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1rem auto;
+}
+
+.project-polaroid{
+  width: 100%;
+  height: auto;
+  background-color: white;
+  padding: 0 0 1rem 0;
+  box-shadow: 0 4px  10px 0 rgba( 0, 0, 0, 0.3 ), 0 0 4rem rgba( 255, 255, 235, 0.5 ) inset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tape::before {
+    content:"";
+    display:block;
+    height: 30px;
+    margin: -15px auto 5px auto;
+    width: 200px;
+    background-color: var(--tape-gray);
+    border-right: 1px dotted var(--tape-edge-gray);
+    border-left: 1px dotted var(--tape-edge-gray);
+    opacity: 0.5;
+    box-shadow:0.5px 0.5px 1px rgb(0,0,0,0.2);
+}
+
+.num{
+  width: 100%;
+  text-align: left;
+  padding-left: .2rem;
+}
+
+.project-img{
+  width: 90%;
+  height: auto;
+  margin: 0 .5rem;
+}
+
+.index-img{
+  object-fit: cover;
+}
+
+.rotate1{
+  transform: rotate(.7deg);
+}
+
+.rotate2{
+  transform: rotate(-.5deg);
+}
+
+.rotate3{
+  transform: rotate(-.7deg);
+}
+
+.rotate4{
+  transform: rotate(.4deg)
+}
+figcaption{
+  padding-top: 1rem;
+}
+@media (min-width: 624px) {
+
+  header{
+    position: static;
+    width: 20%;
     height: 100vh;
-    background: gray;
-    color: white;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
   }
-
-  .nav-link-cont{
-    display: block;
-    margin: 35px 0;
-    line-height: 15px;
-  }
-
-  nav, .nav-bar, .nav-liv-cont, .nav-link{
-    font-size: 20px;
-  }
-
-  /* If 3 lined icon is clicked, make navigation bar visible */
-  #check:checked ~ .nav-bar{
+  #nav-bar{
     left: 0;
+    width: 100%;
+    position:static;
+  }
+  #side-bar-icon{
+    display: none;
   }
 
-  /* Make logo visible */
-  .logo{
-    display: inline;
+  #close-nav-icon{
+    display: none;
   }
 
-  .blurb-title{
-    margin-top: 10px;
+  #project-section {
+    grid-template-columns: repeat(2, minmax(250px, 400px));
+    row-gap: 3rem; 
   }
 }
-/* Mobile View of Website */
-@media (max-width: 700px){
-  .chapter-img{
-    width: 70vw;
-    height: 30vw;
-  }
 
-  .chapter{
-    flex-direction: column;
-  }
-
-  .blurb-container{
-    width: 85%;
-    font-size: 80%;
-    line-height: 20px;
-  }
-
-}
-
-@media(max-width: 550px){
-  footer{
-    flex-direction: column;
+@media (min-width: 1025px) {
+  #project-section {
+    grid-template-columns: repeat(3, minmax(250px, 400px));
+    row-gap: 3rem;
   }
 }

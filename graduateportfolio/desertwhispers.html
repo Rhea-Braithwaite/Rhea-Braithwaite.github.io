@@ -2,138 +2,207 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> MY PORTFOLIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhea Braithwaite Portfolio</title>
+    <link rel="stylesheet" href="./css/styles_projects.css">
+    <link rel="stylesheet" href="./css/styles_index.css"> 
+    <link rel="stylesheet" href="./css/styles_desertwhispers.css"> 
+    <link rel="stylesheet" href="./css/styles_backgrounds.css"> 
 
-    <!-- Font Icons Style Sheet-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 
-    <!-- My Stylesheets -->
-    <link rel="stylesheet" href="css/style3.css">
-    <link rel="stylesheet" href="css/style4.css">
-    <link rel="stylesheet" href="css/project_ss.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
 
-  </head>
-  <body>
-    <nav>
-      <div class="logo">
-        Rhea's Bookshelf
-      </div>
-      <!-- Three lined icon for mobile display -->
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Patrick+Hand&display=swap" rel="stylesheet">
+    
+    <script src="./js/script.js" defer></script>
+  </head> 
+  
+  <body id="desertwhispers-background">
+    <header>
+      <a id="side-bar-icon" onClick="openNav()">
         <i class="fa fa-bars"></i>
-      </label>
-      <!-- Navigation bar to different portfolio pages-->
-      <!-- Needs to be updated once the pages are created-->
-      <ul class="nav-bar">
-        <li class="nav-link-cont"><a class="nav-link" href="index.html" class="home"> Home</a></li>
-        <li class="nav-link-cont"><a class="nav-link" href="index.html#book-contents" >Projects</a></li>
-        <li class="nav-link-cont"><a class="nav-link" href="about.html">About Me</a></li>
-        <li class="nav-link-cont"><a class="nav-link" href="#contact" >Contact</a></li>
-      </ul>
-    </nav>
-    <div class="project-body">
-      <div class="header">
-        <h1>Desert Whispers</h1>
-      </div>
-      <div class="overview-container">
-        <p class="overview"> Overview: An interactive installation, centered around a single tree in
-          the Sweihan Abu Dhabi desert, using sensors and LED lights to convey the
-          tree’s limits of human interaction.
+      </a>
+      <nav id="nav-bar" class="to-do-list">
+        <p id="header">TO DO LIST</p>
+        <a id="close-nav-icon" onClick="closeNav()">
+          <i class="fa fa-x"></i>
+        </a>
+        <ul id="list-container">
+          <li class="to-do-item"> 
+            <a href="index-projects.html">
+              <span class="checkbox"></span>
+              <span class="to-do-text">HOME</span>
+            </a>
+          </li>
+          <li class="to-do-item">
+            <a href="safesound.html">
+              <span class="checkbox"></span>
+              <span class="to-do-text">SafeSound</span>
+            </a>
+          </li>
+          <li class="to-do-item">
+            <a href="walkwithyou.html">
+              <span class="checkbox"></span>
+              <span class="to-do-text">WalkWithYou</span>
+            </a>
+          </li>
+          <li class="to-do-item">
+            <a href="desertwhispers.html">
+              <span class="checkbox"></span>
+              <span class="to-do-text">Desert Whispers</span>
+            </a>
+          </li>
+          <li class="to-do-item">
+            <a href="culinarychronicles.html">
+              <span class="checkbox"></span>
+              <span class="to-do-text">Culinary Chronicles</span>
+            </a>
+          </li>
 
-          </br> </br> Developed as the final project of the Desert Media Art course,
-          which teaches key technical aspects of design such as prototyping and
-          documentation. After splitting into teams of four, we used these newfound
-          skills to research, propose, produce and install an electronic artwork
-          designed for Abu Dhabi’s Sweihan desert.</p>
-      </div>
+          <li class="to-do-item">
+            <a href="digitalwaste.html">
+              <span class="checkbox"></span>
+              <span class="to-do-text">Digital Waste</span>
+            </a>
+          </li>
+          <li class="to-do-item">
+            <a href="switchnotes.html">
+              <span class="checkbox"></span>
+              <span class="to-do-text">Switch Notes</span>
+            </a>
+          </li>
+          <li class="to-do-item">
+            <a href="about-me.html">
+              <span class="checkbox"></span>
+              <span class="to-do-text">About Me</span>
+            </a>
+          </li>
+          <li class="to-do-item">
+            <a>
+              <span class="checkbox"></span>
+              <span class="to-do-blanks"></span>
+            </a>
+          </li>
+          <li class="to-do-item">
+            <a>
+              <span class="checkbox"></span>
+              <span class="to-do-blanks"></span>
+            </a>
+          </li>
 
+          <li class="to-do-item">
+            <a>
+              <span class="checkbox"></span>
+              <span class="to-do-blanks"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div id="overlay" onClick="closeNav()"></div>
+    </header>
+
+    <main class="project-body">
+      <section class="header">
+        <h1 class="project-title">Desert Whispers</h1>
+        <p class="overview"> Overview: An interactive installation, centered around a single tree in the Sweihan Abu Dhabi desert, using sensors and LED lights to convey the tree’s limits of human interaction.
+      <br> <br> Developed as the final project of the Desert Media Art course, which teaches key technical aspects of design such as prototyping and documentation. After splitting into teams of four, we used these newfound skills to research, propose, produce and install an electronic artwork designed for Abu Dhabi’s Sweihan desert.</p>
       <div class="image-gallery">
-        <img src="images/projects/desertwhispers/tree_green3.jpg" alt="Tree Installation" class="project-img1">
-        <img src="images/projects/desertwhispers/tree_yellow1.jpg" alt="Tree Installation" class="project-img1">
+        <figure class="project-figure project-polaroid">
+          <div class="tape"></div>
+          <img src="images/projects/desertwhispers/tree_green3.jpg" alt="Tree Installation" class="project-img zoomable">
+        </figure> 
+        <figure class="project-figure project-polaroid">
+          <div class="tape"></div>
+          <img src="images/projects/desertwhispers/tree_yellow1.jpg" alt="Tree Installation" class="project-img zoomable">
+        </figure>  
       </div>
-
-      <h2 class="project-heading">Early Steps</h2>
-
-      <p class="text"> We each created our own individual ideas, mine of which was using wind
-        chimes as a tool for the desert to voice itself.  </p>
-      <img src="images/projects/desertwhispers/early_idea.jpg" alt="Early Idea" class="project-img2">
+        
+      </section> 
 
 
-      <h2 class="project-heading"> Site Visit and Final Idea </h2>
-      <p class="text">After a visit to our installation site, we workshopped my early idea into an
-        installation centered around a single tree we found.</p>
-        <img src="images/projects/desertwhispers/og_tree2.jpg" alt="Desert Tree that's the Center of the Project" class="project-img4">
+      <section>
+        <h2 class="project-heading highlight">Early Steps</h2>
+        <p class="text"> We each created our own individual ideas, mine of which was using wind chimes as a tool for the desert to voice itself.  </p>
+        <figure class="project-figure project-polaroid">
+          <div class="tape"></div>
+          <img src="images/projects/desertwhispers/early_idea.jpg" alt="Early Idea" class="project-img resize-design-image zoomable">
+        </figure>
+      </section>
 
-      <div class="text-img-row">
-        <div class="text-column">
-          <p class="text" >Using LED lights wrapped in 3D printed leaves and an ultrasonic distance
-            sensor, the installation became a visual way for the tree to communicate
-            its boundaries as humans interact with it. </p>
-            <ul>
+      <section>
+        <h2 class="project-heading highlight"> Site Visit and Final Idea </h2>
+        <p class="text">After a visit to our installation site, we workshopped my early idea into an installation centered around a single tree we found.</p>
+        <figure class="project-figure project-polaroid">
+          <div class="tape"></div>
+          <img src="images/projects/desertwhispers/og_tree2.jpg" alt="Desert Tree that's the Center of the Project" class="project-img zoomable">
+        </figure>
+        
+        <div class="columns-2">
+          <div>
+            <p class="text" >Using LED lights wrapped in 3D printed leaves and an ultrasonic distance sensor, the installation became a visual way for the tree to communicate its boundaries as humans interact with it. </p>
+            <ul class="text">
               <li>Green: Tree is in a healthy state</li>
               <li>Yellow: Approaching tree’s interaction limit</li>
               <li>Red: Tree is in distress as interaction limit has been exceeded </li>
             </ul>
-            <p class="text">The transition of the colors serve to make immediately visible the unseen
-               stresses the environment endures due to human presence. Once the visitor
-               walks away, the tree eventually returns to its earlier green and healthy
-               state. </p>
+            <p class="text">The transition of the colors serve to make immediately visible the unseen stresses the environment endures due to human presence. Once the visitor walks away, the tree eventually returns to its earlier green and healthy state. </p>
+          </div>
+          <figure class="project-figure project-polaroid">
+            <div class="tape"></div>
+            <img src="images/projects/desertwhispers/design.jpg" alt="Installation Sketch" class="project-img zoomable">
+          </figure>
         </div>
-        <div class="image-column">
-          <img src="images/projects/desertwhispers/design.jpg" alt="Installation Sketch" class="project-img1">
+      </section>
+
+      <section>
+        <h2 class="project-heading highlight">Building</h2>
+        <p class="text">I was once again on the technical side building the circuit, to include all the electronic pieces of the project. I then worked on writing the code in Circuit Python to calibrate the ultrasonic sensor, and use its values to change the colors of the LED lights. </p>
+        <div class="image-gallery">
+          <figure class="project-figure project-polaroid">
+            <div class="tape"></div>
+            <img src="images/projects/desertwhispers/circuit.jpg" alt="Initial Circuit" class="project-img zoomable">
+          </figure>
+          <figure class="project-figure project-polaroid">
+            <div class="tape"></div>
+            <img src="images/projects/desertwhispers/circuit2.jpeg" alt="Final Ciruit" class="project-img zoomable">
+          </figure>
         </div>
-      </div>
 
-
-      <h2 class="project-heading">Building</h2>
-      <p class="text">I was once again on the technical side building the circuit, to include
-        all the electronic pieces of the project. I then worked on writing the code in Circuit Python to calibrate the ultrasonic sensor, and
-           use its values to change the colors of the LED lights. </p>
-      <div class="image-gallery">
-        <img src="images/projects/desertwhispers/circuit.jpg" alt="Initial Circuit" class="project-img4">
-        <img src="images/projects/desertwhispers/circuit2.jpeg" alt="Final Ciruit" class="project-img4">
-      </div>
-
-      <p class= "text">
-         <br> <br> After one of our teammates printed the leaves, I then combined
-         them with the LED lights attached to the circuit, and tested them to
-         ensure they changed colors as the distance and time spent at certain
-         distances changed.
+        <p class= "text">
+         <br> <br> After one of our teammates printed the leaves, I then combined them with the LED lights attached to the circuit, and tested them to ensure they changed colors as the distance and time spent at certain distances changed.
 
          <br> <br> Together, we safely attached the pieces onto the tree for the
          final exhibition day, as another of our teammates documented the process.
-       </p>
-       <div class="image-gallery">
-         <img src="images/projects/desertwhispers/group_pic.jpg" alt="Group Installation" class="project-img4">
-         <img src="images/projects/desertwhispers/install.jpeg" alt="Final Tree Setup Image 1" class="project-img4">
-         <img src="images/projects/desertwhispers/tree_build.jpg" alt="Final Tree Setup Image 2" class="project-img4">
-       </div>
+        </p>
+        <div class="image-gallery columns-3">
+          <figure class="project-figure project-polaroid">
+            <div class="tape"></div>
+            <img src="images/projects/desertwhispers/group_pic.jpg" alt="Group Installation" class="project-img crop zoomable">
+          </figure>
+          
+          <figure class="project-figure project-polaroid">
+            <div class="tape"></div>
+            <img src="images/projects/desertwhispers/install.jpeg" alt="Final Tree Setup Image 1" class="project-img crop zoomable">
+          </figure>
+          
+          <figure class="project-figure project-polaroid">
+            <div class="tape"></div>
+            <img src="images/projects/desertwhispers/tree_build.jpg" alt="Final Tree Setup Image 2" class="project-img crop zoomable">
+          </figure>
+          
+        </div>
+        <figure class="project-polaroid project-figure-iframe">
+          <div class="tape"></div>
+          <iframe src="https://drive.google.com/file/d/1p3IXPLUASEZrvaRieehx7YQdAL8GemF2/preview" allow="autoplay"></iframe>
+        </figure>
 
-        <iframe src="https://drive.google.com/file/d/1p3IXPLUASEZrvaRieehx7YQdAL8GemF2/preview" width="700" height="480" allow="autoplay"></iframe>
-   </div>
-   <footer>
-     <div id="author-note" >
-       <h3>Author's Note:</h3>
-       <ul style="list-style-type:none">
-         <li>Please reach out to me if you have any questions, comments or puns
-            you'd like to share. </li>
-       </ul>
-     </div>
-
-     <div id="contact">
-       <h3>Contact Me:</h3>
-       <ul style="list-style-type:none">
-         <li>Email: rheafaith.braithwaite@gmail.com</li>
-       </ul>
-     </div>
-
-   </footer>
+      </section>
+    </main>
+    <div class="lightbox-overlay" id="lightbox"> 
+      <span class="lightbox-close">&times;</span>
+      <img src="" alt="">
+    </div>
   </body>
 </html>
-

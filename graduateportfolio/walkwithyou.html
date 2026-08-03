@@ -1,134 +1,205 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> MY PORTFOLIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhea Braithwaite Portfolio</title>
+    <link rel="stylesheet" href="./css/styles_projects.css">
+    <link rel="stylesheet" href="./css/styles_index.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="./css/styles_backgrounds.css"> 
 
-    <!-- Font Icons Style Sheet-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-    <!-- My Stylesheets -->
-    <link rel="stylesheet" href="css/style3.css">
-    <link rel="stylesheet" href="css/style4.css">
-    <link rel="stylesheet" href="css/project_ss.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-
-  </head>
-  <body>
-    <nav>
-      <div class="logo">
-        Rhea's Bookshelf
-      </div>
-      <!-- Three lined icon for mobile display -->
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Patrick+Hand&display=swap" rel="stylesheet">
+    
+    <script src="./js/script.js" defer></script>
+  </head> 
+  
+  <body id="walkwithyou-background">
+    <header>
+      <a id="side-bar-icon" onClick="openNav()">
         <i class="fa fa-bars"></i>
-      </label>
-      <!-- Navigation bar to different portfolio pages-->
-      <!-- Needs to be updated once the pages are created-->
-      <ul class="nav-bar">
-        <li class="nav-link-cont"><a class="nav-link" href="index.html" class="home"> Home</a></li>
-        <li class="nav-link-cont"><a class="nav-link" href="index.html#book-contents" >Projects</a></li>
-        <li class="nav-link-cont"><a class="nav-link" href="about.html">About Me</a></li>
-        <li class="nav-link-cont"><a class="nav-link" href="#contact" >Contact</a></li>
-      </ul>
-    </nav>
-    <div class="project-body" >
-      <div class="header">
-        <h1>WalkWithYou</h1>
-      </div>
-      <div class="overview-container">
-        <p class="overview">Overview: Mobile application that provides users with tools to make their
-          traveling journey safer.
-          <br> Developed as part of The Summer Environmental
-          Education Development (SEEDs) program, an annual intensive 10-week mobile
-          app development hackathon. It provides an opportunity for female college
-          students to gain coding experience and work with a non-profit.
+      </a>
+      <nav id="nav-bar" class="to-do-list">
+        <p id="header">TO DO LIST</p>
+        <a id="close-nav-icon" onClick="closeNav()">
+          <i class="fa fa-x"></i>
+        </a>
+        <ul id="list-container">
+          <li class="to-do-item"> 
+            <a href="index-projects.html">
+              <span class="checkbox"></span>
+              <span class="to-do-text">HOME</span>
+            </a>
+          </li>
+          <li class="to-do-item">
+            <a href="safesound.html">
+              <span class="checkbox"></span>
+              <span class="to-do-text">SafeSound</span>
+            </a>
+          </li>
+          <li class="to-do-item">
+            <a href="walkwithyou.html">
+              <span class="checkbox"></span>
+              <span class="to-do-text">WalkWithYou</span>
+            </a>
+          </li>
+          <li class="to-do-item">
+            <a href="desertwhispers.html">
+              <span class="checkbox"></span>
+              <span class="to-do-text">Desert Whispers</span>
+            </a>
+          </li>
+          <li class="to-do-item">
+            <a href="culinarychronicles.html">
+              <span class="checkbox"></span>
+              <span class="to-do-text">Culinary Chronicles</span>
+            </a>
+          </li>
 
-          </br> </br> I was paired with another participant, Jasmine, and we worked
-          together on each phase of the app development.  </p>
-      </div>
+          <li class="to-do-item">
+            <a href="digitalwaste.html">
+              <span class="checkbox"></span>
+              <span class="to-do-text">Digital Waste</span>
+            </a>
+          </li>
+          <li class="to-do-item">
+            <a href="switchnotes.html">
+              <span class="checkbox"></span>
+              <span class="to-do-text">Switch Notes</span>
+            </a>
+          </li>
+          <li class="to-do-item">
+            <a href="about-me.html">
+              <span class="checkbox"></span>
+              <span class="to-do-text">About Me</span>
+            </a>
+          </li>
+          <li class="to-do-item">
+            <a>
+              <span class="checkbox"></span>
+              <span class="to-do-blanks"></span>
+            </a>
+          </li>
+          <li class="to-do-item">
+            <a>
+              <span class="checkbox"></span>
+              <span class="to-do-blanks"></span>
+            </a>
+          </li>
 
-      <h2 class="project-heading">Early Steps</h2>
-      <p class="text"> We wanted to explore the problem domain of Women’s Safety, operating
-      from our own personal experiences as young women navigating daily life.
-      After conducting initial research it was statistically clear, this wasn’t
-      isolated to us and very much universal. </p>
-      <div class="image-gallery">
-        <img src="images/projects/seeds/violence1.png" alt="Vioence in Jamaica" class="project-img3">
-        <img src="images/projects/seeds/violence2.png" alt="Violence in Canada and China" class="project-img3">
-      </div>
+          <li class="to-do-item">
+            <a>
+              <span class="checkbox"></span>
+              <span class="to-do-blanks"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div id="overlay" onClick="closeNav()"></div>
+    </header>
 
+    <main class="project-body" >
+      <section>
+        <h1 class="project-title">WalkWithYou</h1>
+        <p class="overview">Overview: Mobile application that provides users with tools to make their traveling journey safer.
+          <br> Developed as part of The Summer Environmental Education Development (SEEDs) program, an annual intensive 10-week mobile app development hackathon. It provides an opportunity for female college students to gain coding experience and work with a non-profit.
+          <br> <br> I was paired with another participant, Jasmine, and we worked together on each phase of the app development.  </p>
+      </section>
+      
+      <section>
+        <h2 class="project-heading highlight">Early Steps</h2>
+        <p class="text"> We wanted to explore the problem domain of Women’s Safety, operatingfrom our own personal experiences as young women navigating daily life. After conducting initial research it was statistically clear, this wasn’t isolated to us and very much universal. </p>
+        <div class="columns-2">
+          <figure class="project-polaroid project-figure">
+            <div class="tape"></div>
+            <img src="images/projects/seeds/violence1.jpeg" alt="Violence in Jamaica" class="project-img zoomable">
+          </figure>
+          <figure class="project-polaroid project-figure">
+            <div class="tape"></div>
+            <img src="images/projects/seeds/violence2.png" alt="Violence in Canada and China" class="project-img zoomable">
+          </figure>
+        </div>
 
-      <h2 class="project-heading"> Problem Statement </h2>
-      <p class="text">The final question we landed on as our problem statement then became: <strong>How might we help females or people, feel safer and more protected when traveling?</strong> </p>
+      </section>
 
-    <h2 class="project-heading">Target Group and User Interviews</h2>
-    <p class="text">We used this baseline to nail down our primary user base (women) and
-      conducted interviews to outline their transportation journey and identify
-      paint points our app could improve.  </p>
-      <img src="images/projects/seeds/interviews.png" alt="Interviews" class="project-img1">
+      <section>
+        <h2 class="project-heading highlight"> Problem Statement </h2>
+        <p class="text">The final question we landed on as our problem statement then became: <strong>How might we help females or people, feel safer and more protected when traveling?</strong> </p>
+      </section>
 
-      <h2 class="project-heading">Ideation and Prototyping </h2>
-      <p class="text">This led to the app’s key features and their specific offerings:</p>
+      <section>
+        <h2 class="project-heading highlight">Target Group and User Interviews</h2>
+        <p class="text">We used this baseline to nail down our primary user base (women) and conducted interviews to outline their transportation journey and identify paint points our app could improve.  </p>
+        <figure class="project-polaroid project-figure single">
+          <div class="tape"></div>
+          <img src="images/projects/seeds/interviews.png" alt="Interviews" class="project-img zoomable">
+        </figure>
+        
+      </section>
 
-      <table>
-        <tr>
-          <th>Feature</th>
-          <th>Offering</th>
-        </tr>
-        <tr>
-          <td>Emergency call buttons</td>
-          <td>Pre-saved emergency contacts and messages, to immediately convey
-            that you are worried for your safety. </td>
-        </tr>
-        <tr>
-          <td>Phone call simulator</td>
-          <td>Using pre-recorded conversations so you can simulate talking to
-            someone over the phone</td>
-        </tr>
-        <tr>
-          <td>Self-defense resources</td>
-          <td>Learn self-defense skills on the go, so you can use them in the
-            event of an emergency</td>
-        </tr>
-      </table>
+      <section>
+        <h2 class="project-heading highlight">Ideation and Prototyping </h2>
+        <p class="text">This led to the app’s key features and their specific offerings:</p>
+  
+        <table class="text">
+          <tr>
+            <th>Feature</th>
+            <th>Offering</th>
+          </tr>
+          <tr>
+            <td>Emergency call buttons</td>
+            <td>Pre-saved emergency contacts and messages, to immediately convey
+              that you are worried for your safety. </td>
+          </tr>
+          <tr>
+            <td>Phone call simulator</td>
+            <td>Using pre-recorded conversations so you can simulate talking to
+              someone over the phone</td>
+          </tr>
+          <tr>
+            <td>Self-defense resources</td>
+            <td>Learn self-defense skills on the go, so you can use them in the
+              event of an emergency</td>
+          </tr>
+        </table> 
+        <p class="text">We then worked on low-fi prototype sketches of each feature </p>
+        <div class="columns-2">
+          <figure class="project-figure project-polaroid single">
+            <div class="tape"></div>
+            <img src="images/projects/seeds/jasmine_lowfi.png" alt="Low Fidelity Prototypes" class="project-img zoomable">
+          </figure>
+          
+          <figure class="project-figure project-polaroid single">
+            <div class="tape"></div>
+            <img src="images/projects/seeds/rhea_lowfi.png" alt="Low Fidelity Prototypes" class="project-img zoomable">
+          </figure>
+        </div>
+        <p class="text"> and then transformed them into high fidelity versions in Figma.</p>
+        <figure class=" project-polaroid project-figure single">
+          <div class="tape"></div>
+          <img src="images/projects/seeds/digital_prototypes2.png" alt="High Fidelity Prototypes" class="project-img zoomable">
+        </figure>
+        
+      </section>
+      
+      <section>
+        <h2 class="project-heading highlight">Final Product</h2>
+        <p class="text">I then coded the final app in Android Studio using the Kotlin programming language.</p>
+        <figure class="project-polaroid project-figure single">
+          <div class="tape"></div>
+          <img src="images/projects/seeds/app.png" alt="Mobile App Screenshots" class="project-img zoomable">
+        </figure>
+      </section>
 
-      <p class="text">We then worked on low-fi prototype sketches of each feature </p>
-      <div class="image-gallery">
-        <img src="images/projects/seeds/jasmine_lowfi.png" alt="Low Fidelity Prototypes" class="project-img1">
-        <img src="images/projects/seeds/rhea_lowfi.png" alt="Low Fidelity Prototypes" class="project-img1">
-      </div>
-      <p> and then transformed them into high fidelity versions in Figma.</p>
-      <img src="images/projects/seeds/digital_prototypes2.png" alt="High Fidelity Prototypes" class="project-img1">
-      <h2 class="project-heading">Final Product</h2>
-      <p class="text">I then coded the final app in Android Studio using the Kotlin programming language.</p>
-      <img src="images/projects/seeds/app.png" alt="Mobile App Screenshots" class="project-img1">
-
-      <h2 class="project-heading">Next Steps & Methods of Improvement</h2>
-      <p class="text">TESTING: To hear from potential users.</p>
+      <section>
+        <h2 class="project-heading highlight">Next Steps & Methods of Improvement</h2>
+        <p class="text">TESTING: To hear from potential users.</p>
+      </section>
+    </main>
+    <div class="lightbox-overlay" id="lightbox"> 
+      <span class="lightbox-close">&times;</span>
+      <img src="" alt="">
     </div>
-      <footer>
-        <div id="author-note" >
-          <h3>Author's Note:</h3>
-          <ul style="list-style-type:none">
-            <li>Please reach out to me if you have any questions, comments or puns
-               you'd like to share. </li>
-          </ul>
-        </div>
-
-        <div id="contact">
-          <h3>Contact Me:</h3>
-          <ul style="list-style-type:none">
-            <li>Email: rheafaith.braithwaite@gmail.com</li>
-          </ul>
-        </div>
-
-      </footer>
-
   </body>
 </html>

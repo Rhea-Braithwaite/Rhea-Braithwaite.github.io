@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./css/styles_projects.css">
     <link rel="stylesheet" href="./css/styles_index.css"> 
     <link rel="stylesheet" href="./css/styles_about.css"> 
+    <link rel="stylesheet" href="./css/styles_backgrounds.css"> 
+
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 
@@ -17,7 +19,7 @@
     <script src="./js/script.js" defer></script>
   </head> 
   
-  <body>
+  <body id="aboutme-background">
     <header>
       <a id="side-bar-icon" onClick="openNav()">
         <i class="fa fa-bars"></i>
@@ -72,9 +74,9 @@
             </a>
           </li>
           <li class="to-do-item">
-            <a>
+            <a href="about-me.html">
               <span class="checkbox"></span>
-              <span class="to-do-blanks"></span>
+              <span class="to-do-text">About Me</span>
             </a>
           </li>
           <li class="to-do-item">
@@ -100,67 +102,54 @@
       </nav>
       <div id="overlay" onClick="closeNav()"></div>
     </header>
+    
     <main id="about-me">
-      <section>
+      <section class="page-title">
+        <h1>about me</h1>
+      </section>
+      <section id="headshot">
         <figure id="headshot-figure" class="project-polaroid sub-section">
           <div class="tape"></div>
-          <!-- <img src="images/miscellaneous/headshot.jpg" alt="Headshot of Rhea" class="project-img"> -->
+          <img src="images/miscellaneous/headshot.jpg" alt="Headshot of Rhea" class="project-img">
         </figure>
-        <div class="sub-section">
-					<h2 class="highlight about-heading">Profile</h2>
-					<ul id="profile">
-						<li>name: rhea braithwaite</li>
-						<li>age: 24</li>
-						<li>sign: virgo</li>
-						<li>height: 6'1</li>
-						<li>eye color: brown</li>
-					</ul>  
-        </div>
-
       </section>
+      <section id="intro">
+        <h2 class="highlight about-heading">Intro</h2>
+        <p class="text">Hiya! My name is Rhea *waves*. I’m a recent university grad with a degree in Computer Science and a 
+          minor in Interactive Media from NYU Abu Dhabi. I was very lucky to have a college experience that 
+          exposed me to a variety of technologies from web development, mobile app development, to virtual 
+          reality and even game development. I learned first hand just how useful technology can be in solving 
+          a variety of real-world problems. I hope to continue to use these skills to make a positive impact 
+          on people day-to-day. <br> <br>
 
-      <section>
-				<div class="sub-section">
-          <h2 class="highlight about-heading">favorite-songs</h2>
-					<ul id="favorite-songs">
-						<li>At the beach in every life by Gigi Perez</li>
-						<li>Illusion by One Direction</li>
-						<li>Caramel by Sleep Token</li>
-					</ul>
-				</div>
-        
-        <div class="music-player sub-section">
-          <div class="square"></div>
-          <div class="song">
-            <p>Caramel</p>
-            <hr>
-            <div class="play-bar">
-              <i class="fa-solid fa-backward"></i>
-              <i class="fa-solid fa-pause"></i>
-              <i class="fa-solid fa-forward"></i>
-            </div>
-          </div>
-        </div>
+          Thanks for visiting my portfolio!</p>
       </section>
-      <section>
-        <div class="sub-section">
-          <h2 class="highlight about-heading">likes</h2>
-          <ul id="likes">
-            <li>fashion illustration</li>
-            <li>açai</li>
-            <li>doc martens</li>
-            <li>fan fiction</li>
-          </ul>
-        </div>
-        <div class="sub-section">
-          <h2 class="highlight about-heading">dislikes</h2>
-          <ul>
-            <li>banana (except in smoothies)</li>
-            <li>jellies</li>
-            <li>people who don't wash thair hands</li>
-          </ul>
-        </div>
-        
+            
+      <section id="favorite-songs">
+        <h2 class="highlight about-heading">favorite-songs</h2>
+        <ul class="text">
+          <li>At the beach in every life by Gigi Perez</li>
+          <li>Illusion by One Direction</li>
+          <li>Caramel by Sleep Token</li>
+        </ul>
+      </section>
+      
+      <section id="likes">
+        <h2 class="highlight about-heading">likes</h2>
+        <ul class="text" id="likes">
+          <li>fashion illustration</li>
+          <li>açai</li>
+          <li>doc martens</li>
+          <li>fan fiction</li>
+        </ul>
+      </section>
+      <section id="dislikes">
+        <h2 class="highlight about-heading">dislikes</h2>
+        <ul class="text">
+          <li>banana (except in smoothies)</li>
+          <li>jellies</li>
+          <li>people who don't wash thair hands</li>
+        </ul>
       </section>
     </main>
   </body>
