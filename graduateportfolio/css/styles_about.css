@@ -33,7 +33,7 @@
 .page-title{
   text-align: center;
   font-family: Caveat;
-  font-size: clamp(2rem, 2rem + .5vw, 4rem);
+  font-size: clamp(2rem, 2rem + .1vw, 3rem);
   text-align: center;
 
 
@@ -48,7 +48,7 @@
 .about-heading{
   font-size: clamp(1.7rem, 1.7rem + 1vw, 2.5rem);
   display: inline-block;
-  text-transform: lowercase;
+  /* text-transform: lowercase; */
   width: fit-content;
   margin: 0 0.5rem 0.5rem .5rem ;
   font-family: Caveat, 'Times New Roman', Times, serif;
