@@ -318,7 +318,7 @@ main{
 
 figcaption{
   color: #104547;
-  font-size: clamp(1.5rem, 1.5rem + .3rem 3rem);
+  font-size: clamp(1.5rem, 1.5rem + .3rem, 3rem);
   font-weight:bold;
   text-align: center;
 }
