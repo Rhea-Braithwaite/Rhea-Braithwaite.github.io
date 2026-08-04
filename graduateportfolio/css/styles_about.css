@@ -57,7 +57,7 @@
 
 #intro{
   border: 5px dashed rgba(var(--accent-color2-rgb), 0.5);
-  padding: .5rem;
+  padding: .7rem;
 }
 
 /* Adjust grid placements for sections based on screen size */

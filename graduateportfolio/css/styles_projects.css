@@ -39,7 +39,7 @@ section{
   padding: .5em;
   text-align: center;
   font-family: Nunito;
-  font-size: clamp(.9rem, .9rem + .1vw ,1.3rem);
+  font-size: clamp(.9rem, .9rem + .1vw, 1.3rem);
   font-weight: 300;  
 }
 
@@ -108,7 +108,7 @@ section{
 
 .text{
   line-height: 1.6;
-  font-size: clamp(1rem, 1rem + .2vw, 2rem);
+  font-size: clamp(1rem, 1rem + .3vw, 2rem);
   font-family: Nunito;
 }
 
