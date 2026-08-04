@@ -27,11 +27,11 @@ section{
   height: auto;
 }
 
-.project-title{
+/* .project-title{
   text-align: center;
   font-family: Caveat;
   font-size: clamp(2rem, 2rem + 1.5vw, 4rem);
-}
+} */
 
 .overview{
   border: 3px dashed var(--accent-color2);
@@ -96,7 +96,6 @@ section{
 .project-img{
   padding-bottom: 1rem;
 }
-
 
 /* Columns initially 1 on mobile screens */
 .columns-2{

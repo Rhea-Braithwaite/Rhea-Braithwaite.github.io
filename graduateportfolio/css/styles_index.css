@@ -107,7 +107,7 @@ header{
   padding-top: 1rem;
 }
 
-#header{
+#nav-bar-header{
   background-color: white;
   width: 90%;
   text-align: center;
@@ -209,28 +209,35 @@ main{
   box-shadow: 0 0 1rem rgb(0 0 0 / 0.25);
 }
 
-#index-page-title {
+.page-header{
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+  gap: .5rem;
+}
 
+#index-page-header {
   margin-top: -2rem;
   color: #104547;
-  font-size: clamp(1rem, 1rem + .5vw ,2.5rem);
 } 
 
-#index-page-title h1{
+#index-page-header h1{
   text-transform: uppercase;
+}
+
+.page-title{
+  text-align: center;
+  font-family: Caveat;
+  font-size: clamp(2rem, 2rem + 1.5vw, 4rem);
 }
 
 .drawing{
   color: var(--secondary-color);
   font-weight: bold;
-  padding-left: 1rem;
+  padding-left: .5rem;
 }
 
 .project-link {
@@ -257,7 +264,6 @@ main{
   flex-direction: column;
   align-items: center;
   justify-content: space-between; 
-  
 }
                
 /* Add tape to each polaroid image */
@@ -313,10 +319,10 @@ figcaption{
 }
 
 @media (min-width: 624px) {
-  #index-page-title{
+  .page-header{
     flex-direction: row;
-    /* gap: .5rem; */
   }
+
   /* Increase columns to 2 for tablet sized screens */
   #project-section {
     grid-template-columns: repeat(2, minmax(250px, 400px));
