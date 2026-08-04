@@ -1,21 +1,19 @@
 // Opening and closing navigation bar
 const navBar = document.getElementById("nav-bar");
-  
-function toggleNav(){
-  navBar.classList.toggle("visible");
-}
 
 function openNav(){
   navBar.classList.add("visible");
+  document.body.style.overflow = 'hidden'; // lock background scroll
 }
 
 function closeNav(){
   navBar.classList.remove("visible");
+  document.body.style.overflow = ''; // restore scroll
 }
 
 // Enlarge images and activate dark overlay for background
 document.addEventListener('DOMContentLoaded', function() {
-  const overlay = document.getElementById('lightbox');
+  const overlay = document.getElementById('lightbox');  
   if(!overlay) return; //if page doesn't have a lightbox simply return
   
   const overlayImg = overlay.querySelector('img');

@@ -51,6 +51,8 @@ header{
   z-index: 10;
   height: auto;
   max-height: 600px;
+  /* max-height: 100vh; */
+  /* overflow-y: auto; */
 }
 
 #side-bar-icon{
@@ -71,6 +73,8 @@ header{
   transition: left 300ms ease-out;
   z-index: 1000;
   padding: 1rem .5rem;
+  max-height: 100vh;
+  overflow-y: auto;
 }
 
 /* Make navbar visible */
@@ -96,6 +100,7 @@ header{
   right: clamp(1.7rem, 1rem + .7vw, 3rem);
   color: var(--accent-color2);
 }
+
 /* Styling for nav bar links */
 .to-do-list{
   background-color: #6882d1;
